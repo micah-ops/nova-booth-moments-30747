@@ -108,7 +108,7 @@ const ExperienceShowcase = () => {
                 loading="lazy"
               />
               <CardHeader>
-                <CardTitle className="font-display text-2xl">Step Into the Spotlight</CardTitle>
+                <CardTitle className="font-display text-2xl">Step into the Spotlight 360 Video Booth.</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
