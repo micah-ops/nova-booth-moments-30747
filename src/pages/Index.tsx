@@ -22,7 +22,7 @@ import { Star, Phone, Mail } from "lucide-react";
 
 import heroImage from "@/assets/hero-nova-booth.jpg";
 import exp360 from "@/assets/experience-360.jpg";
-import expPrint from "@/assets/experience-print.jpg";
+
 import g360_1 from "@/assets/gallery-360-1.jpg";
 import g360_2 from "@/assets/gallery-360-2.jpg";
 import g360_3 from "@/assets/gallery-360-3.jpg";
@@ -122,8 +122,8 @@ const ExperienceShowcase = () => {
           <Card className="hover-scale shadow">
             <article>
               <img
-                src={expPrint}
-                alt="Instant print photo booth with elegant floral backdrop"
+                src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png"
+                alt="Guests in blue at instant print photo booth setup"
                 className="h-64 w-full object-cover rounded-t-lg"
                 loading="lazy"
               />
