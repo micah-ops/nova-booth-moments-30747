@@ -1,12 +1,457 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useMemo } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Star, Phone, Mail } from "lucide-react";
+
+import heroImage from "@/assets/hero-nova-booth.jpg";
+import exp360 from "@/assets/experience-360.jpg";
+import expPrint from "@/assets/experience-print.jpg";
+import g360_1 from "@/assets/gallery-360-1.jpg";
+import g360_2 from "@/assets/gallery-360-2.jpg";
+import g360_3 from "@/assets/gallery-360-3.jpg";
+import g360_4 from "@/assets/gallery-360-4.jpg";
+import gp_1 from "@/assets/gallery-print-1.jpg";
+import gp_2 from "@/assets/gallery-print-2.jpg";
+import gp_3 from "@/assets/gallery-print-3.jpg";
+import gp_4 from "@/assets/gallery-print-4.jpg";
+
+const Header = () => {
+  return (
+    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
+      <div className="container mx-auto flex h-16 items-center justify-between">
+        <a href="#top" className="font-display text-lg tracking-wider">
+          NOVA BOOTH
+        </a>
+        <nav className="hidden md:flex items-center gap-6 text-sm">
+          <a href="#experiences" className="hover:text-primary transition-colors story-link">Experiences</a>
+          <a href="#gallery" className="hover:text-primary transition-colors story-link">Gallery</a>
+          <a href="#faq" className="hover:text-primary transition-colors story-link">FAQ</a>
+        </nav>
+        <div className="flex items-center gap-3">
+          <a href="#contact">
+            <Button variant="hero" size="lg">Reserve Your Date</Button>
+          </a>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+const Hero = () => {
+  return (
+    <section id="top" aria-label="Nova Booth hero" className="relative overflow-hidden">
+      <div className="absolute inset-0 bg-hero" aria-hidden="true" />
+      <img
+        src={heroImage}
+        alt="Elegant photo booth experience at a luxury wedding reception"
+        className="absolute inset-0 h-full w-full object-cover opacity-65"
+        loading="eager"
+        fetchPriority="high"
+      />
+      <div className="relative">
+        <div className="container mx-auto px-4 py-24 md:py-36 text-secondary-foreground">
+          <h1 className="font-display text-4xl md:text-6xl font-semibold tracking-tight animate-fade-in">
+            Curated Moments. Lasting Memories.
+          </h1>
+          <p className="mt-4 max-w-2xl text-base md:text-lg text-secondary-foreground/90 animate-fade-in">
+            Transform your celebration with beautifully designed photo experiences that blend seamlessly into your special day.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-enter">
+            <a href="#contact"><Button variant="hero" size="lg">Reserve Your Date</Button></a>
+            <a href="#gallery"><Button variant="outline" size="lg">See Our Work</Button></a>
+          </div>
+          <div className="mt-6 flex items-center gap-2 text-sm">
+            <div className="flex text-primary">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-current" />
+              ))}
+            </div>
+            <span className="text-secondary-foreground/90">Rated by 50+ Happy Couples</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const ExperienceShowcase = () => {
+  return (
+    <section id="experiences" className="py-16 md:py-24">
+      <div className="container mx-auto px-4">
+        <header className="mb-10 text-center">
+          <h2 className="font-display text-3xl md:text-4xl">Two Ways to Create Magic at Your Celebration</h2>
+        </header>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <Card className="hover-scale shadow">
+            <article>
+              <img
+                src={exp360}
+                alt="Luxury 360° video booth setup in an elegant venue"
+                className="h-64 w-full object-cover rounded-t-lg"
+                loading="lazy"
+              />
+              <CardHeader>
+                <CardTitle className="font-display text-2xl">Step Into the Spotlight</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
+                  <li>Cinematic 360° video capture</li>
+                  <li>Every angle of your special moment</li>
+                  <li>Instant digital sharing</li>
+                  <li>Professional attendant included</li>
+                </ul>
+                <p className="mt-4 text-muted-foreground text-sm">Perfect for: First dances, toasts, and unforgettable celebrations</p>
+              </CardContent>
+            </article>
+          </Card>
+
+          {/* Print Experience */}
+          <Card className="hover-scale shadow">
+            <article>
+              <img
+                src={expPrint}
+                alt="Instant print photo booth with elegant floral backdrop"
+                className="h-64 w-full object-cover rounded-t-lg"
+                loading="lazy"
+              />
+              <CardHeader>
+                <CardTitle className="font-display text-2xl">Timeless Moments, Instantly Yours</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
+                  <li>High-quality instant prints</li>
+                  <li>Professional lighting system</li>
+                  <li>Digital copies included</li>
+                  <li>Take-home keepsakes</li>
+                </ul>
+                <p className="mt-4 text-muted-foreground text-sm">Perfect for: Reception fun, guest entertainment, and party favors</p>
+              </CardContent>
+            </article>
+          </Card>
+        </div>
+        <div className="mt-8 text-center">
+          <a href="#contact"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Gallery = () => {
+  const allImages = useMemo(
+    () => [
+      { src: g360_1, alt: "Couple enjoying the 360° booth", tag: "360" },
+      { src: g360_2, alt: "Garden party with 360° booth", tag: "360" },
+      { src: g360_3, alt: "Corporate event with 360° booth", tag: "360" },
+      { src: g360_4, alt: "360° video moment close-up", tag: "360" },
+      { src: gp_1, alt: "Guests posing at instant print booth", tag: "print" },
+      { src: gp_2, alt: "Corporate gala instant print booth", tag: "print" },
+      { src: gp_3, alt: "Close-up of high-quality instant prints", tag: "print" },
+      { src: gp_4, alt: "Friends laughing at print booth", tag: "print" },
+    ],
+    []
+  );
+
+  const Grid = ({ images }: { images: { src: string; alt: string }[] }) => (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+      {images.map((img, i) => (
+        <figure key={i} className="overflow-hidden rounded-lg shadow hover-scale">
+          <img src={img.src} alt={img.alt} loading="lazy" className="h-40 md:h-48 w-full object-cover" />
+        </figure>
+      ))}
+    </div>
+  );
+
+  return (
+    <section id="gallery" className="py-16 md:py-24">
+      <div className="container mx-auto px-4">
+        <header className="mb-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl">See the Magic in Action</h2>
+        </header>
+        <Tabs defaultValue="all" className="w-full">
+          <TabsList className="grid grid-cols-3 max-w-md mx-auto">
+            <TabsTrigger value="all">All</TabsTrigger>
+            <TabsTrigger value="360">360° Experiences</TabsTrigger>
+            <TabsTrigger value="print">Print Experiences</TabsTrigger>
+          </TabsList>
+          <div className="mt-8">
+            <TabsContent value="all"><Grid images={allImages} /></TabsContent>
+            <TabsContent value="360"><Grid images={allImages.filter(i => i.tag === '360')} /></TabsContent>
+            <TabsContent value="print"><Grid images={allImages.filter(i => i.tag === 'print')} /></TabsContent>
+          </div>
+        </Tabs>
+        <div className="mt-8 text-center">
+          <a href="#contact"><Button variant="hero" size="lg">Create Your Moment</Button></a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const WhyChoose = () => (
+  <section className="py-16 md:py-24">
+    <div className="container mx-auto px-4">
+      <header className="mb-10 text-center">
+        <h2 className="font-display text-3xl md:text-4xl">The Nova Booth Difference</h2>
+      </header>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <Card className="hover-scale shadow">
+          <CardHeader>
+            <CardTitle className="font-display">Curated Aesthetics</CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm md:text-base text-muted-foreground">
+            Every setup is thoughtfully designed to complement your event's unique style and venue, including personalized print designs that reflect your celebration's theme and colors.
+          </CardContent>
+        </Card>
+        <Card className="hover-scale shadow">
+          <CardHeader>
+            <CardTitle className="font-display">White-Glove Service</CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm md:text-base text-muted-foreground">
+            Our professional team handles every detail, so you can focus on celebrating.
+          </CardContent>
+        </Card>
+        <Card className="hover-scale shadow">
+          <CardHeader>
+            <CardTitle className="font-display">Premium Quality</CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm md:text-base text-muted-foreground">
+            Professional-grade prints and cinematic videos with exceptional clarity and color that become treasured keepsakes.
+          </CardContent>
+        </Card>
+      </div>
+      <div className="mt-8 text-center">
+        <a href="#contact"><Button variant="hero" size="lg">Experience the Difference</Button></a>
+      </div>
+    </div>
+  </section>
+);
+
+const Reviews = () => (
+  <section className="py-16 md:py-24">
+    <div className="container mx-auto px-4">
+      <header className="mb-10 text-center">
+        <h2 className="font-display text-3xl md:text-4xl">What Our Clients Say</h2>
+      </header>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {[{
+          quote: "Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!",
+          author: "Sarah & Michael, Garden Wedding"
+        },{
+          quote: "Professional, reliable, and the photo quality was incredible. Our employees loved the instant prints, and the setup perfectly matched our event's aesthetic. Will definitely book again!",
+          author: "Jennifer, Corporate Event Manager"
+        },{
+          quote: "The team was amazing! They made sure everything ran smoothly, and the prints were such high quality our guests thought they were professional photos. Worth every penny!",
+          author: "David & Lisa, Historic Venue Wedding"
+        }].map((t, i) => (
+          <Card key={i} className="shadow">
+            <CardHeader>
+              <div className="flex text-primary">
+                {Array.from({ length: 5 }).map((_, i2) => (
+                  <Star key={i2} className="h-4 w-4 fill-current" />
+                ))}
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm md:text-base">“{t.quote}”</p>
+              <p className="mt-3 text-sm text-muted-foreground">— {t.author}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+      <p className="mt-6 text-center text-sm text-muted-foreground">Join 100+ happy clients who chose Nova Booth</p>
+      <div className="mt-6 text-center">
+        <a href="#contact"><Button variant="hero" size="lg">Add Your Celebration to Our Story</Button></a>
+      </div>
+    </div>
+  </section>
+);
+
+const FAQ = () => (
+  <section id="faq" className="py-16 md:py-24">
+    <div className="container mx-auto px-4">
+      <header className="mb-8 text-center">
+        <h2 className="font-display text-3xl md:text-4xl">Everything You Need to Know</h2>
+      </header>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 className="font-display text-xl mb-4">General Questions</h3>
+          <Accordion type="single" collapsible className="w-full">
+            {[
+              { q: "How many photos or videos can my guests create during the event?", a: "As many as they like within your booked timeframe. There's no limit to the fun." },
+              { q: "When should I secure my date?", a: "Popular dates book quickly—reserve as early as possible to ensure availability." },
+              { q: "Will someone be there to assist our guests?", a: "Yes, a professional attendant curates the experience and ensures everything runs smoothly." },
+              { q: "How much time do you need for setup and removal?", a: "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team." },
+            ].map((f, i) => (
+              <AccordionItem key={i} value={`g-${i}`}>
+                <AccordionTrigger>{f.q}</AccordionTrigger>
+                <AccordionContent>{f.a}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+        <div>
+          <h3 className="font-display text-xl mb-4">Space & Venue Requirements</h3>
+          <Accordion type="single" collapsible className="w-full">
+            {[
+              { q: "What space do you need at our venue?", a: "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue." },
+              { q: "Is setup and breakdown included in our experience?", a: "Absolutely—all setup and breakdown is included with every booking." },
+              { q: "Can we provide our own backdrop or decorations?", a: "Yes. We’ll coordinate to ensure your decor complements our curated setup." },
+            ].map((f, i) => (
+              <AccordionItem key={i} value={`v-${i}`}>
+                <AccordionTrigger>{f.q}</AccordionTrigger>
+                <AccordionContent>{f.a}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </div>
+
+      <div className="mt-8">
+        <h3 className="font-display text-xl mb-4">Experience-Specific Questions</h3>
+        <Accordion type="multiple" className="w-full">
+          {[
+            { q: "How quickly do the photos print?", a: "Instantly—prints are ready within seconds with beautiful color and clarity." },
+            { q: "Do guests also get digital versions?", a: "Yes, guests receive digital copies to share right away." },
+            { q: "How do guests access their 360° videos?", a: "We provide an easy link or QR code for instant download and sharing." },
+            { q: "What's the video quality like?", a: "Cinematic quality with smooth motion and elegant color—designed to look stunning on social." },
+            { q: "How do I get pricing for my specific event?", a: "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration." },
+            { q: "Do you service my area?", a: "We serve weddings and events throughout the region—contact us to confirm your venue." },
+          ].map((f, i) => (
+            <AccordionItem key={i} value={`x-${i}`}>
+              <AccordionTrigger>{f.q}</AccordionTrigger>
+              <AccordionContent>{f.a}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </div>
+  </section>
+);
+
+const FinalCTA = () => (
+  <section id="contact" className="relative py-16 md:py-24">
+    <div className="absolute inset-0 bg-hero opacity-95" aria-hidden="true" />
+    <div className="relative container mx-auto px-4 text-secondary-foreground">
+      <header className="text-center">
+        <h2 className="font-display text-3xl md:text-4xl">Ready to Create Something Beautiful?</h2>
+        <p className="mt-3 max-w-2xl mx-auto text-secondary-foreground/90">
+          Your celebration deserves an experience as special as the moment itself. Let's make it unforgettable.
+        </p>
+      </header>
+      <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-3">
+        <a href="mailto:hello@novabooth.co" aria-label="Email Nova Booth">
+          <Button variant="hero" size="lg">Reserve Your Date Now</Button>
+        </a>
+        <a href="tel:+1234567890" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Call Nova Booth">
+          <Phone className="h-5 w-5" /> <span>Click to Call</span>
+        </a>
+        <a href="mailto:hello@novabooth.co" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Nova Booth">
+          <Mail className="h-5 w-5" /> <span>hello@novabooth.co</span>
+        </a>
+      </div>
+      <p className="mt-3 text-center text-xs text-secondary-foreground/80">We respond within 2 hours</p>
+    </div>
+  </section>
+);
+
+const Footer = () => (
+  <footer className="bg-secondary text-secondary-foreground py-10">
+    <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+      <div>
+        <p className="font-display tracking-wider">NOVA BOOTH</p>
+        <p className="mt-2 text-secondary-foreground/80">Luxury 360° video & instant print experiences.</p>
+      </div>
+      <div>
+        <p className="font-medium">Service Areas</p>
+        <p className="text-secondary-foreground/80">Weddings & events across the region</p>
+      </div>
+      <div className="md:text-right">
+        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="story-link">Instagram</a>
+        <div className="mt-2 space-x-3">
+          <a href="#" className="hover:text-primary">Privacy Policy</a>
+          <a href="#" className="hover:text-primary">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div className="container mx-auto px-4 mt-6 text-xs text-secondary-foreground/70">© {new Date().getFullYear()} Nova Booth. All rights reserved.</div>
+  </footer>
+);
+
+const StructuredData = () => {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Nova Booth',
+    url: '/',
+    description:
+      'Luxury 360° video and instant print photo experiences for weddings and corporate events.',
+    serviceArea: 'Regional',
+  };
+
+  const faq = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'When should I secure my date?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Popular dates book quickly—reserve as early as possible to ensure availability.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do guests get digital versions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, guests receive digital copies to share right away.',
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
+    </>
+  );
+};
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen font-sans">
+      <Header />
+      <main>
+        <Hero />
+        <ExperienceShowcase />
+        <Gallery />
+        <WhyChoose />
+        <Reviews />
+        <FAQ />
+        <FinalCTA />
+        <StructuredData />
+      </main>
+      <Footer />
     </div>
   );
 };
