@@ -161,10 +161,19 @@ const Gallery = () => {
       { src: g360_2, alt: "Garden party with 360° booth", tag: "360" },
       { src: g360_3, alt: "Corporate event with 360° booth", tag: "360" },
       { src: g360_4, alt: "360° video moment close-up", tag: "360" },
-      { src: gp_1, alt: "Guests posing at instant print booth", tag: "print" },
-      { src: gp_2, alt: "Corporate gala instant print booth", tag: "print" },
+      { src: gp_1, alt: "Guests posing at instant print photo booth", tag: "print" },
+      { src: gp_2, alt: "Corporate gala instant print photo booth", tag: "print" },
       { src: gp_3, alt: "Close-up of high-quality instant prints", tag: "print" },
-      { src: gp_4, alt: "Friends laughing at print booth", tag: "print" },
+      { src: gp_4, alt: "Friends laughing at print photo booth", tag: "print" },
+
+      // Additional uploaded print experience images
+      { src: "/lovable-uploads/ef3f80c8-3dae-4e44-a4e2-3701179b68e2.png", alt: "Wedding guests enjoying instant print photo booth", tag: "print" },
+      { src: "/lovable-uploads/1e2595f5-4056-43df-b13e-b155d29b9dae.png", alt: "Black and white instant print booth shot at wedding", tag: "print" },
+      { src: "/lovable-uploads/c92eeda8-4f30-41f2-84ce-ab2000fb1497.png", alt: "Group posing at elegant instant print booth setup", tag: "print" },
+      { src: "/lovable-uploads/2840fc66-7c89-4ac1-8138-a2284f0d15c8.png", alt: "Fun group photo at instant print booth", tag: "print" },
+      { src: "/lovable-uploads/ef52c2f8-796f-4110-980c-67f947b3b86a.png", alt: "Instant print booth with floral backdrop and drapery", tag: "print" },
+      { src: "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png", alt: "Print booth setup with textured backdrop at venue", tag: "print" },
+      { src: "/lovable-uploads/7db278e2-b24f-4bc0-a74d-7df2860d76cc.png", alt: "Outdoor instant print booth with flowing drape backdrop", tag: "print" },
     ],
     []
   );
