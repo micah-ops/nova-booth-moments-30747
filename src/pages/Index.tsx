@@ -86,7 +86,7 @@ const ExperienceShowcase = () => {
           <Card className="hover-scale shadow">
             <article>
               <picture>
-                <source media="(min-width: 768px)" srcSet="/lovable-uploads/31b17396-227f-48f7-be79-ee21b41f3529.png" />
+                <source media="(min-width: 768px)" srcSet="/lovable-uploads/aa7b601e-12eb-4317-8bf0-8137ca8fcb4b.png" />
                 <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               </picture>
               <CardHeader>
