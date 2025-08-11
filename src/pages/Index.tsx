@@ -1,36 +1,17 @@
 import { useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, Phone, Mail } from "lucide-react";
-
 import heroImage from "@/assets/hero-nova-booth.jpg";
 import exp360 from "@/assets/experience-360.jpg";
-
 import g360_1 from "@/assets/gallery-360-1.jpg";
 import g360_2 from "@/assets/gallery-360-2.jpg";
 import g360_3 from "@/assets/gallery-360-3.jpg";
 import g360_4 from "@/assets/gallery-360-4.jpg";
-
 const Header = () => {
-  return (
-    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
+  return <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <a href="#top" className="font-display text-lg tracking-wider">
           NOVA BOOTH
@@ -46,21 +27,12 @@ const Header = () => {
           </a>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 const Hero = () => {
-  return (
-    <section id="top" aria-label="Nova Booth hero" className="relative overflow-hidden">
+  return <section id="top" aria-label="Nova Booth hero" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-hero" aria-hidden="true" />
-      <img
-        src={heroImage}
-        alt="Elegant photo booth experience at a luxury wedding reception"
-        className="absolute inset-0 h-full w-full object-cover opacity-65"
-        loading="eager"
-        fetchPriority="high"
-      />
+      <img src={heroImage} alt="Elegant photo booth experience at a luxury wedding reception" className="absolute inset-0 h-full w-full object-cover opacity-65" loading="eager" fetchPriority="high" />
       <div className="relative">
         <div className="container mx-auto px-4 py-24 md:py-36 text-secondary-foreground">
           <h1 className="font-display text-4xl md:text-6xl font-semibold tracking-tight animate-fade-in">
@@ -75,21 +47,18 @@ const Hero = () => {
           </div>
           <div className="mt-6 flex items-center gap-2 text-sm">
             <div className="flex text-primary">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-current" />
-              ))}
+              {Array.from({
+              length: 5
+            }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
             </div>
             <span className="text-secondary-foreground/90">Rated by 50+ Happy Couples</span>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const ExperienceShowcase = () => {
-  return (
-    <section id="experiences" className="py-16 md:py-24">
+  return <section id="experiences" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-10 text-center">
           <h2 className="font-display text-3xl md:text-4xl">Two Ways to Create Magic at Your Celebration</h2>
@@ -97,14 +66,9 @@ const ExperienceShowcase = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card className="hover-scale shadow">
             <article>
-              <img
-                src={exp360}
-                alt="Luxury 360° video booth setup in an elegant venue"
-                className="h-64 w-full object-cover rounded-t-lg"
-                loading="lazy"
-              />
+              <img src={exp360} alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
-                <CardTitle className="font-display text-2xl">Step into the Spotlight 360 Video Booth.</CardTitle>
+                <CardTitle className="font-display text-2xl"> 360 Video Booth </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
@@ -121,21 +85,18 @@ const ExperienceShowcase = () => {
           {/* Print Experience */}
           <Card className="hover-scale shadow">
             <article>
-              <img
-                src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png"
-                alt="Guests in blue at instant print photo booth setup"
-                className="h-64 w-full object-cover rounded-t-lg"
-                loading="lazy"
-              />
+              <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
-                <CardTitle className="font-display text-2xl">Timeless Moments, Instantly Yours</CardTitle>
+                <CardTitle className="font-display text-2xl">Instant Print Booth </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
                   <li>High-quality instant prints</li>
                   <li>Professional lighting system</li>
                   <li>Digital copies included</li>
-                  <li>Take-home keepsakes</li>
+                  <li>Take-home keepsakes
+
+                </li>
                 </ul>
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Reception fun, guest entertainment, and party favors</p>
               </CardContent>
@@ -146,54 +107,111 @@ const ExperienceShowcase = () => {
           <a href="#contact"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const Gallery = () => {
-  const allImages = useMemo(
-    () => [
-      { src: g360_1, alt: "Couple enjoying the 360° booth", tag: "360" },
-      { src: g360_2, alt: "Garden party with 360° booth", tag: "360" },
-      { src: g360_3, alt: "Corporate event with 360° booth", tag: "360" },
-      { src: g360_4, alt: "360° video moment close-up", tag: "360" },
-
-      // Real event print experiences
-      { src: "/lovable-uploads/ef3f80c8-3dae-4e44-a4e2-3701179b68e2.png", alt: "Wedding guests at instant print booth", tag: "print" },
-      { src: "/lovable-uploads/1e2595f5-4056-43df-b13e-b155d29b9dae.png", alt: "Black and white instant print booth portrait", tag: "print" },
-      { src: "/lovable-uploads/c92eeda8-4f30-41f2-84ce-ab2000fb1497.png", alt: "Group posing at elegant print booth setup", tag: "print" },
-      { src: "/lovable-uploads/2840fc66-7c89-4ac1-8138-a2284f0d15c8.png", alt: "Fun group photo at print booth", tag: "print" },
-      { src: "/lovable-uploads/ef52c2f8-796f-4110-980c-67f947b3b86a.png", alt: "Print booth with floral backdrop and drapery", tag: "print" },
-      { src: "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png", alt: "Print booth setup with textured backdrop", tag: "print" },
-      { src: "/lovable-uploads/7db278e2-b24f-4bc0-a74d-7df2860d76cc.png", alt: "Outdoor print booth with flowing drape backdrop", tag: "print" },
-
-      // Newly added prints
-      { src: "/lovable-uploads/8f085561-948d-4a1f-98e5-99a2d0fc20e4.png", alt: "Couple portrait at print booth on white backdrop", tag: "print" },
-      { src: "/lovable-uploads/10dbd9f5-eaeb-41eb-a964-ee632beaa839.png", alt: "Elegant couple at outdoor print booth backdrop", tag: "print" },
-      { src: "/lovable-uploads/449b6433-4d31-423a-8c1c-aca508ca618b.png", alt: "Friends with props at print booth", tag: "print" },
-      { src: "/lovable-uploads/f7472a79-06ac-487a-ba57-6336adf16743.png", alt: "Bridal party at print booth with soft backdrop", tag: "print" },
-      { src: "/lovable-uploads/3a4f8ac3-9d22-4437-9f06-8025bddee86b.png", alt: "Guests celebrating at print booth", tag: "print" },
-      { src: "/lovable-uploads/777b182d-e831-4b76-a7a1-1a883a58e5e0.png", alt: "Guests with colored glasses at print booth", tag: "print" },
-      { src: "/lovable-uploads/16550f1b-9006-4492-a469-496d83d8a73d.png", alt: "Group portrait at print booth with gray backdrop", tag: "print" },
-      { src: "/lovable-uploads/b27d07db-6187-4b7f-b469-7acab60bbdf7.png", alt: "Group portrait at print booth on white backdrop", tag: "print" },
-      { src: "/lovable-uploads/ad3a25bd-15d6-46c5-9122-168b2a879fe6.png", alt: "Photo strip designs collage from events", tag: "print" },
-      { src: "/lovable-uploads/697e23b3-c63c-4f9a-840a-d563f20eff00.png", alt: "Photo strip templates collage from weddings", tag: "print" },
-    ],
-    []
-  );
-
-  const Grid = ({ images }: { images: { src: string; alt: string }[] }) => (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-      {images.map((img, i) => (
-        <figure key={i} className="overflow-hidden rounded-lg shadow hover-scale">
+  const allImages = useMemo(() => [{
+    src: g360_1,
+    alt: "Couple enjoying the 360° booth",
+    tag: "360"
+  }, {
+    src: g360_2,
+    alt: "Garden party with 360° booth",
+    tag: "360"
+  }, {
+    src: g360_3,
+    alt: "Corporate event with 360° booth",
+    tag: "360"
+  }, {
+    src: g360_4,
+    alt: "360° video moment close-up",
+    tag: "360"
+  },
+  // Real event print experiences
+  {
+    src: "/lovable-uploads/ef3f80c8-3dae-4e44-a4e2-3701179b68e2.png",
+    alt: "Wedding guests at instant print booth",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/1e2595f5-4056-43df-b13e-b155d29b9dae.png",
+    alt: "Black and white instant print booth portrait",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/c92eeda8-4f30-41f2-84ce-ab2000fb1497.png",
+    alt: "Group posing at elegant print booth setup",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/2840fc66-7c89-4ac1-8138-a2284f0d15c8.png",
+    alt: "Fun group photo at print booth",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/ef52c2f8-796f-4110-980c-67f947b3b86a.png",
+    alt: "Print booth with floral backdrop and drapery",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png",
+    alt: "Print booth setup with textured backdrop",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/7db278e2-b24f-4bc0-a74d-7df2860d76cc.png",
+    alt: "Outdoor print booth with flowing drape backdrop",
+    tag: "print"
+  },
+  // Newly added prints
+  {
+    src: "/lovable-uploads/8f085561-948d-4a1f-98e5-99a2d0fc20e4.png",
+    alt: "Couple portrait at print booth on white backdrop",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/10dbd9f5-eaeb-41eb-a964-ee632beaa839.png",
+    alt: "Elegant couple at outdoor print booth backdrop",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/449b6433-4d31-423a-8c1c-aca508ca618b.png",
+    alt: "Friends with props at print booth",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/f7472a79-06ac-487a-ba57-6336adf16743.png",
+    alt: "Bridal party at print booth with soft backdrop",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/3a4f8ac3-9d22-4437-9f06-8025bddee86b.png",
+    alt: "Guests celebrating at print booth",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/777b182d-e831-4b76-a7a1-1a883a58e5e0.png",
+    alt: "Guests with colored glasses at print booth",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/16550f1b-9006-4492-a469-496d83d8a73d.png",
+    alt: "Group portrait at print booth with gray backdrop",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/b27d07db-6187-4b7f-b469-7acab60bbdf7.png",
+    alt: "Group portrait at print booth on white backdrop",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/ad3a25bd-15d6-46c5-9122-168b2a879fe6.png",
+    alt: "Photo strip designs collage from events",
+    tag: "print"
+  }, {
+    src: "/lovable-uploads/697e23b3-c63c-4f9a-840a-d563f20eff00.png",
+    alt: "Photo strip templates collage from weddings",
+    tag: "print"
+  }], []);
+  const Grid = ({
+    images
+  }: {
+    images: {
+      src: string;
+      alt: string;
+    }[];
+  }) => <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+      {images.map((img, i) => <figure key={i} className="overflow-hidden rounded-lg shadow hover-scale">
           <img src={img.src} alt={img.alt} loading="lazy" className="h-40 md:h-48 w-full object-cover" />
-        </figure>
-      ))}
-    </div>
-  );
-
-  return (
-    <section id="gallery" className="py-16 md:py-24">
+        </figure>)}
+    </div>;
+  return <section id="gallery" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl">See the Magic in Action</h2>
@@ -214,12 +232,9 @@ const Gallery = () => {
           <a href="#contact"><Button variant="hero" size="lg">Create Your Moment</Button></a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
-const WhyChoose = () => (
-  <section className="py-16 md:py-24">
+const WhyChoose = () => <section className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-10 text-center">
         <h2 className="font-display text-3xl md:text-4xl">The Nova Booth Difference</h2>
@@ -254,51 +269,43 @@ const WhyChoose = () => (
         <a href="#contact"><Button variant="hero" size="lg">Experience the Difference</Button></a>
       </div>
     </div>
-  </section>
-);
-
-const Reviews = () => (
-  <section className="py-16 md:py-24">
+  </section>;
+const Reviews = () => <section className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-10 text-center">
         <h2 className="font-display text-3xl md:text-4xl">What Our Clients Say</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[{
-          quote: "Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!",
-          author: "Sarah & Michael, Garden Wedding"
-        },{
-          quote: "Professional, reliable, and the photo quality was incredible. Our employees loved the instant prints, and the setup perfectly matched our event's aesthetic. Will definitely book again!",
-          author: "Jennifer, Corporate Event Manager"
-        },{
-          quote: "The team was amazing! They made sure everything ran smoothly, and the prints were such high quality our guests thought they were professional photos. Worth every penny!",
-          author: "David & Lisa, Historic Venue Wedding"
-        }].map((t, i) => (
-          <Card key={i} className="shadow">
+        quote: "Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!",
+        author: "Sarah & Michael, Garden Wedding"
+      }, {
+        quote: "Professional, reliable, and the photo quality was incredible. Our employees loved the instant prints, and the setup perfectly matched our event's aesthetic. Will definitely book again!",
+        author: "Jennifer, Corporate Event Manager"
+      }, {
+        quote: "The team was amazing! They made sure everything ran smoothly, and the prints were such high quality our guests thought they were professional photos. Worth every penny!",
+        author: "David & Lisa, Historic Venue Wedding"
+      }].map((t, i) => <Card key={i} className="shadow">
             <CardHeader>
               <div className="flex text-primary">
-                {Array.from({ length: 5 }).map((_, i2) => (
-                  <Star key={i2} className="h-4 w-4 fill-current" />
-                ))}
+                {Array.from({
+              length: 5
+            }).map((_, i2) => <Star key={i2} className="h-4 w-4 fill-current" />)}
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-sm md:text-base">“{t.quote}”</p>
               <p className="mt-3 text-sm text-muted-foreground">— {t.author}</p>
             </CardContent>
-          </Card>
-        ))}
+          </Card>)}
       </div>
       <p className="mt-6 text-center text-sm text-muted-foreground">Join 100+ happy clients who chose Nova Booth</p>
       <div className="mt-6 text-center">
         <a href="#contact"><Button variant="hero" size="lg">Add Your Celebration to Our Story</Button></a>
       </div>
     </div>
-  </section>
-);
-
-const FAQ = () => (
-  <section id="faq" className="py-16 md:py-24">
+  </section>;
+const FAQ = () => <section id="faq" className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-8 text-center">
         <h2 className="font-display text-3xl md:text-4xl">Everything You Need to Know</h2>
@@ -307,32 +314,40 @@ const FAQ = () => (
         <div>
           <h3 className="font-display text-xl mb-4">General Questions</h3>
           <Accordion type="single" collapsible className="w-full">
-            {[
-              { q: "How many photos or videos can my guests create during the event?", a: "As many as they like within your booked timeframe. There's no limit to the fun." },
-              { q: "When should I secure my date?", a: "Popular dates book quickly—reserve as early as possible to ensure availability." },
-              { q: "Will someone be there to assist our guests?", a: "Yes, a professional attendant curates the experience and ensures everything runs smoothly." },
-              { q: "How much time do you need for setup and removal?", a: "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team." },
-            ].map((f, i) => (
-              <AccordionItem key={i} value={`g-${i}`}>
+            {[{
+            q: "How many photos or videos can my guests create during the event?",
+            a: "As many as they like within your booked timeframe. There's no limit to the fun."
+          }, {
+            q: "When should I secure my date?",
+            a: "Popular dates book quickly—reserve as early as possible to ensure availability."
+          }, {
+            q: "Will someone be there to assist our guests?",
+            a: "Yes, a professional attendant curates the experience and ensures everything runs smoothly."
+          }, {
+            q: "How much time do you need for setup and removal?",
+            a: "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
+          }].map((f, i) => <AccordionItem key={i} value={`g-${i}`}>
                 <AccordionTrigger>{f.q}</AccordionTrigger>
                 <AccordionContent>{f.a}</AccordionContent>
-              </AccordionItem>
-            ))}
+              </AccordionItem>)}
           </Accordion>
         </div>
         <div>
           <h3 className="font-display text-xl mb-4">Space & Venue Requirements</h3>
           <Accordion type="single" collapsible className="w-full">
-            {[
-              { q: "What space do you need at our venue?", a: "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue." },
-              { q: "Is setup and breakdown included in our experience?", a: "Absolutely—all setup and breakdown is included with every booking." },
-              { q: "Can we provide our own backdrop or decorations?", a: "Yes. We’ll coordinate to ensure your decor complements our curated setup." },
-            ].map((f, i) => (
-              <AccordionItem key={i} value={`v-${i}`}>
+            {[{
+            q: "What space do you need at our venue?",
+            a: "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."
+          }, {
+            q: "Is setup and breakdown included in our experience?",
+            a: "Absolutely—all setup and breakdown is included with every booking."
+          }, {
+            q: "Can we provide our own backdrop or decorations?",
+            a: "Yes. We’ll coordinate to ensure your decor complements our curated setup."
+          }].map((f, i) => <AccordionItem key={i} value={`v-${i}`}>
                 <AccordionTrigger>{f.q}</AccordionTrigger>
                 <AccordionContent>{f.a}</AccordionContent>
-              </AccordionItem>
-            ))}
+              </AccordionItem>)}
           </Accordion>
         </div>
       </div>
@@ -340,27 +355,33 @@ const FAQ = () => (
       <div className="mt-8">
         <h3 className="font-display text-xl mb-4">Experience-Specific Questions</h3>
         <Accordion type="multiple" className="w-full">
-          {[
-            { q: "How quickly do the photos print?", a: "Instantly—prints are ready within seconds with beautiful color and clarity." },
-            { q: "Do guests also get digital versions?", a: "Yes, guests receive digital copies to share right away." },
-            { q: "How do guests access their 360° videos?", a: "We provide an easy link or QR code for instant download and sharing." },
-            { q: "What's the video quality like?", a: "Cinematic quality with smooth motion and elegant color—designed to look stunning on social." },
-            { q: "How do I get pricing for my specific event?", a: "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration." },
-            { q: "Do you service my area?", a: "We serve weddings and events throughout the region—contact us to confirm your venue." },
-          ].map((f, i) => (
-            <AccordionItem key={i} value={`x-${i}`}>
+          {[{
+          q: "How quickly do the photos print?",
+          a: "Instantly—prints are ready within seconds with beautiful color and clarity."
+        }, {
+          q: "Do guests also get digital versions?",
+          a: "Yes, guests receive digital copies to share right away."
+        }, {
+          q: "How do guests access their 360° videos?",
+          a: "We provide an easy link or QR code for instant download and sharing."
+        }, {
+          q: "What's the video quality like?",
+          a: "Cinematic quality with smooth motion and elegant color—designed to look stunning on social."
+        }, {
+          q: "How do I get pricing for my specific event?",
+          a: "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."
+        }, {
+          q: "Do you service my area?",
+          a: "We serve weddings and events throughout the region—contact us to confirm your venue."
+        }].map((f, i) => <AccordionItem key={i} value={`x-${i}`}>
               <AccordionTrigger>{f.q}</AccordionTrigger>
               <AccordionContent>{f.a}</AccordionContent>
-            </AccordionItem>
-          ))}
+            </AccordionItem>)}
         </Accordion>
       </div>
     </div>
-  </section>
-);
-
-const FinalCTA = () => (
-  <section id="contact" className="relative py-16 md:py-24">
+  </section>;
+const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24">
     <div className="absolute inset-0 bg-hero opacity-95" aria-hidden="true" />
     <div className="relative container mx-auto px-4 text-secondary-foreground">
       <header className="text-center">
@@ -382,11 +403,8 @@ const FinalCTA = () => (
       </div>
       <p className="mt-3 text-center text-xs text-secondary-foreground/80">We respond within 2 hours</p>
     </div>
-  </section>
-);
-
-const Footer = () => (
-  <footer className="bg-secondary text-secondary-foreground py-10">
+  </section>;
+const Footer = () => <footer className="bg-secondary text-secondary-foreground py-10">
     <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
       <div>
         <p className="font-display tracking-wider">NOVA BOOTH</p>
@@ -405,54 +423,46 @@ const Footer = () => (
       </div>
     </div>
     <div className="container mx-auto px-4 mt-6 text-xs text-secondary-foreground/70">© {new Date().getFullYear()} Nova Booth. All rights reserved.</div>
-  </footer>
-);
-
+  </footer>;
 const StructuredData = () => {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Nova Booth',
     url: '/',
-    description:
-      'Luxury 360° video and instant print photo experiences for weddings and corporate events.',
-    serviceArea: 'Regional',
+    description: 'Luxury 360° video and instant print photo experiences for weddings and corporate events.',
+    serviceArea: 'Regional'
   };
-
   const faq = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'When should I secure my date?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Popular dates book quickly—reserve as early as possible to ensure availability.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Do guests get digital versions?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, guests receive digital copies to share right away.',
-        },
-      },
-    ],
+    mainEntity: [{
+      '@type': 'Question',
+      name: 'When should I secure my date?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Popular dates book quickly—reserve as early as possible to ensure availability.'
+      }
+    }, {
+      '@type': 'Question',
+      name: 'Do guests get digital versions?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, guests receive digital copies to share right away.'
+      }
+    }]
   };
-
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
-    </>
-  );
+  return <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+      __html: JSON.stringify(data)
+    }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+      __html: JSON.stringify(faq)
+    }} />
+    </>;
 };
-
 const Index = () => {
-  return (
-    <div className="min-h-screen font-sans">
+  return <div className="min-h-screen font-sans">
       <Header />
       <main>
         <Hero />
@@ -465,8 +475,6 @@ const Index = () => {
         <StructuredData />
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
