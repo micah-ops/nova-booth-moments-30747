@@ -85,7 +85,7 @@ const ExperienceShowcase = () => {
           {/* Print Experience */}
           <Card className="hover-scale shadow">
             <article>
-              <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               <CardHeader>
                 <CardTitle className="font-display text-2xl">Instant Print Booth </CardTitle>
               </CardHeader>
