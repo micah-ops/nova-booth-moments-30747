@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, Phone, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-nova-booth.jpg";
-import exp360 from "@/assets/experience-360.jpg";
+
 import g360_1 from "@/assets/gallery-360-1.jpg";
 import g360_2 from "@/assets/gallery-360-2.jpg";
 import g360_3 from "@/assets/gallery-360-3.jpg";
@@ -67,7 +67,7 @@ const ExperienceShowcase = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card className="hover-scale shadow">
             <article>
-              <img src={exp360} alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
                 <CardTitle className="font-display text-2xl"> 360 Video Booth </CardTitle>
               </CardHeader>
