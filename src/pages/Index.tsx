@@ -14,15 +14,7 @@ const Header = () => {
   return <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
       <div className="container mx-auto flex h-24 items-center justify-between">
         <a href="#top" className="inline-flex items-center gap-2" aria-label="Nova Booth Home">
-          <img
-            src="/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png"
-            alt="Nova Booth logo"
-            className="h-24 w-auto md:h-24"
-            width="120"
-            height="36"
-            loading="eager"
-            decoding="async"
-          />
+          <img src="/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png" alt="Nova Booth logo" className="h-24 w-auto md:h-24" width="120" height="36" loading="eager" decoding="async" />
           <span className="sr-only">NOVA BOOTH</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -70,7 +62,7 @@ const ExperienceShowcase = () => {
   return <section id="experiences" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-10 text-center">
-          <h2 className="font-display text-3xl md:text-4xl">Two Ways to Create Magic at Your Celebration</h2>
+          <h2 className="font-display text-3xl md:text-4xl">Two Ways to Create Magic at Your Celebration </h2>
         </header>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card className="hover-scale shadow">
