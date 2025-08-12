@@ -13,8 +13,17 @@ import g360_4 from "@/assets/gallery-360-4.jpg";
 const Header = () => {
   return <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
       <div className="container mx-auto flex h-16 items-center justify-between">
-        <a href="#top" className="font-display text-lg tracking-wider">
-          NOVA BOOTH
+        <a href="#top" className="inline-flex items-center gap-2" aria-label="Nova Booth Home">
+          <img
+            src="/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png"
+            alt="Nova Booth logo"
+            className="h-8 w-auto md:h-9"
+            width="120"
+            height="36"
+            loading="eager"
+            decoding="async"
+          />
+          <span className="sr-only">NOVA BOOTH</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <a href="#experiences" className="hover:text-primary transition-colors story-link">Experiences</a>
