@@ -241,7 +241,7 @@ const Gallery = () => {
 const WhyChoose = () => <section className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-10 text-center">
-        <h2 className="font-display text-3xl md:text-4xl text-secondary">The Nova Booth Difference</h2>
+        <h2 className="font-display text-3xl md:text-4xl text-secondary">THE NOVA BOOTH DIFFERENCE</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card className="hover-scale shadow">
