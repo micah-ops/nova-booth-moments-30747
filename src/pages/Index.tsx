@@ -18,9 +18,9 @@ const Header = () => {
           <span className="sr-only">NOVA BOOTH</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <a href="#experiences" className="hover:text-primary transition-colors story-link">Experiences</a>
-          <a href="#gallery" className="hover:text-primary transition-colors story-link">Gallery</a>
-          <a href="#faq" className="hover:text-primary transition-colors story-link">FAQ</a>
+          <a href="#experiences" className="hover:text-secondary transition-colors story-link">Experiences</a>
+          <a href="#gallery" className="hover:text-secondary transition-colors story-link">Gallery</a>
+          <a href="#faq" className="hover:text-secondary transition-colors story-link">FAQ</a>
         </nav>
         <div className="flex items-center gap-3">
           <a href="#contact">
@@ -44,7 +44,7 @@ const Hero = () => {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-enter">
             <a href="#contact"><Button variant="hero" size="lg">Reserve Your Date</Button></a>
-            <a href="#gallery"><Button variant="outline" size="lg">See Our Work</Button></a>
+            <a href="#gallery"><Button variant="secondary" size="lg">See Our Work</Button></a>
           </div>
           <div className="mt-6 flex items-center gap-2 text-sm">
             <div className="flex text-primary">
@@ -62,7 +62,7 @@ const ExperienceShowcase = () => {
   return <section id="experiences" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-10 text-center">
-          <h2 className="font-display text-3xl md:text-4xl">Two Ways to Create Magic at Your Celebration </h2>
+          <h2 className="font-display text-3xl md:text-4xl text-secondary">Two Ways to Create Magic at Your Celebration </h2>
         </header>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card className="hover-scale shadow">
@@ -218,7 +218,7 @@ const Gallery = () => {
   return <section id="gallery" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-8 text-center">
-          <h2 className="font-display text-3xl md:text-4xl">See the Magic in Action</h2>
+          <h2 className="font-display text-3xl md:text-4xl text-secondary">See the Magic in Action</h2>
         </header>
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="grid grid-cols-3 max-w-md mx-auto">
@@ -241,7 +241,7 @@ const Gallery = () => {
 const WhyChoose = () => <section className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-10 text-center">
-        <h2 className="font-display text-3xl md:text-4xl">The Nova Booth Difference</h2>
+        <h2 className="font-display text-3xl md:text-4xl text-secondary">The Nova Booth Difference</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card className="hover-scale shadow">
@@ -277,7 +277,7 @@ const WhyChoose = () => <section className="py-16 md:py-24">
 const Reviews = () => <section className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-10 text-center">
-        <h2 className="font-display text-3xl md:text-4xl">What Our Clients Say</h2>
+        <h2 className="font-display text-3xl md:text-4xl text-secondary">What Our Clients Say</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[{
@@ -312,7 +312,7 @@ const Reviews = () => <section className="py-16 md:py-24">
 const FAQ = () => <section id="faq" className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-8 text-center">
-        <h2 className="font-display text-3xl md:text-4xl">Everything You Need to Know</h2>
+        <h2 className="font-display text-3xl md:text-4xl text-secondary">Everything You Need to Know</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
