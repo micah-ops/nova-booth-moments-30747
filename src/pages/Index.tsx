@@ -215,10 +215,10 @@ const Gallery = () => {
           <img src={img.src} alt={img.alt} loading="lazy" className="h-40 md:h-48 w-full object-cover" />
         </figure>)}
     </div>;
-  return <section id="gallery" className="py-16 md:py-24">
+  return <section id="gallery" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <header className="mb-8 text-center">
-          <h2 className="font-display text-3xl md:text-4xl text-secondary">See the Magic in Action</h2>
+          <h2 className="font-display text-3xl md:text-4xl text-secondary-foreground uppercase">SEE THE MAGIC IN ACTION</h2>
         </header>
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="grid grid-cols-3 max-w-md mx-auto">
