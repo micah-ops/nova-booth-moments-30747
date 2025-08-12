@@ -274,10 +274,10 @@ const WhyChoose = () => <section className="py-16 md:py-24">
       </div>
     </div>
   </section>;
-const Reviews = () => <section className="py-16 md:py-24">
+const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
     <div className="container mx-auto px-4">
       <header className="mb-10 text-center">
-        <h2 className="font-display text-3xl md:text-4xl text-secondary">What Our Clients Say</h2>
+        <h2 className="font-display text-3xl md:text-4xl text-secondary-foreground uppercase">What Our Clients Say</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[{
