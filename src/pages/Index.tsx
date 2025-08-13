@@ -42,11 +42,6 @@ const Header = () => {
           <a href="#gallery" className="hover:text-secondary transition-colors story-link">Gallery</a>
           <a href="#faq" className="hover:text-secondary transition-colors story-link">FAQ</a>
         </nav>
-        <div className="hidden md:flex items-center gap-3">
-          <a href="#contact">
-            <Button variant="hero" size="lg">Reserve Your Date</Button>
-          </a>
-        </div>
       </div>
     </header>;
 };
