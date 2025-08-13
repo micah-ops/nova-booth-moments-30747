@@ -103,7 +103,7 @@ const ExperienceShowcase = () => {
             </article>
           </Card>
 
-          {/* Print Experience */}
+          {/* Print Experience - Now First */}
           <Card className="hover-scale shadow">
             <article>
               <picture>
