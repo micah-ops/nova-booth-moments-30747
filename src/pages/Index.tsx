@@ -73,6 +73,39 @@ const Hero = () => {
       </div>
     </section>;
 };
+
+const ClientLogos = () => {
+  const logos = [
+    "Amazon", "Microsoft", "LuluLemon", "Remax", "Wework",
+    "OHSU", "DECKERS", "Amazon", "Otak", "Uchealth", "Nike"
+  ];
+
+  return (
+    <section className="bg-primary py-12 overflow-hidden" aria-label="Trusted by leading companies">
+      <div className="container mx-auto px-4">
+        <h2 className="text-center text-white/90 text-sm font-medium tracking-wide mb-8 uppercase">
+          Trusted by Seattle's Leading Companies
+        </h2>
+        <div className="relative">
+          <div className="flex animate-scroll whitespace-nowrap">
+            {[...Array(3)].map((_, setIndex) => (
+              <div key={setIndex} className="flex items-center space-x-12 min-w-max">
+                {logos.map((logo, index) => (
+                  <div
+                    key={`${setIndex}-${index}`}
+                    className="text-white font-semibold text-lg md:text-xl tracking-wide opacity-80 hover:opacity-100 transition-opacity"
+                  >
+                    {logo}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 const ExperienceShowcase = () => {
   return <section id="experiences" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -485,6 +518,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <ClientLogos />
         <ExperienceShowcase />
         <Gallery />
         <WhyChoose />
