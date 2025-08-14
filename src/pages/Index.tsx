@@ -5,7 +5,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, Phone, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-nova-booth.jpg";
-
 import g360_1 from "@/assets/gallery-360-1.jpg";
 import g360_2 from "@/assets/gallery-360-2.jpg";
 import g360_3 from "@/assets/gallery-360-3.jpg";
@@ -13,24 +12,19 @@ import g360_4 from "@/assets/gallery-360-4.jpg";
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
-      
       setLastScrollY(currentScrollY);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
-
   return <header className={`fixed top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto flex h-12 items-center justify-between md:justify-between">
         <a href="#top" className="inline-flex items-center gap-2 mx-auto md:mx-0" aria-label="Nova Booth Home">
@@ -73,44 +67,30 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 const ClientLogos = () => {
-  const logos = [
-    "Amazon", "Microsoft", "LuluLemon", "Remax", "Wework",
-    "OHSU", "DECKERS", "Amazon", "Otak", "Uchealth", "Nike"
-  ];
-
-  return (
-    <section className="bg-primary py-12 overflow-hidden" aria-label="Trusted by leading companies">
+  const logos = ["Amazon", "Microsoft", "LuluLemon", "Remax", "Wework", "OHSU", "DECKERS", "Amazon", "Otak", "Uchealth", "Nike"];
+  return <section className="bg-primary py-12 overflow-hidden" aria-label="Trusted by leading companies">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-white/90 text-sm font-medium tracking-wide mb-8 uppercase">
           Trusted by Seattle's Leading Companies
         </h2>
         <div className="relative">
           <div className="flex animate-scroll whitespace-nowrap">
-            {[...Array(3)].map((_, setIndex) => (
-              <div key={setIndex} className="flex items-center space-x-12 min-w-max">
-                {logos.map((logo, index) => (
-                  <div
-                    key={`${setIndex}-${index}`}
-                    className="text-white font-semibold text-lg md:text-xl tracking-wide opacity-80 hover:opacity-100 transition-opacity"
-                  >
+            {[...Array(3)].map((_, setIndex) => <div key={setIndex} className="flex items-center space-x-12 min-w-max">
+                {logos.map((logo, index) => <div key={`${setIndex}-${index}`} className="text-white font-semibold text-lg md:text-xl tracking-wide opacity-80 hover:opacity-100 transition-opacity">
                     {logo}
-                  </div>
-                ))}
-              </div>
-            ))}
+                  </div>)}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 const ExperienceShowcase = () => {
   return <section id="experiences" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-10 text-center">
-          <h2 className="font-display text-3xl md:text-4xl text-secondary">Two Ways to Create Magic at Your Celebration </h2>
+          <h2 className="font-display text-3xl md:text-4xl text-secondary">Ways to Celebrate  </h2>
         </header>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card className="hover-scale shadow">
