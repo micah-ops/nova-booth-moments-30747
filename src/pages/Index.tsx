@@ -111,7 +111,7 @@ const ExperienceShowcase = () => {
             </article>
           </Card>
 
-          {/* Print Experience - Now First */}
+          {/* Print Experience - Already First */}
           <Card className="hover-scale shadow">
             <article>
               <picture>
@@ -126,9 +126,7 @@ const ExperienceShowcase = () => {
                   <li>High-quality instant prints</li>
                   <li>Professional lighting system</li>
                   <li>Digital copies included</li>
-                  <li>Take-home keepsakes
-
-                </li>
+                  <li>Take-home keepsakes</li>
                 </ul>
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Reception fun, guest entertainment, and party favors</p>
               </CardContent>
