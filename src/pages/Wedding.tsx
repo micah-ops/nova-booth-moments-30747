@@ -111,7 +111,7 @@ const Wedding = () => {
                 <img src="/src/assets/experience-360.jpg" alt="360° Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">3</h3>
+                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">360 Video Booth Experience</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">Experience the magic of cinematic 360° video capture that creates stunning, shareable moments from every angle</p>
                 <div className="mb-4">
                   <h4 className="font-display font-semibold text-foreground mb-2">Perfect For:</h4>
