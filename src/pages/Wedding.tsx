@@ -25,16 +25,6 @@ const Wedding = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="relative z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex justify-center">
-          <img 
-            src="/lovable-uploads/ff6acf32-c869-415c-af8f-1fd4d5a5b825.png" 
-            alt="Nova Booth Logo" 
-            className="h-12 w-auto"
-          />
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
