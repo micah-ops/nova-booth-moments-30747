@@ -93,25 +93,7 @@ const ExperienceShowcase = () => {
           <h2 className="font-display text-3xl md:text-4xl text-secondary">Ways to Celebrate  </h2>
         </header>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <Card className="hover-scale shadow">
-            <article>
-              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
-              <CardHeader>
-                <CardTitle className="font-display text-2xl"> 360 Video Booth </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
-                  <li>Cinematic 360° video capture</li>
-                  <li>Every angle of your special moment</li>
-                  <li>Instant digital sharing</li>
-                  <li>Professional attendant included</li>
-                </ul>
-                <p className="mt-4 text-muted-foreground text-sm">Perfect for: First dances, toasts, and unforgettable celebrations</p>
-              </CardContent>
-            </article>
-          </Card>
-
-          {/* Print Experience - Already First */}
+          {/* Instant Print Booth - Now First */}
           <Card className="hover-scale shadow">
             <article>
               <picture>
@@ -119,7 +101,7 @@ const ExperienceShowcase = () => {
                 <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               </picture>
               <CardHeader>
-                <CardTitle className="font-display text-2xl">Instant Print Booth </CardTitle>
+                <CardTitle className="font-display text-2xl">Instant Print Booth </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
@@ -129,6 +111,25 @@ const ExperienceShowcase = () => {
                   <li>Take-home keepsakes</li>
                 </ul>
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Reception fun, guest entertainment, and party favors</p>
+              </CardContent>
+            </article>
+          </Card>
+
+          {/* 360 Video Booth - Now Second */}
+          <Card className="hover-scale shadow">
+            <article>
+              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <CardHeader>
+                <CardTitle className="font-display text-2xl"> 360 Video Booth </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
+                  <li>Cinematic 360° video capture</li>
+                  <li>Every angle of your special moment</li>
+                  <li>Instant digital sharing</li>
+                  <li>Professional attendant included</li>
+                </ul>
+                <p className="mt-4 text-muted-foreground text-sm">Perfect for: First dances, toasts, and unforgettable celebrations</p>
               </CardContent>
             </article>
           </Card>
