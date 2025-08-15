@@ -523,6 +523,7 @@ Join the Team
 Partners
 The Perfect Booth Unit
 About Us
+<a href="/wedding" className="story-link hover:text-primary">Wedding Experiences</a>
 
 
 
