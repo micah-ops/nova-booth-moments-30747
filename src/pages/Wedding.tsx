@@ -27,14 +27,26 @@ const Wedding = () => {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="relative z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-4 py-4">
-          <h1 className="text-3xl font-display font-bold text-foreground">NOVA BOOTH</h1>
+        <div className="container mx-auto px-4 py-4 flex justify-center">
+          <img 
+            src="/lovable-uploads/2840fc66-7c89-4ac1-8138-a2284f0d15c8.png" 
+            alt="Nova Booth Logo" 
+            className="h-12 w-auto"
+          />
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-hero"></div>
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://rvmediahost.s3.us-west-2.amazonaws.com/pb.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/5 to-background/20"></div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -61,12 +73,9 @@ const Wedding = () => {
               </CardContent>
             </Card>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <div className="flex justify-center mb-8">
               <Button size="lg" className="text-lg px-8 py-4 h-auto bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">
                 Reserve Your Date
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/20 text-white hover:bg-white/20">
-                Check Availability
               </Button>
             </div>
 
