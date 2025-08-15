@@ -4,37 +4,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { FaPalette, FaHeart, FaStar, FaPhone, FaEnvelope } from "react-icons/fa";
 import { FaConciergeBell } from "react-icons/fa";
 import { useState } from "react";
-
 const Wedding = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
-
-  const weddingGalleryImages = [
-    "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png",
-    "/lovable-uploads/ef3f80c8-3dae-4e44-a4e2-3701179b68e2.png",
-    "/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png",
-    "/lovable-uploads/697e23b3-c63c-4f9a-840a-d563f20eff00.png",
-    "/lovable-uploads/777b182d-e831-4b76-a7a1-1a883a58e5e0.png",
-    "/lovable-uploads/449b6433-4d31-423a-8c1c-aca508ca618b.png",
-    "/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png",
-    "/lovable-uploads/31b17396-227f-48f7-be79-ee21b41f3529.png",
-    "/lovable-uploads/3a4f8ac3-9d22-4437-9f06-8025bddee86b.png",
-    "/lovable-uploads/10dbd9f5-eaeb-41eb-a964-ee632beaa839.png",
-    "/lovable-uploads/16550f1b-9006-4492-a469-496d83d8a73d.png",
-    "/lovable-uploads/1e2595f5-4056-43df-b13e-b155d29b9dae.png"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const weddingGalleryImages = ["/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png", "/lovable-uploads/ef3f80c8-3dae-4e44-a4e2-3701179b68e2.png", "/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png", "/lovable-uploads/697e23b3-c63c-4f9a-840a-d563f20eff00.png", "/lovable-uploads/777b182d-e831-4b76-a7a1-1a883a58e5e0.png", "/lovable-uploads/449b6433-4d31-423a-8c1c-aca508ca618b.png", "/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png", "/lovable-uploads/31b17396-227f-48f7-be79-ee21b41f3529.png", "/lovable-uploads/3a4f8ac3-9d22-4437-9f06-8025bddee86b.png", "/lovable-uploads/10dbd9f5-eaeb-41eb-a964-ee632beaa839.png", "/lovable-uploads/16550f1b-9006-4492-a469-496d83d8a73d.png", "/lovable-uploads/1e2595f5-4056-43df-b13e-b155d29b9dae.png"];
+  return <div className="min-h-screen bg-background">
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="https://rvmediahost.s3.us-west-2.amazonaws.com/pb.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/5 to-background/20"></div>
@@ -52,9 +29,7 @@ const Wedding = () => {
             <Card className="max-w-4xl mx-auto mb-12 bg-white/10 backdrop-blur-md border-white/20">
               <CardContent className="p-8">
                 <div className="flex justify-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} className="text-primary text-xl" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-xl" />)}
                 </div>
                 <blockquote className="text-lg md:text-xl font-sans italic mb-4 text-white">
                   "Nova Booth was the BEST decision we made for our wedding! The 360° videos of our first dance are absolutely magical, and our guests are still talking about how much fun they had. The setup was so elegant it looked like part of our decor!"
@@ -88,26 +63,24 @@ const Wedding = () => {
             {/* Instant Print Experience */}
             <Card className="group hover-scale">
               <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
-                <img 
-                  src="/src/assets/experience-print.jpg" 
-                  alt="Instant Print Wedding Experience"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                <img src="/src/assets/experience-print.jpg" alt="Instant Print Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">
-                  Guest Entertainment That Doubles as Wedding Favors
-                </h3>
+                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">Instant Print Booth
+
+              </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Give your guests beautiful, high-quality prints they can take home as instant wedding favors. Our elegant setups complement your wedding aesthetic while providing endless entertainment.
                 </p>
                 <div className="mb-4">
                   <h4 className="font-display font-semibold text-foreground mb-2">Perfect For:</h4>
-                  <p className="text-sm text-muted-foreground">Reception entertainment, guest book alternative, cocktail hour</p>
+                  <p className="text-sm text-muted-foreground">Reception entertainment, Wedding Favors, cocktail hour</p>
                 </div>
                 <div className="p-4 bg-accent rounded-lg">
-                  <h4 className="font-display font-semibold text-accent-foreground mb-1">Wedding Benefit:</h4>
-                  <p className="text-sm text-accent-foreground">Eliminates the need for separate wedding favors</p>
+                  <h4 className="font-display font-semibold text-accent-foreground mb-1">
+                </h4>
+                  <p className="text-sm text-accent-foreground">
+                </p>
                 </div>
               </CardContent>
             </Card>
@@ -115,25 +88,18 @@ const Wedding = () => {
             {/* Glamour Experience */}
             <Card className="group hover-scale">
               <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
-                <img 
-                  src="/src/assets/glamour-booth-placeholder.jpg" 
-                  alt="Glamour Wedding Experience"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                <img src="/src/assets/glamour-booth-placeholder.jpg" alt="Glamour Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">
-                  Make Every Guest Feel Wedding-Day Beautiful
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Let your guests step into the spotlight with professional beauty lighting and custom filters. Perfect for capturing the joy and elegance of your special day.
-                </p>
+                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">Glamour Booth Experience</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">Let your guests step into the spotlight with professional beauty lighting and custom filters. Perfect for Creating Instagram-worthy photos your guests will love sharing.</p>
                 <div className="mb-4">
                   <h4 className="font-display font-semibold text-foreground mb-2">Perfect For:</h4>
                   <p className="text-sm text-muted-foreground">Getting ready photos, cocktail hour, bridal party portraits</p>
                 </div>
                 <div className="p-4 bg-accent rounded-lg">
-                  <h4 className="font-display font-semibold text-accent-foreground mb-1">Wedding Benefit:</h4>
+                  <h4 className="font-display font-semibold text-accent-foreground mb-1">
+                </h4>
                   <p className="text-sm text-accent-foreground">Creates Instagram-worthy photos your guests will love sharing</p>
                 </div>
               </CardContent>
@@ -142,25 +108,18 @@ const Wedding = () => {
             {/* 360° Experience */}
             <Card className="group hover-scale">
               <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
-                <img 
-                  src="/src/assets/experience-360.jpg" 
-                  alt="360° Wedding Experience"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                <img src="/src/assets/experience-360.jpg" alt="360° Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">
-                  Capture Your First Dance Forever
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Transform your most precious moments into cinematic keepsakes. From your first dance to the bouquet toss, our 360° experience captures the joy and emotion from every angle.
-                </p>
+                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">3</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">Experience the magic of cinematic 360° video capture that creates stunning, shareable moments from every angle</p>
                 <div className="mb-4">
                   <h4 className="font-display font-semibold text-foreground mb-2">Perfect For:</h4>
                   <p className="text-sm text-muted-foreground">First dance, grand entrance, bouquet toss, special toasts</p>
                 </div>
                 <div className="p-4 bg-accent rounded-lg">
-                  <h4 className="font-display font-semibold text-accent-foreground mb-1">Wedding Benefit:</h4>
+                  <h4 className="font-display font-semibold text-accent-foreground mb-1">
+                </h4>
                   <p className="text-sm text-accent-foreground">Creates shareable moments your guests will post about for months</p>
                 </div>
               </CardContent>
@@ -183,15 +142,9 @@ const Wedding = () => {
           </h2>
           
           <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-            {weddingGalleryImages.map((image, index) => (
-              <div key={index} className="break-inside-avoid group">
-                <img 
-                  src={image} 
-                  alt={`Wedding moment ${index + 1}`}
-                  className="w-full rounded-lg hover-scale shadow-md hover:shadow-lg transition-shadow duration-300"
-                />
-              </div>
-            ))}
+            {weddingGalleryImages.map((image, index) => <div key={index} className="break-inside-avoid group">
+                <img src={image} alt={`Wedding moment ${index + 1}`} className="w-full rounded-lg hover-scale shadow-md hover:shadow-lg transition-shadow duration-300" />
+              </div>)}
           </div>
 
           <div className="text-center mt-12">
@@ -265,9 +218,7 @@ const Wedding = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="p-8">
               <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-primary text-lg" />
-                ))}
+                {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
                 "Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!"
@@ -279,9 +230,7 @@ const Wedding = () => {
 
             <Card className="p-8">
               <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-primary text-lg" />
-                ))}
+                {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
                 "Our wedding planner recommended Nova Booth and they exceeded every expectation. The instant prints were such high quality our guests thought they were professional photos, and they made perfect wedding favors!"
@@ -293,9 +242,7 @@ const Wedding = () => {
 
             <Card className="p-8">
               <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-primary text-lg" />
-                ))}
+                {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
                 "The team was incredible - they coordinated perfectly with our photographer and never disrupted our timeline. Our guests loved the glamour booth during cocktail hour, and we got the most beautiful photos!"
@@ -440,18 +387,10 @@ const Wedding = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-6">
-              <a 
-                href="https://instagram.com/novabooth" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-              >
+              <a href="https://instagram.com/novabooth" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 Instagram
               </a>
-              <a 
-                href="mailto:weddings@novabooth.com"
-                className="hover:text-primary transition-colors"
-              >
+              <a href="mailto:weddings@novabooth.com" className="hover:text-primary transition-colors">
                 Contact
               </a>
             </div>
@@ -463,8 +402,6 @@ const Wedding = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Wedding;
