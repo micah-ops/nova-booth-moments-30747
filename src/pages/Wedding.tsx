@@ -55,7 +55,7 @@ const Wedding = () => {
       {/* Three Wedding Experiences */}
       <section className="py-20" style={{backgroundColor: '#16213e'}}>
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16" style={{color: '#f5f5f5'}}>
             Three Ways to Make Your Wedding Unforgettable
           </h2>
           
