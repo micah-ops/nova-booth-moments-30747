@@ -43,7 +43,15 @@ const Header = () => {
 const Hero = () => {
   return <section id="top" aria-label="Nova Booth hero" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-hero" aria-hidden="true" />
-      <img src={heroImage} alt="Elegant photo booth experience at a luxury wedding reception" className="absolute inset-0 h-full w-full object-cover opacity-65" loading="eager" fetchPriority="high" />
+      <video 
+        src="https://rvmediahost.s3.us-west-2.amazonaws.com/pb.mp4" 
+        className="absolute inset-0 h-full w-full object-cover opacity-65" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+        aria-label="Nova Booth photo booth experience video"
+      />
       <div className="relative">
         <div className="container mx-auto px-4 py-24 md:py-36 text-secondary-foreground">
           <h1 className="font-display text-4xl md:text-6xl font-semibold tracking-tight animate-fade-in">
