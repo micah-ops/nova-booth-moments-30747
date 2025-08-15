@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FaPalette, FaConciergeBell, FaHeart, FaStar, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaPalette, FaHeart, FaStar, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaConciergeBell } from "react-icons/fa";
 import { useState } from "react";
 
 const Wedding = () => {
