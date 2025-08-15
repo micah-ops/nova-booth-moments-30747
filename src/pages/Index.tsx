@@ -9,6 +9,7 @@ import g360_1 from "@/assets/gallery-360-1.jpg";
 import g360_2 from "@/assets/gallery-360-2.jpg";
 import g360_3 from "@/assets/gallery-360-3.jpg";
 import g360_4 from "@/assets/gallery-360-4.jpg";
+import glamourPlaceholder from "@/assets/glamour-booth-placeholder.jpg";
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -153,7 +154,7 @@ const ExperienceShowcase = () => {
           {/* Glamour Experience Booth - Third */}
           <Card className="hover-scale shadow">
             <article>
-              <img src="/lovable-uploads/8f085561-948d-4a1f-98e5-99a2d0fc20e4.png" alt="Elegant couple at professional glamour photo booth with sophisticated lighting and sleek backdrop" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <img src={glamourPlaceholder} alt="Elegant photo booth setup with professional lighting and a sleek black tension backdrop, showing guests taking sophisticated portrait-style photos" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
                 <CardTitle className="font-display text-2xl">Glammer Experiance Booth</CardTitle>
                 <p className="text-sm text-primary font-medium mt-1">Capture Your Best Self - Professional beauty portraits with instant prints</p>
