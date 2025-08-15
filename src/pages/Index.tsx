@@ -90,28 +90,10 @@ const ExperienceShowcase = () => {
   return <section id="experiences" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-10 text-center">
-          <h2 className="font-display text-3xl md:text-4xl text-secondary">Ways to Celebrate  </h2>
+          <h2 className="font-display text-3xl md:text-4xl text-secondary">Ways to Celebrate  </h2>
         </header>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <Card className="hover-scale shadow">
-            <article>
-              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
-              <CardHeader>
-                <CardTitle className="font-display text-2xl"> 360 Video Booth </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
-                  <li>Cinematic 360° video capture</li>
-                  <li>Every angle of your special moment</li>
-                  <li>Instant digital sharing</li>
-                  <li>Professional attendant included</li>
-                </ul>
-                <p className="mt-4 text-muted-foreground text-sm">Perfect for: First dances, toasts, and unforgettable celebrations</p>
-              </CardContent>
-            </article>
-          </Card>
-
-          {/* Print Experience - Already First */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          {/* Instant Print Booth - First */}
           <Card className="hover-scale shadow">
             <article>
               <picture>
@@ -119,16 +101,81 @@ const ExperienceShowcase = () => {
                 <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               </picture>
               <CardHeader>
-                <CardTitle className="font-display text-2xl">Instant Print Booth </CardTitle>
+                <CardTitle className="font-display text-2xl">Instant Print Booth</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm md:text-base list-disc pl-5">
-                  <li>High-quality instant prints</li>
-                  <li>Professional lighting system</li>
-                  <li>Digital copies included</li>
-                  <li>Take-home keepsakes</li>
-                </ul>
+                <div className="md:hidden mb-4">
+                  <p className="text-sm text-muted-foreground">Create instant memories with professional-quality prints that guests can take home immediately. Our high-end printing technology ensures every photo becomes a treasured keepsake from your special day.</p>
+                </div>
+                <div className="md:flex md:gap-6">
+                  <ul className="space-y-2 text-sm md:text-base list-disc pl-5 md:flex-1">
+                    <li>High-quality instant prints</li>
+                    <li>Professional lighting system</li>
+                    <li>Digital copies included</li>
+                    <li>Take-home keepsakes</li>
+                  </ul>
+                  <div className="hidden md:block md:flex-1">
+                    <p className="text-sm text-muted-foreground">Create instant memories with professional-quality prints that guests can take home immediately. Our high-end printing technology ensures every photo becomes a treasured keepsake from your special day.</p>
+                  </div>
+                </div>
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Reception fun, guest entertainment, and party favors</p>
+              </CardContent>
+            </article>
+          </Card>
+
+          {/* 360 Video Booth - Second */}
+          <Card className="hover-scale shadow">
+            <article>
+              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <CardHeader>
+                <CardTitle className="font-display text-2xl">360 Video Booth</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="md:hidden mb-4">
+                  <p className="text-sm text-muted-foreground">Experience the magic of cinematic 360° video capture that creates stunning, shareable moments from every angle. Perfect for capturing those special celebratory moments that deserve to be seen from all perspectives.</p>
+                </div>
+                <div className="md:flex md:gap-6">
+                  <ul className="space-y-2 text-sm md:text-base list-disc pl-5 md:flex-1">
+                    <li>Cinematic 360° video capture</li>
+                    <li>Every angle of your special moment</li>
+                    <li>Instant digital sharing</li>
+                    <li>Professional attendant included</li>
+                  </ul>
+                  <div className="hidden md:block md:flex-1">
+                    <p className="text-sm text-muted-foreground">Experience the magic of cinematic 360° video capture that creates stunning, shareable moments from every angle. Perfect for capturing those special celebratory moments that deserve to be seen from all perspectives.</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-muted-foreground text-sm">Perfect for: First dances, toasts, and unforgettable celebrations</p>
+              </CardContent>
+            </article>
+          </Card>
+
+          {/* Glamour Experience Booth - Third */}
+          <Card className="hover-scale shadow">
+            <article>
+              <img src="/lovable-uploads/8f085561-948d-4a1f-98e5-99a2d0fc20e4.png" alt="Elegant couple at professional glamour photo booth with sophisticated lighting and sleek backdrop" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <CardHeader>
+                <CardTitle className="font-display text-2xl">Glammer Experiance Booth</CardTitle>
+                <p className="text-sm text-primary font-medium mt-1">Capture Your Best Self - Professional beauty portraits with instant prints</p>
+              </CardHeader>
+              <CardContent>
+                <div className="md:hidden mb-4">
+                  <p className="text-sm text-muted-foreground">Transform into your most glamorous self with our professional-grade beauty booth experience. Featuring custom smoothing filters and elegant lighting, every guest becomes the star of their own sophisticated portrait session.</p>
+                </div>
+                <div className="md:flex md:gap-6">
+                  <ul className="space-y-2 text-sm md:text-base list-disc pl-5 md:flex-1">
+                    <li>Professional beauty lighting system</li>
+                    <li>Custom smoothing filters for flawless results</li>
+                    <li>Choice of classic black & white or vibrant color</li>
+                    <li>Unlimited 4x6 prints</li>
+                    <li>Instant digital sharing for social media</li>
+                    <li>Elegant tension backdrop (white or black)</li>
+                  </ul>
+                  <div className="hidden md:block md:flex-1">
+                    <p className="text-sm text-muted-foreground">Transform into your most glamorous self with our professional-grade beauty booth experience. Featuring custom smoothing filters and elegant lighting, every guest becomes the star of their own sophisticated portrait session.</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-muted-foreground text-sm">Perfect for: Milestone celebrations, anniversary parties, and sophisticated gatherings where guests want to feel effortlessly beautiful</p>
               </CardContent>
             </article>
           </Card>
@@ -139,6 +186,7 @@ const ExperienceShowcase = () => {
       </div>
     </section>;
 };
+
 const Gallery = () => {
   const allImages = useMemo(() => [{
     src: g360_1,
@@ -306,16 +354,7 @@ const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
         <h2 className="font-display text-3xl md:text-4xl text-secondary-foreground uppercase">What Our Clients Say</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {[{
-        quote: "Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!",
-        author: "Sarah & Michael, Garden Wedding"
-      }, {
-        quote: "Professional, reliable, and the photo quality was incredible. Our employees loved the instant prints, and the setup perfectly matched our event's aesthetic. Will definitely book again!",
-        author: "Jennifer, Corporate Event Manager"
-      }, {
-        quote: "The team was amazing! They made sure everything ran smoothly, and the prints were such high quality our guests thought they were professional photos. Worth every penny!",
-        author: "David & Lisa, Historic Venue Wedding"
-      }].map((t, i) => <Card key={i} className="shadow">
+        {[{"quote":"Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!","author":"Sarah & Michael, Garden Wedding"}, {"quote":"Professional, reliable, and the photo quality was incredible. Our employees loved the instant prints, and the setup perfectly matched our event's aesthetic. Will definitely book again!","author":"Jennifer, Corporate Event Manager"}, {"quote":"The team was amazing! They made sure everything ran smoothly, and the prints were such high quality our guests thought they were professional photos. Worth every penny!","author":"David & Lisa, Historic Venue Wedding"}].map((t, i) => <Card key={i} className="shadow">
             <CardHeader>
               <div className="flex text-primary">
                 {Array.from({
@@ -324,7 +363,7 @@ const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-sm md:text-base">“{t.quote}”</p>
+              <p className="text-sm md:text-base">"{t.quote}"</p>
               <p className="mt-3 text-sm text-muted-foreground">— {t.author}</p>
             </CardContent>
           </Card>)}
@@ -344,19 +383,7 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
         <div>
           <h3 className="font-display text-xl mb-4">General Questions</h3>
           <Accordion type="single" collapsible className="w-full">
-            {[{
-            q: "How many photos or videos can my guests create during the event?",
-            a: "As many as they like within your booked timeframe. There's no limit to the fun."
-          }, {
-            q: "When should I secure my date?",
-            a: "Popular dates book quickly—reserve as early as possible to ensure availability."
-          }, {
-            q: "Will someone be there to assist our guests?",
-            a: "Yes, a professional attendant curates the experience and ensures everything runs smoothly."
-          }, {
-            q: "How much time do you need for setup and removal?",
-            a: "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
-          }].map((f, i) => <AccordionItem key={i} value={`g-${i}`}>
+            {[{"q":"How many photos or videos can my guests create during the event?","a":"As many as they like within your booked timeframe. There's no limit to the fun."}, {"q":"When should I secure my date?","a":"Popular dates book quickly—reserve as early as possible to ensure availability."}, {"q":"Will someone be there to assist our guests?","a":"Yes, a professional attendant curates the experience and ensures everything runs smoothly."}, {"q":"How much time do you need for setup and removal?","a":"We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team."}].map((f, i) => <AccordionItem key={i} value={`g-${i}`}>
                 <AccordionTrigger>{f.q}</AccordionTrigger>
                 <AccordionContent>{f.a}</AccordionContent>
               </AccordionItem>)}
@@ -365,16 +392,7 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
         <div>
           <h3 className="font-display text-xl mb-4">Space & Venue Requirements</h3>
           <Accordion type="single" collapsible className="w-full">
-            {[{
-            q: "What space do you need at our venue?",
-            a: "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."
-          }, {
-            q: "Is setup and breakdown included in our experience?",
-            a: "Absolutely—all setup and breakdown is included with every booking."
-          }, {
-            q: "Can we provide our own backdrop or decorations?",
-            a: "Yes. We’ll coordinate to ensure your decor complements our curated setup."
-          }].map((f, i) => <AccordionItem key={i} value={`v-${i}`}>
+            {[{"q":"What space do you need at our venue?","a":"We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."}, {"q":"Is setup and breakdown included in our experience?","a":"Absolutely—all setup and breakdown is included with every booking."}, {"q":"Can we provide our own backdrop or decorations?","a":"Yes. We'll coordinate to ensure your decor complements our curated setup."}].map((f, i) => <AccordionItem key={i} value={`v-${i}`}>
                 <AccordionTrigger>{f.q}</AccordionTrigger>
                 <AccordionContent>{f.a}</AccordionContent>
               </AccordionItem>)}
@@ -385,25 +403,7 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
       <div className="mt-8">
         <h3 className="font-display text-xl mb-4">Experience-Specific Questions</h3>
         <Accordion type="multiple" className="w-full">
-          {[{
-          q: "How quickly do the photos print?",
-          a: "Instantly—prints are ready within seconds with beautiful color and clarity."
-        }, {
-          q: "Do guests also get digital versions?",
-          a: "Yes, guests receive digital copies to share right away."
-        }, {
-          q: "How do guests access their 360° videos?",
-          a: "We provide an easy link or QR code for instant download and sharing."
-        }, {
-          q: "What's the video quality like?",
-          a: "Cinematic quality with smooth motion and elegant color—designed to look stunning on social."
-        }, {
-          q: "How do I get pricing for my specific event?",
-          a: "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."
-        }, {
-          q: "Do you service my area?",
-          a: "We serve weddings and events throughout the region—contact us to confirm your venue."
-        }].map((f, i) => <AccordionItem key={i} value={`x-${i}`}>
+          {[{"q":"How quickly do the photos print?","a":"Instantly—prints are ready within seconds with beautiful color and clarity."}, {"q":"Do guests also get digital versions?","a":"Yes, guests receive digital copies to share right away."}, {"q":"How do guests access their 360° videos?","a":"We provide an easy link or QR code for instant download and sharing."}, {"q":"What's the video quality like?","a":"Cinematic quality with smooth motion and elegant color—designed to look stunning on social."}, {"q":"How do I get pricing for my specific event?","a":"Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."}, {"q":"Do you service my area?","a":"We serve weddings and events throughout the region—contact us to confirm your venue."}].map((f, i) => <AccordionItem key={i} value={`x-${i}`}>
               <AccordionTrigger>{f.q}</AccordionTrigger>
               <AccordionContent>{f.a}</AccordionContent>
             </AccordionItem>)}
