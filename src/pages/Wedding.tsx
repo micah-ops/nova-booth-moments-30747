@@ -53,7 +53,7 @@ const Wedding = () => {
       </section>
 
       {/* Three Wedding Experiences */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-primary/5">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-foreground">
             Three Ways to Make Your Wedding Unforgettable
