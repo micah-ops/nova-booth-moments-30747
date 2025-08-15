@@ -180,6 +180,37 @@ const ExperienceShowcase = () => {
               </CardContent>
             </article>
           </Card>
+
+          {/* Branded Experience Booth - Fourth */}
+          <Card className="hover-scale shadow">
+            <article>
+              <img src="/lovable-uploads/6c015e84-d300-4e6f-9099-977293571915.png" alt="Professional corporate photo booth setup with custom branded backdrop showing company logo, professional lighting, and business professionals taking executive-quality photos" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <CardHeader>
+                <CardTitle className="font-display text-2xl">Branded Experiance Booth</CardTitle>
+                <p className="text-sm text-primary font-medium mt-1">Elevate Your Corporate Brand - Brand activations your guests will remember</p>
+              </CardHeader>
+              <CardContent>
+                <div className="md:hidden mb-4">
+                  <p className="text-sm text-muted-foreground">Create professional-quality photos that align perfectly with your corporate brand. Our branded experience seamlessly integrates your company identity while providing attendees with polished, professional images.</p>
+                </div>
+                <div className="md:flex md:gap-6">
+                  <ul className="space-y-2 text-sm md:text-base list-disc pl-5 md:flex-1">
+                    <li>Complete company branding integration</li>
+                    <li>Custom-printed backdrop featuring your logo</li>
+                    <li>Professional lighting for quality photos</li>
+                    <li>Branded photo templates and layouts</li>
+                    <li>Digital delivery with company branding</li>
+                    <li>Professional attendant managing the experience</li>
+                    <li>Optional guest surveys</li>
+                  </ul>
+                  <div className="hidden md:block md:flex-1">
+                    <p className="text-sm text-muted-foreground">Create professional-quality photos that align perfectly with your corporate brand. Our branded experience seamlessly integrates your company identity while providing attendees with polished, professional images.</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-muted-foreground text-sm">Perfect for: Corporate conferences, product launches, company celebrations, and networking events and brand activations where professional image and brand consistency matter</p>
+              </CardContent>
+            </article>
+          </Card>
         </div>
         <div className="mt-8 text-center">
           <a href="#contact"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
