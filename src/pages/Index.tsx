@@ -10,17 +10,6 @@ import g360_2 from "@/assets/gallery-360-2.jpg";
 import g360_3 from "@/assets/gallery-360-3.jpg";
 import g360_4 from "@/assets/gallery-360-4.jpg";
 import glamourPlaceholder from "@/assets/glamour-booth-placeholder.jpg";
-// Company logos
-import amazonLogo from "@/assets/logos/amazon-logo.png";
-import microsoftLogo from "@/assets/logos/microsoft-logo.png";
-import lululemonLogo from "@/assets/logos/lululemon-logo.png";
-import remaxLogo from "@/assets/logos/remax-logo.png";
-import weworkLogo from "@/assets/logos/wework-logo.png";
-import ohsuLogo from "@/assets/logos/ohsu-logo.png";
-import deckersLogo from "@/assets/logos/deckers-logo.png";
-import otakLogo from "@/assets/logos/otak-logo.png";
-import uchealthLogo from "@/assets/logos/uchealth-logo.png";
-import nikeLogo from "@/assets/logos/nike-logo.png";
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -80,18 +69,17 @@ const Hero = () => {
     </section>;
 };
 const ClientLogos = () => {
-  const logos = [
-    { name: "Amazon", image: amazonLogo },
-    { name: "Microsoft", image: microsoftLogo },
-    { name: "LuluLemon", image: lululemonLogo },
-    { name: "Remax", image: remaxLogo },
-    { name: "WeWork", image: weworkLogo },
-    { name: "OHSU", image: ohsuLogo },
-    { name: "DECKERS", image: deckersLogo },
-    { name: "Amazon", image: amazonLogo },
-    { name: "Otak", image: otakLogo },
-    { name: "UCHealth", image: uchealthLogo },
-    { name: "Nike", image: nikeLogo }
+  const companies = [
+    "Amazon",
+    "Microsoft",
+    "Lululemon",
+    "Remax",
+    "WeWork",
+    "OHSU",
+    "Deckers",
+    "Otak",
+    "UCHealth",
+    "Nike"
   ];
   
   return <section className="bg-primary py-12 overflow-hidden" aria-label="Trusted by leading companies">
@@ -102,12 +90,10 @@ const ClientLogos = () => {
         <div className="relative">
           <div className="flex animate-scroll whitespace-nowrap">
             {[...Array(3)].map((_, setIndex) => <div key={setIndex} className="flex items-center space-x-12 min-w-max">
-                {logos.map((logo, index) => <div key={`${setIndex}-${index}`} className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
-                    <img 
-                      src={logo.image} 
-                      alt={`${logo.name} logo`} 
-                      className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert" 
-                    />
+                {companies.map((company, index) => <div key={`${setIndex}-${index}`} className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                    <span className="text-white text-lg md:text-xl font-semibold px-4">
+                      {company}
+                    </span>
                   </div>)}
               </div>)}
           </div>
