@@ -85,7 +85,7 @@ const ClientLogos = () => {
   return <section className="bg-primary py-12 overflow-hidden" aria-label="Trusted by leading companies">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-white/90 text-sm font-medium tracking-wide mb-8 uppercase">
-          Trusted by Seattle's Leading Companies
+          Trusted by Leading Companies
         </h2>
         <div className="relative">
           <div className="flex animate-scroll whitespace-nowrap">
