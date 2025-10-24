@@ -1,14 +1,9 @@
-import { useMemo, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, Phone, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-nova-booth.jpg";
-import g360_1 from "@/assets/gallery-360-1.jpg";
-import g360_2 from "@/assets/gallery-360-2.jpg";
-import g360_3 from "@/assets/gallery-360-3.jpg";
-import g360_4 from "@/assets/gallery-360-4.jpg";
 import glamourPlaceholder from "@/assets/glamour-booth-placeholder.jpg";
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -233,126 +228,25 @@ const ExperienceShowcase = () => {
     </section>;
 };
 const Gallery = () => {
-  const allImages = useMemo(() => [{
-    src: g360_1,
-    alt: "Couple enjoying the 360° booth",
-    tag: "360"
-  }, {
-    src: g360_2,
-    alt: "Garden party with 360° booth",
-    tag: "360"
-  }, {
-    src: g360_3,
-    alt: "Corporate event with 360° booth",
-    tag: "360"
-  }, {
-    src: g360_4,
-    alt: "360° video moment close-up",
-    tag: "360"
-  },
-  // Real event print experiences
-  {
-    src: "/lovable-uploads/ef3f80c8-3dae-4e44-a4e2-3701179b68e2.png",
-    alt: "Wedding guests at instant print booth",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/1e2595f5-4056-43df-b13e-b155d29b9dae.png",
-    alt: "Black and white instant print booth portrait",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/c92eeda8-4f30-41f2-84ce-ab2000fb1497.png",
-    alt: "Group posing at elegant print booth setup",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/2840fc66-7c89-4ac1-8138-a2284f0d15c8.png",
-    alt: "Fun group photo at print booth",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/ef52c2f8-796f-4110-980c-67f947b3b86a.png",
-    alt: "Print booth with floral backdrop and drapery",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png",
-    alt: "Print booth setup with textured backdrop",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/7db278e2-b24f-4bc0-a74d-7df2860d76cc.png",
-    alt: "Outdoor print booth with flowing drape backdrop",
-    tag: "print"
-  },
-  // Newly added prints
-  {
-    src: "/lovable-uploads/8f085561-948d-4a1f-98e5-99a2d0fc20e4.png",
-    alt: "Couple portrait at print booth on white backdrop",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/10dbd9f5-eaeb-41eb-a964-ee632beaa839.png",
-    alt: "Elegant couple at outdoor print booth backdrop",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/449b6433-4d31-423a-8c1c-aca508ca618b.png",
-    alt: "Friends with props at print booth",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/f7472a79-06ac-487a-ba57-6336adf16743.png",
-    alt: "Bridal party at print booth with soft backdrop",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/3a4f8ac3-9d22-4437-9f06-8025bddee86b.png",
-    alt: "Guests celebrating at print booth",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/777b182d-e831-4b76-a7a1-1a883a58e5e0.png",
-    alt: "Guests with colored glasses at print booth",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/16550f1b-9006-4492-a469-496d83d8a73d.png",
-    alt: "Group portrait at print booth with gray backdrop",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/b27d07db-6187-4b7f-b469-7acab60bbdf7.png",
-    alt: "Group portrait at print booth on white backdrop",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/ad3a25bd-15d6-46c5-9122-168b2a879fe6.png",
-    alt: "Photo strip designs collage from events",
-    tag: "print"
-  }, {
-    src: "/lovable-uploads/697e23b3-c63c-4f9a-840a-d563f20eff00.png",
-    alt: "Photo strip templates collage from weddings",
-    tag: "print"
-  }], []);
-  const Grid = ({
-    images
-  }: {
-    images: {
-      src: string;
-      alt: string;
-    }[];
-  }) => <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-      {images.map((img, i) => <figure key={i} className="overflow-hidden rounded-lg shadow hover-scale">
-          <img src={img.src} alt={img.alt} loading="lazy" className="h-40 md:h-48 w-full object-cover" />
-        </figure>)}
-    </div>;
+  // Add your gallery images here
+  const images: { src: string; alt: string }[] = [
+    // Example:
+    // { src: "/path/to/image1.jpg", alt: "Description of image 1" },
+  ];
+
   return <section id="gallery" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <header className="mb-8 text-center">
-          <h2 className="font-display text-3xl md:text-4xl text-secondary-foreground uppercase">SEE THE MAGIC IN ACTION</h2>
-        </header>
-        <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid grid-cols-3 max-w-md mx-auto">
-            <TabsTrigger value="all">All</TabsTrigger>
-            <TabsTrigger value="360">360° Experiences</TabsTrigger>
-            <TabsTrigger value="print">Print Experiences</TabsTrigger>
-          </TabsList>
-          <div className="mt-8">
-            <TabsContent value="all"><Grid images={allImages} /></TabsContent>
-            <TabsContent value="360"><Grid images={allImages.filter(i => i.tag === '360')} /></TabsContent>
-            <TabsContent value="print"><Grid images={allImages.filter(i => i.tag === 'print')} /></TabsContent>
-          </div>
-        </Tabs>
-        <div className="mt-8 text-center">
-          <a href="#contact"><Button variant="hero" size="lg">Create Your Moment</Button></a>
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+          {images.map((img, i) => (
+            <figure key={i} className="break-inside-avoid overflow-hidden rounded-lg shadow hover-scale mb-4">
+              <img 
+                src={img.src} 
+                alt={img.alt} 
+                loading="lazy" 
+                className="w-full h-auto object-cover" 
+              />
+            </figure>
+          ))}
         </div>
       </div>
     </section>;
