@@ -49,7 +49,7 @@ const Hero = () => {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-enter">
             <a href="#contact"><Button variant="hero" size="lg">Reserve Your Date</Button></a>
-            <a href="#experiences"><Button variant="secondary" size="lg">See Our Experiences</Button></a>
+            <a href="#experiences-cta"><Button variant="secondary" size="lg">See Our Experiences</Button></a>
           </div>
           <div className="mt-6 flex items-center gap-2 text-sm">
             <div className="flex text-primary">
@@ -221,7 +221,7 @@ const ExperienceShowcase = () => {
             </article>
           </Card> */}
         </div>
-        <div className="mt-8 text-center">
+        <div id="experiences-cta" className="mt-8 text-center">
           <a href="#contact"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
         </div>
       </div>
