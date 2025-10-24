@@ -160,8 +160,8 @@ const ExperienceShowcase = () => {
             </article>
           </Card>
 
-          {/* Glamour Experience Booth - Third */}
-          <Card className="hover-scale shadow">
+          {/* Glamour Experience Booth - Hidden (uncomment to show) */}
+          {/* <Card className="hover-scale shadow">
             <article>
               <img src={glamourPlaceholder} alt="Elegant photo booth setup with professional lighting and a sleek black tension backdrop, showing guests taking sophisticated portrait-style photos" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
@@ -188,10 +188,10 @@ const ExperienceShowcase = () => {
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Milestone celebrations, anniversary parties, and sophisticated gatherings where guests want to feel effortlessly beautiful</p>
               </CardContent>
             </article>
-          </Card>
+          </Card> */}
 
-          {/* Branded Experience Booth - Fourth */}
-          <Card className="hover-scale shadow">
+          {/* Branded Experience Booth - Hidden (uncomment to show) */}
+          {/* <Card className="hover-scale shadow">
             <article>
               <img src="/lovable-uploads/6c015e84-d300-4e6f-9099-977293571915.png" alt="Professional corporate photo booth setup with custom branded backdrop showing company logo, professional lighting, and business professionals taking executive-quality photos" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
@@ -219,7 +219,7 @@ const ExperienceShowcase = () => {
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Corporate conferences, product launches, company celebrations, and networking events and brand activations where professional image and brand consistency matter</p>
               </CardContent>
             </article>
-          </Card>
+          </Card> */}
         </div>
         <div className="mt-8 text-center">
           <a href="#contact"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
