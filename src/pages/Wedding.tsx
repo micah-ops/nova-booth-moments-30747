@@ -32,7 +32,7 @@ const Wedding = () => {
                   {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-xl" />)}
                 </div>
                 <blockquote className="text-lg md:text-xl font-sans italic mb-4 text-white">
-                  "Nova Booth was the BEST decision we made for our wedding! The 360° videos of our first dance are absolutely magical, and our guests are still talking about how much fun they had. The setup was so elegant it looked like part of our decor!"
+                  "Perfect Booth was the BEST decision we made for our wedding! The 360° videos of our first dance are absolutely magical, and our guests are still talking about how much fun they had. The setup was so elegant it looked like part of our decor!"
                 </blockquote>
                 <cite className="text-white/80 font-sans">- Sarah & Michael</cite>
               </CardContent>
@@ -159,7 +159,7 @@ const Wedding = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-foreground">
-            Why Couples Choose Nova Booth for Their Wedding
+            Why Couples Choose Perfect Booth for Their Wedding
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -221,7 +221,7 @@ const Wedding = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!"
+                "Perfect Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
                 Sarah & Michael, Garden Wedding at Vintage Estates
@@ -233,7 +233,7 @@ const Wedding = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "Our wedding planner recommended Nova Booth and they exceeded every expectation. The instant prints were such high quality our guests thought they were professional photos, and they made perfect wedding favors!"
+                "Our wedding planner recommended Perfect Booth and they exceeded every expectation. The instant prints were such high quality our guests thought they were professional photos, and they made perfect wedding favors!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
                 Emma & James, Ballroom Wedding

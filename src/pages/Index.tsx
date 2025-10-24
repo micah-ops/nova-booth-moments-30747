@@ -23,9 +23,9 @@ const Header = () => {
   }, [lastScrollY]);
   return <header className={`fixed top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto flex h-12 items-center justify-between md:justify-between">
-        <a href="#top" className="inline-flex items-center gap-2 mx-auto md:mx-0" aria-label="Nova Booth Home">
-          <img src="/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png" alt="Nova Booth logo" className="h-28 w-auto md:h-24" width="120" height="36" loading="eager" decoding="async" />
-          <span className="sr-only">NOVA BOOTH</span>
+        <a href="#top" className="inline-flex items-center gap-2 mx-auto md:mx-0" aria-label="Perfect Booth Home">
+          <img src="/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png" alt="Perfect Booth logo" className="h-28 w-auto md:h-24" width="120" height="36" loading="eager" decoding="async" />
+          <span className="sr-only">PERFECT BOOTH</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <a href="#experiences" className="hover:text-secondary transition-colors story-link">Experiences</a>
@@ -36,9 +36,9 @@ const Header = () => {
     </header>;
 };
 const Hero = () => {
-  return <section id="top" aria-label="Nova Booth hero" className="relative overflow-hidden">
+  return <section id="top" aria-label="Perfect Booth hero" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-hero" aria-hidden="true" />
-      <video src="https://rvmediahost.s3.us-west-2.amazonaws.com/pb.mp4" className="absolute inset-0 h-full w-full object-cover opacity-65" autoPlay loop muted playsInline aria-label="Nova Booth photo booth experience video" />
+      <video src="https://rvmediahost.s3.us-west-2.amazonaws.com/pb.mp4" className="absolute inset-0 h-full w-full object-cover opacity-65" autoPlay loop muted playsInline aria-label="Perfect Booth photo booth experience video" />
       <div className="relative">
         <div className="container mx-auto px-4 py-24 md:py-36 text-secondary-foreground">
           <h1 className="font-display text-4xl md:text-6xl font-semibold tracking-tight animate-fade-in">
@@ -254,7 +254,7 @@ const Gallery = () => {
 const WhyChoose = () => <section className="py-16 md:py-24">
     <div className="container mx-auto px-4">
       <header className="mb-10 text-center">
-        <h2 className="font-display text-3xl md:text-4xl text-secondary">THE NOVA BOOTH DIFFERENCE</h2>
+        <h2 className="font-display text-3xl md:text-4xl text-secondary">THE PERFECT BOOTH DIFFERENCE</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card className="hover-scale shadow">
@@ -294,7 +294,7 @@ const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[{
-        "quote": "Nova Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!",
+        "quote": "Perfect Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!",
         "author": "Sarah & Michael, Garden Wedding"
       }, {
         "quote": "Professional, reliable, and the photo quality was incredible. Our employees loved the instant prints, and the setup perfectly matched our event's aesthetic. Will definitely book again!",
@@ -316,7 +316,7 @@ const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
             </CardContent>
           </Card>)}
       </div>
-      <p className="mt-6 text-center text-sm text-muted-foreground">Join 100+ happy clients who chose Nova Booth</p>
+      <p className="mt-6 text-center text-sm text-muted-foreground">Join 100+ happy clients who chose Perfect Booth</p>
       <div className="mt-6 text-center">
         <a href="#contact"><Button variant="hero" size="lg">Add Your Celebration to Our Story</Button></a>
       </div>
@@ -408,13 +408,13 @@ const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24"
         </p>
       </header>
       <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-3">
-        <a href="mailto:hello@novabooth.co" aria-label="Email Nova Booth">
+        <a href="mailto:hello@novabooth.co" aria-label="Email Perfect Booth">
           <Button variant="hero" size="lg">Reserve Your Date Now</Button>
         </a>
-        <a href="tel:+1234567890" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Call Nova Booth">
+        <a href="tel:+1234567890" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Call Perfect Booth">
           <Phone className="h-5 w-5" /> <span>Click to Call</span>
         </a>
-        <a href="mailto:hello@novabooth.co" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Nova Booth">
+        <a href="mailto:hello@novabooth.co" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Perfect Booth">
           <Mail className="h-5 w-5" /> <span>hello@novabooth.co</span>
         </a>
       </div>
@@ -424,7 +424,7 @@ const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24"
 const Footer = () => <footer className="bg-secondary text-secondary-foreground py-10">
     <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
       <div>
-        <p className="font-display tracking-wider">NOVA BOOTH</p>
+        <p className="font-display tracking-wider">PERFECT BOOTH</p>
         <p className="mt-2 text-secondary-foreground/80">Luxury 360° video & instant print experiences.
 
 Join the Team
@@ -455,13 +455,13 @@ About Us
         </div>
       </div>
     </div>
-    <div className="container mx-auto px-4 mt-6 text-xs text-secondary-foreground/70">© {new Date().getFullYear()} Nova Booth. All rights reserved.</div>
+    <div className="container mx-auto px-4 mt-6 text-xs text-secondary-foreground/70">© {new Date().getFullYear()} Perfect Booth. All rights reserved.</div>
   </footer>;
 const StructuredData = () => {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Nova Booth',
+    name: 'Perfect Booth',
     url: '/',
     description: 'Luxury 360° video and instant print photo experiences for weddings and corporate events.',
     serviceArea: 'Regional'
