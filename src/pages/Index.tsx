@@ -408,14 +408,14 @@ const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24"
         </p>
       </header>
       <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-3">
-        <a href="mailto:hello@novabooth.co" aria-label="Email Perfect Booth">
+        <a href="mailto:micah@perfect-booth.com" aria-label="Email Perfect Booth">
           <Button variant="hero" size="lg">Reserve Your Date Now</Button>
         </a>
         <a href="tel:+1234567890" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Call Perfect Booth">
           <Phone className="h-5 w-5" /> <span>Click to Call</span>
         </a>
-        <a href="mailto:hello@novabooth.co" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Perfect Booth">
-          <Mail className="h-5 w-5" /> <span>hello@novabooth.co</span>
+        <a href="mailto:micah@perfect-booth.com" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Perfect Booth">
+          <Mail className="h-5 w-5" /> <span>micah@perfect-booth.com</span>
         </a>
       </div>
       <p className="mt-3 text-center text-xs text-secondary-foreground/80">We respond within 2 hours</p>
