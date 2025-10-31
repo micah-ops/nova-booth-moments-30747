@@ -108,8 +108,8 @@ const ExperienceShowcase = () => {
           <Card className="hover-scale shadow">
             <article>
               <picture>
-                <source media="(min-width: 768px)" srcSet="/lovable-uploads/31b17396-227f-48f7-be79-ee21b41f3529.png" />
-                <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
+                <source media="(min-width: 768px)" srcSet="/lovable-uploads/instant-print-booth-desktop.jpg" />
+                <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests enjoying instant print photo booth with gray backdrop" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               </picture>
               <CardHeader>
                 <CardTitle className="font-display text-2xl">Instant Print Booth</CardTitle>
