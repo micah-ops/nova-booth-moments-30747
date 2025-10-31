@@ -39,9 +39,11 @@ const Wedding = () => {
             </Card>
 
             <div className="flex justify-center mb-8">
-              <Button size="lg" className="text-lg px-8 py-4 h-auto bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">
-                Reserve Your Date
-              </Button>
+              <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="text-lg px-8 py-4 h-auto bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">
+                  Reserve Your Date
+                </Button>
+              </a>
             </div>
 
             <p className="text-white/90 font-sans flex items-center justify-center gap-2">
@@ -127,9 +129,11 @@ const Wedding = () => {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="text-lg px-8 py-4 h-auto">
-              Reserve Your Date
-            </Button>
+            <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-lg px-8 py-4 h-auto">
+                Reserve Your Date
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -201,9 +205,11 @@ const Wedding = () => {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="text-lg px-8 py-4 h-auto">
-              Reserve Your Date
-            </Button>
+            <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-lg px-8 py-4 h-auto">
+                Reserve Your Date
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -357,9 +363,11 @@ const Wedding = () => {
               Your special day deserves an experience as beautiful as your love story. Let's make it unforgettable.
             </p>
             
-            <Button size="lg" className="text-lg px-12 py-6 h-auto mb-12 bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">
-              Reserve Your Date Now
-            </Button>
+            <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-lg px-12 py-6 h-auto mb-12 bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">
+                Reserve Your Date Now
+              </Button>
+            </a>
             
             <div className="space-y-4 text-white/90">
               <div className="flex items-center justify-center gap-2">

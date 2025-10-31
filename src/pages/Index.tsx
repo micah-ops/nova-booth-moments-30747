@@ -49,7 +49,7 @@ const Hero = () => {
             Transform your celebration with beautifully designed photo experiences that blend seamlessly into your special day.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-enter">
-            <a href="#contact"><Button variant="hero" size="lg">Reserve Your Date</Button></a>
+            <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg">Reserve Your Date</Button></a>
             <a href="#experiences-cta"><Button variant="secondary" size="lg">See Our Experiences</Button></a>
           </div>
           <div className="mt-6 flex items-center gap-2 text-sm">
@@ -223,7 +223,7 @@ const ExperienceShowcase = () => {
           </Card> */}
         </div>
         <div id="experiences-cta" className="mt-8 text-center">
-          <a href="#contact"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
+          <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
         </div>
       </div>
     </section>;
@@ -409,7 +409,7 @@ const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24"
         </p>
       </header>
       <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-3">
-        <a href="mailto:micah@perfect-booth.com" aria-label="Email Perfect Booth">
+        <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer" aria-label="Request a quote from Perfect Booth">
           <Button variant="hero" size="lg">Reserve Your Date Now</Button>
         </a>
         <a href="tel:+1234567890" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Call Perfect Booth">
