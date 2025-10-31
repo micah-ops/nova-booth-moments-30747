@@ -109,7 +109,7 @@ const ExperienceShowcase = () => {
             <article>
               <picture>
                 <source media="(min-width: 768px)" srcSet="/lovable-uploads/print-booth-package.png" />
-                <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Instant print photo booth experience with various backdrops" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
+                <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Instant print photo booth experience with various backdrops" className="h-64 md:h-auto w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               </picture>
               <CardHeader>
                 <CardTitle className="font-display text-2xl">Instant Print Booth</CardTitle>
@@ -137,7 +137,7 @@ const ExperienceShowcase = () => {
           {/* 360 Video Booth - Second */}
           <Card className="hover-scale shadow">
             <article>
-              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
+              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 md:h-auto w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
                 <CardTitle className="font-display text-2xl">360 Video Booth</CardTitle>
               </CardHeader>
