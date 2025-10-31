@@ -107,10 +107,10 @@ const ExperienceShowcase = () => {
           {/* Instant Print Booth - First */}
           <Card className="hover-scale shadow">
             <article>
-            <picture>
-              <source media="(min-width: 768px)" srcSet="/lovable-uploads/31b17396-227f-48f7-be79-ee21b41f3529.png" />
-              <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
-            </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcSet="/lovable-uploads/31b17396-227f-48f7-be79-ee21b41f3529.png" />
+                <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Guests in blue at instant print photo booth setup" className="h-64 w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
+              </picture>
               <CardHeader>
                 <CardTitle className="font-display text-2xl">Instant Print Booth</CardTitle>
               </CardHeader>
@@ -137,7 +137,7 @@ const ExperienceShowcase = () => {
           {/* 360 Video Booth - Second */}
           <Card className="hover-scale shadow">
             <article>
-              <img src="/lovable-uploads/red-rose-booth.png" alt="Luxury 360° video booth setup with red rose backdrop" className="h-64 w-full object-cover object-top rounded-t-lg" loading="lazy" />
+              <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="Luxury 360° video booth setup in an elegant venue" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
                 <CardTitle className="font-display text-2xl">360 Video Booth</CardTitle>
               </CardHeader>
@@ -161,12 +161,12 @@ const ExperienceShowcase = () => {
             </article>
           </Card>
 
-          {/* Glamour Experience Booth */}
-          <Card className="hover-scale shadow">
+          {/* Glamour Experience Booth - Hidden (uncomment to show) */}
+          {/* <Card className="hover-scale shadow">
             <article>
               <img src={glamourPlaceholder} alt="Elegant photo booth setup with professional lighting and a sleek black tension backdrop, showing guests taking sophisticated portrait-style photos" className="h-64 w-full object-cover rounded-t-lg" loading="lazy" />
               <CardHeader>
-                <CardTitle className="font-display text-2xl">Glamour Experience Booth</CardTitle>
+                <CardTitle className="font-display text-2xl">Glammer Experiance Booth</CardTitle>
                 <p className="text-sm text-primary font-medium mt-1">Capture Your Best Self - Professional beauty portraits with instant prints</p>
               </CardHeader>
               <CardContent>
@@ -189,7 +189,7 @@ const ExperienceShowcase = () => {
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Milestone celebrations, anniversary parties, and sophisticated gatherings where guests want to feel effortlessly beautiful</p>
               </CardContent>
             </article>
-          </Card>
+          </Card> */}
 
           {/* Branded Experience Booth - Hidden (uncomment to show) */}
           {/* <Card className="hover-scale shadow">
