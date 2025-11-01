@@ -91,7 +91,7 @@ const ExperienceShowcase = () => {
         <header className="mb-10 text-center">
           <h2 className="font-display text-3xl md:text-4xl text-secondary">Ways to Celebrate  </h2>
         </header>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Instant Print Booth - First */}
           <Card className="hover-scale shadow">
             <article>
