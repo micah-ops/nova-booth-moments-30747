@@ -9,7 +9,7 @@ const Wedding = () => {
   const weddingGalleryImages = ["/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png", "/lovable-uploads/ef3f80c8-3dae-4e44-a4e2-3701179b68e2.png", "/lovable-uploads/3266919b-6cb3-43ec-8b86-168a5f017b4c.png", "/lovable-uploads/697e23b3-c63c-4f9a-840a-d563f20eff00.png", "/lovable-uploads/777b182d-e831-4b76-a7a1-1a883a58e5e0.png", "/lovable-uploads/449b6433-4d31-423a-8c1c-aca508ca618b.png", "/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png", "/lovable-uploads/31b17396-227f-48f7-be79-ee21b41f3529.png", "/lovable-uploads/3a4f8ac3-9d22-4437-9f06-8025bddee86b.png", "/lovable-uploads/10dbd9f5-eaeb-41eb-a964-ee632beaa839.png", "/lovable-uploads/16550f1b-9006-4492-a469-496d83d8a73d.png", "/lovable-uploads/1e2595f5-4056-43df-b13e-b155d29b9dae.png"];
   return <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="py-6 bg-background border-b border-border">
+      <header className="py-3 bg-background border-b border-border">
         <div className="container mx-auto px-4 flex justify-center">
           <img 
             src="/src/assets/perfect-booth-logo.png" 
