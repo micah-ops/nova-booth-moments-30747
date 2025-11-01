@@ -11,11 +11,7 @@ const Wedding = () => {
       {/* Header */}
       <header className="py-1 bg-background border-b border-border">
         <div className="container mx-auto px-4 flex justify-center">
-          <img 
-            src="/src/assets/perfect-booth-logo.png" 
-            alt="Perfect Booth" 
-            className="h-12 md:h-16"
-          />
+          
         </div>
       </header>
 
