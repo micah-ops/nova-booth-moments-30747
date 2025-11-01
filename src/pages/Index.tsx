@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star, Phone, Mail } from "lucide-react";
+import { Star } from "lucide-react";
 import heroImage from "@/assets/hero-nova-booth.jpg";
 import glamourPlaceholder from "@/assets/glamour-booth-placeholder.jpg";
 import perfectBoothLogo from "@/assets/perfect-booth-logo.png";
@@ -65,19 +65,7 @@ const Hero = () => {
     </section>;
 };
 const ClientLogos = () => {
-  const companies = [
-    "Amazon",
-    "Microsoft",
-    "Lululemon",
-    "Remax",
-    "WeWork",
-    "OHSU",
-    "Deckers",
-    "Otak",
-    "UCHealth",
-    "Nike"
-  ];
-  
+  const companies = ["Amazon", "Microsoft", "Lululemon", "Remax", "WeWork", "OHSU", "Deckers", "Otak", "UCHealth", "Nike"];
   return <section className="bg-primary py-12 overflow-hidden" aria-label="Trusted by leading companies">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-white/90 text-sm font-medium tracking-wide mb-8 uppercase">
@@ -109,7 +97,7 @@ const ExperienceShowcase = () => {
             <article>
               <picture>
                 <source media="(min-width: 768px)" srcSet="/lovable-uploads/print-booth-package.png" />
-                <img src="/lovable-uploads/IMG_6198.jpg" alt="Instant print photo booth experience with various backdrops" className="h-64 md:h-auto w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
+                <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Instant print photo booth experience with various backdrops" className="h-64 md:h-auto w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               </picture>
               <CardHeader>
                 <CardTitle className="font-display text-2xl">Instant Print Booth</CardTitle>
@@ -189,7 +177,7 @@ const ExperienceShowcase = () => {
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Milestone celebrations, anniversary parties, and sophisticated gatherings where guests want to feel effortlessly beautiful</p>
               </CardContent>
             </article>
-          </Card> */}
+           </Card> */}
 
           {/* Branded Experience Booth - Hidden (uncomment to show) */}
           {/* <Card className="hover-scale shadow">
@@ -220,7 +208,7 @@ const ExperienceShowcase = () => {
                 <p className="mt-4 text-muted-foreground text-sm">Perfect for: Corporate conferences, product launches, company celebrations, and networking events and brand activations where professional image and brand consistency matter</p>
               </CardContent>
             </article>
-          </Card> */}
+           </Card> */}
         </div>
         <div id="experiences-cta" className="mt-8 text-center">
           <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg">Reserve Your Experience</Button></a>
@@ -230,24 +218,19 @@ const ExperienceShowcase = () => {
 };
 const Gallery = () => {
   // Add your gallery images here
-  const images: { src: string; alt: string }[] = [
+  const images: {
+    src: string;
+    alt: string;
+  }[] = [
     // Example:
     // { src: "/path/to/image1.jpg", alt: "Description of image 1" },
   ];
-
   return <section id="gallery" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {images.map((img, i) => (
-            <figure key={i} className="break-inside-avoid overflow-hidden rounded-lg shadow hover-scale mb-4">
-              <img 
-                src={img.src} 
-                alt={img.alt} 
-                loading="lazy" 
-                className="w-full h-auto object-cover" 
-              />
-            </figure>
-          ))}
+          {images.map((img, i) => <figure key={i} className="break-inside-avoid overflow-hidden rounded-lg shadow hover-scale mb-4">
+              <img src={img.src} alt={img.alt} loading="lazy" className="w-full h-auto object-cover" />
+            </figure>)}
         </div>
       </div>
     </section>;
@@ -410,13 +393,13 @@ const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24"
       </header>
       <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-3">
         <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer" aria-label="Request a quote from Perfect Booth">
-          <Button variant="hero" size="lg">Reserve Your Date Now</Button>
+          <Button variant="hero" size="lg" className="px-[30px] mx-[40px]">Reserve Your Date Now</Button>
         </a>
         <a href="tel:+1234567890" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Call Perfect Booth">
-          <Phone className="h-5 w-5" /> <span>Click to Call</span>
+           
         </a>
         <a href="mailto:micah@perfect-booth.com" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Perfect Booth">
-          <Mail className="h-5 w-5" /> <span>micah@perfect-booth.com</span>
+           
         </a>
       </div>
       <p className="mt-3 text-center text-xs text-secondary-foreground/80">We respond within 2 hours</p>
@@ -432,7 +415,7 @@ Join the Team
 Partners
 The Perfect Booth Unit
 About Us
-<a href="/wedding" className="story-link hover:text-primary">Wedding Experiences</a>
+        <a href="/wedding" className="story-link hover:text-primary">Wedding Experiences</a>
 
 
 
