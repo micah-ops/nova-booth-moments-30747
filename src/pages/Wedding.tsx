@@ -14,7 +14,7 @@ const Wedding = () => {
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="https://rvmediahost.s3.us-west-2.amazonaws.com/pb.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/5 to-background/20"></div>
+        <div className="absolute inset-0 bg-secondary/60"></div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-6xl mx-auto">
