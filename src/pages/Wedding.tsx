@@ -12,7 +12,7 @@ const Wedding = () => {
       {/* Header */}
       <header className="h-[6.5vh] bg-background border-b border-border flex items-center justify-center">
         <div className="container mx-auto px-4 flex justify-center">
-          <img src={perfectBoothLogo} alt="Perfect Booth" className="h-[60px]" />
+          <img src={perfectBoothLogo} alt="Perfect Booth" className="h-[30px]" />
         </div>
       </header>
 
