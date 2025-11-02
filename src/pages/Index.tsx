@@ -25,7 +25,7 @@ const Header = () => {
   return <header className={`fixed top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto flex h-12 items-center justify-between md:justify-between">
         <a href="#top" className="inline-flex items-center gap-2 mx-auto md:mx-0" aria-label="Perfect Booth Home">
-          <img src={perfectBoothLogo} alt="Perfect Booth logo" className="h-20 w-auto md:h-[4.2rem]" width="120" height="36" loading="eager" decoding="async" />
+          <img src={perfectBoothLogo} alt="Perfect Booth logo" className="h-12 w-auto md:h-[2.5rem]" width="120" height="36" loading="eager" decoding="async" />
           <span className="sr-only">PERFECT BOOTH</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
