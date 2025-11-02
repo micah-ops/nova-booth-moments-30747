@@ -50,7 +50,7 @@ const Hero = () => {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-enter">
             <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg">Reserve Your Date</Button></a>
-            <a href="#experiences"><Button variant="secondary" size="lg">See Our Experiences</Button></a>
+            
           </div>
           <div className="mt-6 flex items-center gap-2 text-sm">
             <div className="flex text-primary">
