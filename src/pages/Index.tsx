@@ -421,16 +421,7 @@ About Us
 
       </p>
       </div>
-      <div>
-        <p className="font-medium">Service Areas</p>
-        <p className="text-secondary-foreground/80">- The PNW
-- Oregon
-- Washington
-- Denver CO
-- Houston TX 
--Tampa FL
--</p>
-      </div>
+      
       <div className="md:text-right">
         <a href="https://instagram.com" target="_blank" rel="noreferrer" className="story-link">Instagram</a>
         <div className="mt-2 space-x-3">
