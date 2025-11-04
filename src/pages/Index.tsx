@@ -409,17 +409,14 @@ const Footer = () => <footer className="bg-secondary text-secondary-foreground p
     <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
       <div>
         <p className="font-display tracking-wider">PERFECT BOOTH</p>
-        <p className="mt-2 text-secondary-foreground/80">Luxury 360° video & instant print experiences.
-
-Join the Team
-Partners
-The Perfect Booth Unit
-About Us
-        <a href="/wedding" className="story-link hover:text-primary">Wedding Experiences</a>
-
-
-
-      </p>
+        <ul className="mt-2 text-secondary-foreground/80 space-y-1 list-disc pl-5">
+          <li>Luxury 360° video & instant print experiences</li>
+          <li>Join the Team</li>
+          <li>Partners</li>
+          <li>The Perfect Booth Unit</li>
+          <li>About Us</li>
+          <li><a href="/wedding" className="story-link hover:text-primary">Wedding Experiences</a></li>
+        </ul>
       </div>
       
       <div className="md:text-right">
