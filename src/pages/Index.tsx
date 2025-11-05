@@ -311,13 +311,17 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
       <header className="mb-8 text-center">
         <h2 className="font-display text-3xl md:text-4xl text-secondary">Everything You Need to Know</h2>
       </header>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <h3 className="font-display text-xl mb-4">General Questions</h3>
-          <Accordion type="single" collapsible className="w-full">
-            {[{
-            "q": "How many photos or videos can my guests create during the event?",
+      <div className="max-w-3xl mx-auto">
+        <Accordion type="single" collapsible className="w-full">
+          {[{
+            "q": "How many photos can my guests create during the event?",
             "a": "As many as they like within your booked timeframe. There's no limit to the fun."
+          }, {
+            "q": "How quickly do the photos print?",
+            "a": "Photos print in about 30 seconds with beautiful color and clarity."
+          }, {
+            "q": "Do guests also get digital versions?",
+            "a": "Yes, guests receive digital copies to share right away."
           }, {
             "q": "When should I secure my date?",
             "a": "Popular dates book quickly—reserve as early as possible to ensure availability."
@@ -327,16 +331,7 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
           }, {
             "q": "How much time do you need for setup and removal?",
             "a": "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
-          }].map((f, i) => <AccordionItem key={i} value={`g-${i}`}>
-                <AccordionTrigger>{f.q}</AccordionTrigger>
-                <AccordionContent>{f.a}</AccordionContent>
-              </AccordionItem>)}
-          </Accordion>
-        </div>
-        <div>
-          <h3 className="font-display text-xl mb-4">Space & Venue Requirements</h3>
-          <Accordion type="single" collapsible className="w-full">
-            {[{
+          }, {
             "q": "What space do you need at our venue?",
             "a": "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."
           }, {
@@ -345,36 +340,10 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
           }, {
             "q": "Can we provide our own backdrop or decorations?",
             "a": "Yes. We'll coordinate to ensure your decor complements our curated setup."
-          }].map((f, i) => <AccordionItem key={i} value={`v-${i}`}>
-                <AccordionTrigger>{f.q}</AccordionTrigger>
-                <AccordionContent>{f.a}</AccordionContent>
-              </AccordionItem>)}
-          </Accordion>
-        </div>
-      </div>
-
-      <div className="mt-8">
-        <h3 className="font-display text-xl mb-4">Experience-Specific Questions</h3>
-        <Accordion type="multiple" className="w-full">
-          {[{
-          "q": "How quickly do the photos print?",
-          "a": "Instantly—prints are ready within seconds with beautiful color and clarity."
-        }, {
-          "q": "Do guests also get digital versions?",
-          "a": "Yes, guests receive digital copies to share right away."
-        }, {
-          "q": "How do guests access their 360° videos?",
-          "a": "We provide an easy link or QR code for instant download and sharing."
-        }, {
-          "q": "What's the video quality like?",
-          "a": "Cinematic quality with smooth motion and elegant color—designed to look stunning on social."
-        }, {
-          "q": "How do I get pricing for my specific event?",
-          "a": "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."
-        }, {
-          "q": "Do you service my area?",
-          "a": "We serve weddings and events throughout the region—contact us to confirm your venue."
-        }].map((f, i) => <AccordionItem key={i} value={`x-${i}`}>
+          }, {
+            "q": "How do I get pricing for my specific event?",
+            "a": "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."
+          }].map((f, i) => <AccordionItem key={i} value={`faq-${i}`}>
               <AccordionTrigger>{f.q}</AccordionTrigger>
               <AccordionContent>{f.a}</AccordionContent>
             </AccordionItem>)}
