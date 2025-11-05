@@ -405,29 +405,41 @@ const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24"
       <p className="mt-3 text-center text-xs text-secondary-foreground/80">We respond within 2 hours</p>
     </div>
   </section>;
-const Footer = () => <footer className="bg-secondary text-secondary-foreground py-10">
-    <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-      <div>
-        <p className="font-display tracking-wider">PERFECT BOOTH</p>
-        <ul className="mt-2 text-secondary-foreground/80 space-y-1 list-disc pl-5">
-          <li>Luxury 360° video & instant print experiences</li>
-          <li>Join the Team</li>
-          <li>Partners</li>
-          <li>The Perfect Booth Unit</li>
-          <li>About Us</li>
-          <li><a href="/wedding" className="story-link hover:text-primary">Wedding Experiences</a></li>
-        </ul>
-      </div>
-      
-      <div className="md:text-right">
-        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="story-link">Instagram</a>
-        <div className="mt-2 space-x-3">
-          <a href="#" className="hover:text-primary">Privacy Policy</a>
-          <a href="#" className="hover:text-primary">Terms</a>
+const Footer = () => <footer className="bg-secondary text-secondary-foreground py-16">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-secondary-foreground/20">
+        <div className="md:col-span-2">
+          <h3 className="font-display text-xl tracking-wider mb-4">PERFECT BOOTH</h3>
+          <p className="text-secondary-foreground/80 leading-relaxed max-w-md">
+            Luxury 360° video & instant print experiences for your most memorable events.
+          </p>
+        </div>
+        
+        <div>
+          <h4 className="font-display tracking-wider text-sm mb-4">EXPLORE</h4>
+          <nav className="space-y-3">
+            <a href="/wedding" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Wedding Experiences</a>
+            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">The Perfect Booth Unit</a>
+            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">About Us</a>
+            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Join the Team</a>
+            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Partners</a>
+          </nav>
+        </div>
+        
+        <div>
+          <h4 className="font-display tracking-wider text-sm mb-4">CONNECT</h4>
+          <nav className="space-y-3">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Instagram</a>
+            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Terms of Service</a>
+          </nav>
         </div>
       </div>
+      
+      <div className="pt-8 text-center md:text-left">
+        <p className="text-sm text-secondary-foreground/70">© {new Date().getFullYear()} Perfect Booth. All rights reserved.</p>
+      </div>
     </div>
-    <div className="container mx-auto px-4 mt-6 text-xs text-secondary-foreground/70">© {new Date().getFullYear()} Perfect Booth. All rights reserved.</div>
   </footer>;
 const StructuredData = () => {
   const data = {
