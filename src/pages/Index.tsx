@@ -399,8 +399,8 @@ const Footer = () => <footer className="bg-secondary text-secondary-foreground p
           <h4 className="font-display tracking-wider text-sm mb-4">CONNECT</h4>
           <nav className="space-y-3">
             <a href="https://instagram.com" target="_blank" rel="noreferrer" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Instagram</a>
-            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Terms of Service</a>
+            <a href="/privacy-policy" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Terms of Service</a>
           </nav>
         </div>
       </div>
