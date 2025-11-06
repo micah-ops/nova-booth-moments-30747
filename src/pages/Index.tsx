@@ -30,7 +30,7 @@ const Header = () => {
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <a href="#experiences" className="hover:text-secondary transition-colors story-link">Experiences</a>
-          <a href="#gallery" className="hover:text-secondary transition-colors story-link">Gallery</a>
+          
           <a href="#faq" className="hover:text-secondary transition-colors story-link">FAQ</a>
         </nav>
       </div>
@@ -314,36 +314,36 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
       <div className="max-w-3xl mx-auto">
         <Accordion type="single" collapsible className="w-full">
           {[{
-            "q": "How many photos can my guests create during the event?",
-            "a": "As many as they like within your booked timeframe. There's no limit to the fun."
-          }, {
-            "q": "How quickly do the photos print?",
-            "a": "Photos print in about 30 seconds with beautiful color and clarity."
-          }, {
-            "q": "Do guests also get digital versions?",
-            "a": "Yes, guests receive digital copies to share right away."
-          }, {
-            "q": "When should I secure my date?",
-            "a": "Popular dates book quickly—reserve as early as possible to ensure availability."
-          }, {
-            "q": "Will someone be there to assist our guests?",
-            "a": "Yes, a professional attendant curates the experience and ensures everything runs smoothly."
-          }, {
-            "q": "How much time do you need for setup and removal?",
-            "a": "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
-          }, {
-            "q": "What space do you need at our venue?",
-            "a": "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."
-          }, {
-            "q": "Is setup and breakdown included in our experience?",
-            "a": "Absolutely—all setup and breakdown is included with every booking."
-          }, {
-            "q": "Can we provide our own backdrop or decorations?",
-            "a": "Yes. We'll coordinate to ensure your decor complements our curated setup."
-          }, {
-            "q": "How do I get pricing for my specific event?",
-            "a": "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."
-          }].map((f, i) => <AccordionItem key={i} value={`faq-${i}`}>
+          "q": "How many photos can my guests create during the event?",
+          "a": "As many as they like within your booked timeframe. There's no limit to the fun."
+        }, {
+          "q": "How quickly do the photos print?",
+          "a": "Photos print in about 30 seconds with beautiful color and clarity."
+        }, {
+          "q": "Do guests also get digital versions?",
+          "a": "Yes, guests receive digital copies to share right away."
+        }, {
+          "q": "When should I secure my date?",
+          "a": "Popular dates book quickly—reserve as early as possible to ensure availability."
+        }, {
+          "q": "Will someone be there to assist our guests?",
+          "a": "Yes, a professional attendant curates the experience and ensures everything runs smoothly."
+        }, {
+          "q": "How much time do you need for setup and removal?",
+          "a": "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
+        }, {
+          "q": "What space do you need at our venue?",
+          "a": "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."
+        }, {
+          "q": "Is setup and breakdown included in our experience?",
+          "a": "Absolutely—all setup and breakdown is included with every booking."
+        }, {
+          "q": "Can we provide our own backdrop or decorations?",
+          "a": "Yes. We'll coordinate to ensure your decor complements our curated setup."
+        }, {
+          "q": "How do I get pricing for my specific event?",
+          "a": "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."
+        }].map((f, i) => <AccordionItem key={i} value={`faq-${i}`}>
               <AccordionTrigger>{f.q}</AccordionTrigger>
               <AccordionContent>{f.a}</AccordionContent>
             </AccordionItem>)}
