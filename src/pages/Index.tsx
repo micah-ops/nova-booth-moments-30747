@@ -387,7 +387,7 @@ const Footer = () => <footer className="bg-secondary text-secondary-foreground p
         <div>
           <h4 className="font-display tracking-wider text-sm mb-4">EXPLORE</h4>
           <nav className="space-y-3">
-            <a href="/wedding" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Wedding Experiences</a>
+            
             <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">The Perfect Booth Unit</a>
             <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">About Us</a>
             <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Join the Team</a>
