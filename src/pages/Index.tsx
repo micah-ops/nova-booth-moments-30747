@@ -295,7 +295,7 @@ const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-sm md:text-base">"{t.quote}"</p>
+              <p className="text-sm md:text-base">&quot;I hired Perfect Booth for my wedding reception and it was amazing! ... They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event.&quot;{t.quote}"</p>
               <p className="mt-3 text-sm text-muted-foreground">— {t.author}</p>
             </CardContent>
           </Card>)}
