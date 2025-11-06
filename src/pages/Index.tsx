@@ -278,14 +278,14 @@ const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
       </header>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[{
-        "quote": "Perfect Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!",
-        "author": "Sarah & Michael, Garden Wedding"
+        "quote": "They were so helpful and the response time was amazing, compared to other Photo Booth companies I've talked to. I appreciated every aspect of the process and my wife and I couldn't have asked for a better experience.",
+        "author": "Timothy and Hannah - Wedding"
       }, {
-        "quote": "Professional, reliable, and the photo quality was incredible. Our employees loved the instant prints, and the setup perfectly matched our event's aesthetic. Will definitely book again!",
-        "author": "Jennifer, Corporate Event Manager"
+        "quote": "Best photo booth experience ever! The quality of the photos were amazing! My guests talked about it non-stop. The pictures printed instantly! We also got to custom make the background which was the highlight of it. I would book Perfect Booth for all my future events.",
+        "author": "Jenni Luu - Birthday"
       }, {
-        "quote": "The team was amazing! They made sure everything ran smoothly, and the prints were such high quality our guests thought they were professional photos. Worth every penny!",
-        "author": "David & Lisa, Historic Venue Wedding"
+        "quote": "I hired Perfect Booth for my wedding reception and it was amazing! Their pricing was very fair and very customizable based on time which was so nice! They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event.",
+        "author": "Katie Yoshioka - Wedding"
       }].map((t, i) => <Card key={i} className="shadow">
             <CardHeader>
               <div className="flex text-primary">
