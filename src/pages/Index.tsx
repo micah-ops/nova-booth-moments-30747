@@ -96,7 +96,8 @@ const ExperienceShowcase = () => {
           <Card className="hover-scale shadow">
             <article>
               <picture>
-                <img src="/lovable-uploads/instant-print-booth.png" alt="Instant print photo booth experience with various backdrops" className="h-64 md:h-auto w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
+                <source media="(min-width: 768px)" srcSet="/lovable-uploads/print-booth-package.png" />
+                <img src="/lovable-uploads/73fc2b5b-6330-4045-87c6-ce04371076e0.png" alt="Instant print photo booth experience with various backdrops" className="h-64 md:h-auto w-full object-cover object-center md:object-top rounded-t-lg" loading="lazy" />
               </picture>
               <CardHeader>
                 <CardTitle className="font-display text-2xl">Instant Print Booth</CardTitle>
@@ -386,7 +387,7 @@ const Footer = () => <footer className="bg-secondary text-secondary-foreground p
         <div>
           <h4 className="font-display tracking-wider text-sm mb-4">EXPLORE</h4>
           <nav className="space-y-3">
-            
+            <a href="/wedding" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Wedding Experiences</a>
             <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">The Perfect Booth Unit</a>
             <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">About Us</a>
             <a href="#" className="block text-secondary-foreground/80 hover:text-primary transition-colors">Join the Team</a>
