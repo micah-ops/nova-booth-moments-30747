@@ -117,7 +117,7 @@ const ExperienceShowcase = () => {
                     <p className="text-sm text-muted-foreground">Create instant memories with professional-quality prints that guests can take home immediately. Our high-end printing technology ensures every photo becomes a treasured keepsake from your special day.</p>
                   </div>
                 </div>
-                <p className="mt-4 text-muted-foreground text-sm">Perfect for: Reception fun, guest entertainment, and party favors</p>
+                
               </CardContent>
             </article>
           </Card>
@@ -144,7 +144,7 @@ const ExperienceShowcase = () => {
                     <p className="text-sm text-muted-foreground">Experience the magic of cinematic 360° video capture that creates stunning, shareable moments from every angle. Perfect for capturing those special celebratory moments that deserve to be seen from all perspectives.</p>
                   </div>
                 </div>
-                <p className="mt-4 text-muted-foreground text-sm">Perfect for: First dances, toasts, and unforgettable celebrations</p>
+                
               </CardContent>
             </article>
           </Card>
