@@ -5,44 +5,36 @@ import { FaPalette, FaHeart, FaStar, FaPhone, FaEnvelope } from "react-icons/fa"
 import { FaConciergeBell } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
-
-const reviews = [
-  {
-    name: "Max Barenberg",
-    text: "Awesome booth! Everyone at the party was raving. Worth the money for sure!!",
-    shortText: "Awesome booth! Everyone at the party was raving."
-  },
-  {
-    name: "Susan Vandervlugt",
-    text: "Super friendly staff and cute set up at the wedding this weekend! Love the vibe!",
-    shortText: "Super friendly staff and cute set up! Love the vibe!"
-  },
-  {
-    name: "Katie Yoshioka",
-    text: "I hired Perfect Booth for my wedding reception and it was amazing! Their pricing was very fair and very customizable based on time which was so nice! They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event.",
-    shortText: "Amazing! Fair pricing, customizable, and so much fun! 10/10 recommend for any event."
-  },
-  {
-    name: "Jenny Payne",
-    text: "Such a great team! Kids had a blast and perfect booth was PERFECT! Great communication and professional.",
-    shortText: "Great team! Kids had a blast. Perfect communication and professional."
-  }
-];
+const reviews = [{
+  name: "Max Barenberg",
+  text: "Awesome booth! Everyone at the party was raving. Worth the money for sure!!",
+  shortText: "Awesome booth! Everyone at the party was raving."
+}, {
+  name: "Susan Vandervlugt",
+  text: "Super friendly staff and cute set up at the wedding this weekend! Love the vibe!",
+  shortText: "Super friendly staff and cute set up! Love the vibe!"
+}, {
+  name: "Katie Yoshioka",
+  text: "I hired Perfect Booth for my wedding reception and it was amazing! Their pricing was very fair and very customizable based on time which was so nice! They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event.",
+  shortText: "Amazing! Fair pricing, customizable, and so much fun! 10/10 recommend for any event."
+}, {
+  name: "Jenny Payne",
+  text: "Such a great team! Kids had a blast and perfect booth was PERFECT! Great communication and professional.",
+  shortText: "Great team! Kids had a blast. Perfect communication and professional."
+}];
 const Wedding = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [currentReview, setCurrentReview] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const weddingGalleryImages = ["/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png"];
-
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible(false);
       setTimeout(() => {
-        setCurrentReview((prev) => (prev + 1) % reviews.length);
+        setCurrentReview(prev => (prev + 1) % reviews.length);
         setIsVisible(true);
       }, 500);
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
   return <div className="min-h-screen bg-background">
@@ -116,15 +108,10 @@ const Wedding = () => {
                   Give your guests beautiful, high-quality prints they can take home as instant wedding favors. Our elegant setups complement your wedding aesthetic while providing endless entertainment.
                 </p>
                 <div className="mb-4">
-                  <h4 className="font-display font-semibold text-foreground mb-2">Perfect For:</h4>
-                  <p className="text-sm text-muted-foreground">Reception entertainment, Wedding Favors, cocktail hour</p>
+                  
+                  
                 </div>
-                <div className="p-4 bg-accent rounded-lg">
-                  <h4 className="font-display font-semibold text-accent-foreground mb-1">
-                </h4>
-                  <p className="text-sm text-accent-foreground">
-                </p>
-                </div>
+                
               </CardContent>
             </Card>
 
@@ -137,14 +124,10 @@ const Wedding = () => {
                 <h3 className="text-2xl font-display font-bold mb-4 text-foreground">360 Video Booth Experience</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">Experience the magic of cinematic 360° video capture that creates stunning, shareable moments from every angle</p>
                 <div className="mb-4">
-                  <h4 className="font-display font-semibold text-foreground mb-2">Perfect For:</h4>
-                  <p className="text-sm text-muted-foreground">First dance, grand entrance, bouquet toss, special toasts</p>
+                  
+                  
                 </div>
-                <div className="p-4 bg-accent rounded-lg">
-                  <h4 className="font-display font-semibold text-accent-foreground mb-1">
-                </h4>
-                  <p className="text-sm text-accent-foreground">Creates shareable moments your guests will post about for months</p>
-                </div>
+                
               </CardContent>
             </Card>
           </div>
