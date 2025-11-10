@@ -330,7 +330,7 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
           "a": "Yes, a professional attendant curates the experience and ensures everything runs smoothly."
         }, {
           "q": "How much time do you need for setup and removal?",
-          "a": "We typically require 60–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
+          "a": "We typically require 30–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
         }, {
           "q": "What space do you need at our venue?",
           "a": "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."
