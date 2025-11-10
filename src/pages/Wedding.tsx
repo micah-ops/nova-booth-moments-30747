@@ -70,9 +70,7 @@ const Wedding = () => {
 
             <div className="flex justify-center mb-8">
               <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="text-lg px-8 py-4 h-auto bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">
-                  Reserve Your Date
-                </Button>
+                <Button size="lg" className="text-lg px-8 py-4 h-auto bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">Get Free Quote</Button>
               </a>
             </div>
 
