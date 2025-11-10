@@ -374,21 +374,9 @@ const Wedding = () => {
             </a>
             
             <div className="space-y-4 text-white/90">
-              <div className="flex items-center justify-center gap-2">
-                <FaPhone className="text-primary" />
-                <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                  (123) 456-7890
-                </a>
-              </div>
-              <div className="flex items-center justify-center gap-2">
-                <FaEnvelope className="text-primary" />
-                <a href="mailto:weddings@novabooth.com" className="hover:text-primary transition-colors">
-                  weddings@novabooth.com
-                </a>
-              </div>
-              <p className="text-sm opacity-80">
-                We respond within 2 hours and offer complimentary wedding consultations
-              </p>
+              
+              
+              <p className="text-sm opacity-80">We respond within 2 hours </p>
             </div>
           </div>
         </div>
