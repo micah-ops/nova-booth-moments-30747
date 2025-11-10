@@ -9,13 +9,6 @@ const Wedding = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const weddingGalleryImages = ["/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png"];
   return <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="h-[6.5vh] bg-background border-b border-border flex items-center justify-center">
-        <div className="container mx-auto px-4 flex justify-center">
-          <img src={perfectBoothLogo} alt="Perfect Booth" className="h-[30px]" />
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
