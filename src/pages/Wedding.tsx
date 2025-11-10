@@ -3,11 +3,48 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FaPalette, FaHeart, FaStar, FaPhone, FaEnvelope } from "react-icons/fa";
 import { FaConciergeBell } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
+
+const reviews = [
+  {
+    name: "Max Barenberg",
+    text: "Awesome booth! Everyone at the party was raving. Worth the money for sure!!",
+    shortText: "Awesome booth! Everyone at the party was raving."
+  },
+  {
+    name: "Susan Vandervlugt",
+    text: "Super friendly staff and cute set up at the wedding this weekend! Love the vibe!",
+    shortText: "Super friendly staff and cute set up! Love the vibe!"
+  },
+  {
+    name: "Katie Yoshioka",
+    text: "I hired Perfect Booth for my wedding reception and it was amazing! Their pricing was very fair and very customizable based on time which was so nice! They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event.",
+    shortText: "Amazing! Fair pricing, customizable, and so much fun! 10/10 recommend for any event."
+  },
+  {
+    name: "Jenny Payne",
+    text: "Such a great team! Kids had a blast and perfect booth was PERFECT! Great communication and professional.",
+    shortText: "Great team! Kids had a blast. Perfect communication and professional."
+  }
+];
 const Wedding = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
+  const [currentReview, setCurrentReview] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
   const weddingGalleryImages = ["/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentReview((prev) => (prev + 1) % reviews.length);
+        setIsVisible(true);
+      }, 500);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -25,16 +62,17 @@ const Wedding = () => {
               Professional photo experiences that entertain your guests while creating beautiful memories of your special day
             </p>
 
-            {/* Embedded Review Card */}
-            <Card className="max-w-4xl mx-auto mb-12 bg-white/10 backdrop-blur-md border-white/20">
-              <CardContent className="p-8">
-                <div className="flex justify-center mb-4">
-                  {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-xl" />)}
+            {/* Rotating Review Card */}
+            <Card className={`max-w-4xl mx-auto mb-8 md:mb-12 bg-white/10 backdrop-blur-md border-white/20 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+              <CardContent className="p-6 md:p-8">
+                <div className="flex justify-center mb-3 md:mb-4">
+                  {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-base md:text-xl" />)}
                 </div>
-                <blockquote className="text-lg md:text-xl font-sans italic mb-4 text-white">
-                  "Perfect Booth was the BEST decision we made for our wedding! The 360° videos of our first dance are absolutely magical, and our guests are still talking about how much fun they had. The setup was so elegant it looked like part of our decor!"
+                <blockquote className="text-base md:text-lg lg:text-xl font-sans italic mb-3 md:mb-4 text-white">
+                  <span className="md:hidden">"{reviews[currentReview].shortText}"</span>
+                  <span className="hidden md:inline">"{reviews[currentReview].text}"</span>
                 </blockquote>
-                <cite className="text-white/80 font-sans">- Sarah & Michael</cite>
+                <cite className="text-white/80 font-sans text-sm md:text-base">- {reviews[currentReview].name}</cite>
               </CardContent>
             </Card>
 
