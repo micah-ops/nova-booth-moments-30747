@@ -75,7 +75,7 @@ const Wedding = () => {
             </div>
 
             <p className="text-white/90 font-sans flex items-center justify-center gap-2">
-              <FaStar className="text-primary" />
+              {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary" />)}
               Rated by 100+ Happy Couples
             </p>
           </div>
