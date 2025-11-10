@@ -40,28 +40,28 @@ export default function ThankYou() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-secondary flex flex-col items-center justify-center px-4 py-12">
       <div className="max-w-2xl w-full text-center space-y-8">
         <div className="flex justify-center">
           <CheckCircle className="w-20 h-20 text-primary animate-scale-in" />
         </div>
         
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-secondary-foreground">
             Thank You!
           </h1>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-secondary-foreground/80">
             We've received your request and will get back to you shortly.
           </p>
         </div>
 
-        <div className="bg-card border border-border rounded-lg p-8 min-h-[200px] flex flex-col justify-center">
+        <div className="bg-card/5 border border-secondary-foreground/20 rounded-lg p-8 min-h-[200px] flex flex-col justify-center">
           <div
             className={`transition-opacity duration-500 ${
               isVisible ? "opacity-100" : "opacity-0"
             }`}
           >
-            <p className="text-foreground text-lg italic mb-4">
+            <p className="text-secondary-foreground text-lg italic mb-4">
               "{reviews[currentReview].text}"
             </p>
             <p className="text-primary font-semibold">
