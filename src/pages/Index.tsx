@@ -339,7 +339,7 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
           "a": "Absolutely—all setup and breakdown is included with every booking."
         }, {
           "q": "Can we provide our own backdrop or decorations?",
-          "a": "Yes. We'll coordinate to ensure your decor complements our curated setup."
+          "a": "Yes, they can provide your own backdrops and props."
         }, {
           "q": "How do I get pricing for my specific event?",
           "a": "Tap any 'Reserve Your Date' button to reach us. We'll tailor a quote to your celebration."
