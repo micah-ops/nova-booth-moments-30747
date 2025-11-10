@@ -217,7 +217,7 @@ const Wedding = () => {
       </section>
 
       {/* Wedding Testimonials */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-blue-950">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-foreground">
             What Couples Are Saying
