@@ -26,12 +26,7 @@ const Wedding = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [currentReview, setCurrentReview] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const weddingGalleryImages = [
-    "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png",
-    "/lovable-uploads/wedding-photo-strips.png",
-    "/lovable-uploads/wedding-booth-gold.png",
-    "/lovable-uploads/wedding-booth-sunset.png"
-  ];
+  const weddingGalleryImages = ["/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png", "/lovable-uploads/wedding-photo-strips.png", "/lovable-uploads/wedding-booth-gold.png", "/lovable-uploads/wedding-booth-sunset.png"];
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible(false);
@@ -379,7 +374,7 @@ const Wedding = () => {
             <div className="space-y-4 text-white/90">
               
               
-              <p className="text-sm opacity-80">We respond within 2 hours </p>
+              
             </div>
           </div>
         </div>
