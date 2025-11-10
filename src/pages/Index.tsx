@@ -333,7 +333,7 @@ const FAQ = () => <section id="faq" className="py-16 md:py-24">
           "a": "We typically require 30–90 minutes for setup and 45 minutes for breakdown, all handled by our team."
         }, {
           "q": "What space do you need at our venue?",
-          "a": "We recommend a 10'x10' area with nearby power. We'll tailor the layout to your venue."
+          "a": "We recommend a 10'x10' area with over 8 feet of vertical space for the backdrop and nearby power. We'll tailor the layout to your venue."
         }, {
           "q": "Is setup and breakdown included in our experience?",
           "a": "Absolutely—all setup and breakdown is included with every booking."
