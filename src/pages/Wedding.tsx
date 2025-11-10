@@ -96,14 +96,17 @@ const Wedding = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-secondary-foreground">
-            Three Ways to Make Your Wedding Unforgettable
+            Two Ways to Make Your Wedding Unforgettable
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Instant Print Experience */}
             <Card className="group hover-scale">
               <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
-                <img src="/src/assets/experience-print.jpg" alt="Instant Print Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <picture>
+                  <source media="(min-width: 768px)" srcSet="/lovable-uploads/print-booth-package.png" />
+                  <img src="/lovable-uploads/instant-print-booth-mobile.png" alt="Instant Print Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </picture>
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-display font-bold mb-4 text-foreground">Instant Print Booth
@@ -125,30 +128,10 @@ const Wedding = () => {
               </CardContent>
             </Card>
 
-            {/* Glamour Experience */}
-            <Card className="group hover-scale">
-              <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
-                <img src="/src/assets/glamour-booth-placeholder.jpg" alt="Glamour Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-display font-bold mb-4 text-foreground">Glamour Booth Experience</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">Let your guests step into the spotlight with professional beauty lighting and custom filters. Perfect for Creating Instagram-worthy photos your guests will love sharing.</p>
-                <div className="mb-4">
-                  <h4 className="font-display font-semibold text-foreground mb-2">Perfect For:</h4>
-                  <p className="text-sm text-muted-foreground">Getting ready photos, cocktail hour, bridal party portraits</p>
-                </div>
-                <div className="p-4 bg-accent rounded-lg">
-                  <h4 className="font-display font-semibold text-accent-foreground mb-1">
-                </h4>
-                  <p className="text-sm text-accent-foreground">Creates Instagram-worthy photos your guests will love sharing</p>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* 360° Experience */}
             <Card className="group hover-scale">
               <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
-                <img src="/src/assets/experience-360.jpg" alt="360° Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png" alt="360° Wedding Experience" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-display font-bold mb-4 text-foreground">360 Video Booth Experience</h3>
