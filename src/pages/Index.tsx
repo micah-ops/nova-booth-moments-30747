@@ -302,7 +302,7 @@ const Reviews = () => <section className="py-16 md:py-24 bg-secondary">
       </div>
       <p className="mt-6 text-center text-sm text-muted-foreground">Join 100+ happy clients who chose Perfect Booth</p>
       <div className="mt-6 text-center">
-        <a href="#contact"><Button variant="hero" size="lg">Add Your Celebration to Our Story</Button></a>
+        <a href="#contact"><Button variant="hero" size="lg">Get a Quote Today</Button></a>
       </div>
     </div>
   </section>;
