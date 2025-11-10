@@ -20,96 +20,121 @@ const TermsOfService = () => {
         
         <div className="prose prose-lg max-w-none space-y-8">
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Agreement to Terms</h2>
+            <h2 className="text-2xl font-semibold mb-4">Photobooth Rental Agreement</h2>
             <p className="text-foreground/80 leading-relaxed">
-              By accessing and using Perfect Booth's services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services.
+              This agreement is made between Seamless Ventures LLC, doing business as Perfect Booth ("Company"), and the client whose signature appears on the rental contract ("Client"). By signing the contract, the Client acknowledges that they have read and agreed to these terms and conditions.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Services</h2>
+            <h2 className="text-2xl font-semibold mb-4">Definition of Client</h2>
             <p className="text-foreground/80 leading-relaxed">
-              Perfect Booth provides professional photo booth services including 360° video experiences and instant print photo booths for events. All services are subject to availability and booking confirmation.
+              The person(s) whose signature(s) appear on the photobooth contract shall be the Client and shall be the one(s) to whom Perfect Booth delivers its products, and shall be financially responsible for all payments to be made under this contract. This contract incorporates the entire understanding of the parties, and any modifications to it must be in writing and signed both by Perfect Booth and by the Client.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Booking and Payment</h2>
-            <ul className="list-disc pl-6 space-y-2 text-foreground/80">
-              <li>All bookings require a deposit to secure your date</li>
-              <li>Final payment is due prior to the event date</li>
-              <li>Prices are subject to change but confirmed bookings will honor quoted rates</li>
-              <li>Payment methods accepted will be specified during booking</li>
-              <li>Additional charges may apply for services beyond the agreed package</li>
-            </ul>
+            <h2 className="text-2xl font-semibold mb-4">Services Provided</h2>
+            <p className="text-foreground/80 leading-relaxed">
+              The Company agrees to provide photo booth rental services for the Client's event on the agreed upon date and location as specified in the rental contract.
+            </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Cancellation and Refunds</h2>
+            <h2 className="text-2xl font-semibold mb-4">Rental Period</h2>
+            <p className="text-foreground/80 leading-relaxed">
+              The photo booth will be operational for the total hours specified in the invoice, except for any necessary maintenance or technical downtime. The Company will arrive approximately 45 minutes to one hour before the rental period begins to set up the photo booth.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Payment and Deposit</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Cancellation policies:
+              Payment terms are as follows:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-foreground/80">
-              <li>Cancellations made 60+ days before the event: Full refund minus 10% processing fee</li>
-              <li>Cancellations made 30-59 days before: 50% refund</li>
-              <li>Cancellations made less than 30 days before: No refund</li>
-              <li>We reserve the right to cancel due to circumstances beyond our control with full refund</li>
+              <li>A deposit of $99 or 50% of the project total (whichever is applicable) is required at the time of booking to secure the date</li>
+              <li>The remaining balance is due no later than one week before the event date</li>
+              <li>The deposit is fully refundable within 24 hours of payment</li>
+              <li>After 24 hours, $99 of the deposit becomes non-refundable</li>
+              <li>If the event is canceled and rescheduled, the deposit can be transferred to the new event</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Event Requirements</h2>
+            <h2 className="text-2xl font-semibold mb-4">Cancellation Policy</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              The client must provide:
+              The Company reserves the right to cancel this Agreement at any time for any reason, in which case the Company will issue a full refund of all payments made by the Client.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Retainer Payments and Liquidated Damages</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Once the Company reserves a date and time for the Client, it stops offering its services to others for that date and time. If the event is canceled or postponed, the Company incurs a loss. The Client agrees that determining the exact damages suffered by the Company due to a cancellation or postponement would be challenging.
+            </p>
+            <p className="text-foreground/80 leading-relaxed">
+              Therefore, if the Client cancels or postpones the event within 14 days of the original event date, the initial retainer payment made by the Client, or $99 of that retainer payment if the payment was greater than $99, will be considered reasonable liquidated damages and is non-refundable and non-transferable to a future event. Payments that exceed the $99 non-refundable portion are refundable or can be used as a credit toward a future event.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Setup and Operation Requirements</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              The Client is responsible for providing:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-foreground/80">
-              <li>Adequate space for booth setup as specified</li>
-              <li>Access to electrical outlets</li>
-              <li>Clear access for equipment load-in and load-out</li>
-              <li>A safe and secure environment for equipment</li>
-              <li>Notification of any venue restrictions or requirements</li>
+              <li>A suitable location for the photo booth - a ten by ten-foot area</li>
+              <li>Electrical power within 25 feet via an outlet or extension cord</li>
+              <li>Wi-Fi access with necessary passwords for full functionality of the photo booth</li>
+              <li>The Company will work with the Client to ensure all requirements are met</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Intellectual Property</h2>
+            <h2 className="text-2xl font-semibold mb-4">Damages</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              The Client agrees to be responsible for any damage or loss to the Company's equipment caused by:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-foreground/80">
+              <li>Any misuse of the equipment by Client or its guests</li>
+              <li>Theft of equipment</li>
+              <li>Damage resulting from improper environmental conditions, such as rain, wind, or excessive heat</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Limitation of Liability</h2>
             <p className="text-foreground/80 leading-relaxed">
-              All photos and videos taken remain the property of Perfect Booth. We grant you and your guests a personal, non-commercial license to use the media. We reserve the right to use photos and videos for marketing purposes unless otherwise agreed in writing.
+              The Company will not be liable for any injury, loss, or damage directly or consequently arising out of the use or inability to use the photo booth. The Client agrees to indemnify the Company against all liability related to the Client's event during or after the Client's event.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Liability</h2>
+            <h2 className="text-2xl font-semibold mb-4">Use of Images</h2>
             <p className="text-foreground/80 leading-relaxed">
-              Perfect Booth is not liable for any indirect, incidental, or consequential damages. Our total liability shall not exceed the amount paid for services. We are not responsible for guest behavior or injuries at events.
+              The Client agrees that all photos taken in the photobooth can be used by the Company for marketing and promotional purposes, unless otherwise specified in writing by the Client.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Equipment and Property</h2>
+            <h2 className="text-2xl font-semibold mb-4">Governing Law</h2>
             <p className="text-foreground/80 leading-relaxed">
-              The client is responsible for any damage to our equipment caused by guests or venue conditions. Guests must follow operator instructions. Misuse of equipment may result in early service termination without refund.
+              This Agreement shall be governed by and construed in accordance with the laws of the state of Washington.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Force Majeure</h2>
+            <h2 className="text-2xl font-semibold mb-4">Entire Agreement</h2>
             <p className="text-foreground/80 leading-relaxed">
-              We are not liable for failure to perform services due to circumstances beyond our control including but not limited to: natural disasters, severe weather, pandemics, venue closures, or equipment failure.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">Changes to Terms</h2>
-            <p className="text-foreground/80 leading-relaxed">
-              We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting. Continued use of services constitutes acceptance of modified terms.
+              This Agreement constitutes the entire agreement between the parties and supersedes all prior agreements, understandings, and negotiations, whether written or oral. Any modifications to this agreement must be in writing and signed by both Perfect Booth and the Client.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
             <p className="text-foreground/80 leading-relaxed">
-              For questions about these Terms of Service, please contact us at info@perfectbooth.com
+              For questions about these Terms of Service, please contact Seamless Ventures LLC, DBA Perfect Booth at info@perfectbooth.com
             </p>
           </section>
         </div>
