@@ -27,6 +27,13 @@ export default function ThankYou() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    // Track conversion
+    if (window.gtag) {
+      window.gtag('config', 'AW-16616595167');
+    }
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible(false);
       
