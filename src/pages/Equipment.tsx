@@ -8,6 +8,7 @@ import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
 import perfectBoothHero from "@/assets/perfect-booth-unit-main.png";
 import perfectBoothProduct from "@/assets/perfect-booth-product.jpg";
 import perfectBoothStory from "@/assets/perfect-booth-story.png";
+import perfectBoothHeroBg from "@/assets/perfect-booth-hero-bg.png";
 const Equipment = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [avgEventRevenue, setAvgEventRevenue] = useState(800);
@@ -36,10 +37,17 @@ const Equipment = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
+      <section className="relative pt-32 pb-20 overflow-hidden min-h-[600px] md:min-h-[700px]">
+        <div className="absolute inset-0">
+          <img 
+            src={perfectBoothHeroBg} 
+            alt="Perfect Booth photo booth unit" 
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-transparent" />
+        </div>
         <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-2xl">
             <div className="mb-8 space-y-2">
               <div className="text-xl md:text-2xl font-semibold text-primary uppercase tracking-wider">
                 Compact • Simple • Beautiful
@@ -52,7 +60,7 @@ const Equipment = () => {
               Premium photo booth equipment designed for professional event companies. 
               Start or scale your photo booth business with industry-leading technology.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a href="#contact">
                 <Button size="lg" className="text-lg px-8 py-6 h-auto">
                   Request Pricing
@@ -64,7 +72,7 @@ const Equipment = () => {
                 </Button>
               </a>
             </div>
-            <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary" />
                 <span>Full Training Included</span>
