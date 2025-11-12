@@ -2,11 +2,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Slider } from "@/components/ui/slider";
 import { CheckCircle2, Package, Headphones, TrendingUp, Zap, Shield, DollarSign } from "lucide-react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
 
 const Equipment = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
+  const [avgEventRevenue, setAvgEventRevenue] = useState(800);
+  const [eventsPerMonth, setEventsPerMonth] = useState(4);
+
+  // Calculate values based on sliders
+  const boothCost = 15000; // Estimated average booth cost
+  const eventsToBreakEven = Math.ceil(boothCost / avgEventRevenue);
+  const annualRevenue = avgEventRevenue * eventsPerMonth * 12;
 
   return (
     <div className="min-h-screen bg-background">
@@ -465,40 +473,93 @@ const Equipment = () => {
       {/* ROI Calculator Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Calculate Your ROI
-            </h2>
-            <p className="text-xl mb-12 opacity-90">
-              See how quickly a Perfect Booth can pay for itself
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+                Calculate Your ROI
+              </h2>
+              <p className="text-xl opacity-90">
+                Adjust the sliders to see your personalized revenue potential
+              </p>
+            </div>
             
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 mb-8">
-              <div className="grid md:grid-cols-3 gap-8 text-left">
+              {/* Interactive Sliders */}
+              <div className="space-y-8 mb-12">
                 <div>
-                  <div className="text-4xl font-bold mb-2">$800</div>
-                  <p className="opacity-90">Average event revenue</p>
+                  <div className="flex justify-between items-center mb-4">
+                    <label className="text-lg font-semibold">Average Event Revenue</label>
+                    <span className="text-2xl font-bold">${avgEventRevenue.toLocaleString()}</span>
+                  </div>
+                  <Slider
+                    value={[avgEventRevenue]}
+                    onValueChange={(value) => setAvgEventRevenue(value[0])}
+                    min={400}
+                    max={2000}
+                    step={50}
+                    className="w-full"
+                  />
+                  <div className="flex justify-between text-sm opacity-75 mt-2">
+                    <span>$400</span>
+                    <span>$2,000</span>
+                  </div>
                 </div>
+
                 <div>
-                  <div className="text-4xl font-bold mb-2">15-25</div>
-                  <p className="opacity-90">Events to break even</p>
+                  <div className="flex justify-between items-center mb-4">
+                    <label className="text-lg font-semibold">Events Per Month</label>
+                    <span className="text-2xl font-bold">{eventsPerMonth}</span>
+                  </div>
+                  <Slider
+                    value={[eventsPerMonth]}
+                    onValueChange={(value) => setEventsPerMonth(value[0])}
+                    min={1}
+                    max={20}
+                    step={1}
+                    className="w-full"
+                  />
+                  <div className="flex justify-between text-sm opacity-75 mt-2">
+                    <span>1 event</span>
+                    <span>20 events</span>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-4xl font-bold mb-2">$40k+</div>
-                  <p className="opacity-90">Annual revenue potential</p>
+              </div>
+
+              {/* Results */}
+              <div className="grid md:grid-cols-3 gap-6 pt-8 border-t border-white/20">
+                <div className="text-center">
+                  <div className="text-lg opacity-90 mb-2">Average Event Revenue</div>
+                  <div className="text-4xl font-bold">${avgEventRevenue.toLocaleString()}</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-lg opacity-90 mb-2">Events to Break Even</div>
+                  <div className="text-4xl font-bold">{eventsToBreakEven}</div>
+                  <div className="text-sm opacity-75 mt-1">
+                    (~{Math.ceil(eventsToBreakEven / eventsPerMonth)} months at your rate)
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-lg opacity-90 mb-2">Annual Revenue Potential</div>
+                  <div className="text-4xl font-bold">${(annualRevenue / 1000).toFixed(0)}k</div>
+                  <div className="text-sm opacity-75 mt-1">
+                    {eventsPerMonth * 12} events/year
+                  </div>
                 </div>
               </div>
             </div>
             
-            <p className="text-sm opacity-75 mb-8">
-              *Based on average pricing of $800-1200 per event and typical operating costs
+            <p className="text-sm opacity-75 mb-8 text-center">
+              *Calculations based on ${boothCost.toLocaleString()} estimated booth cost and your selected event pricing. 
+              Actual costs and revenue may vary.
             </p>
             
-            <a href="#contact">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-6 h-auto">
-                Request Custom Pricing
-              </Button>
-            </a>
+            <div className="text-center">
+              <a href="#contact">
+                <Button size="lg" variant="secondary" className="text-lg px-8 py-6 h-auto">
+                  Request Custom Pricing
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
