@@ -8,7 +8,6 @@ import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
 import perfectBoothHero from "@/assets/perfect-booth-unit-main.png";
 import perfectBoothProduct from "@/assets/perfect-booth-product.jpg";
 import perfectBoothStory from "@/assets/perfect-booth-story.png";
-
 const Equipment = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [avgEventRevenue, setAvgEventRevenue] = useState(800);
@@ -20,20 +19,12 @@ const Equipment = () => {
   const eventsToBreakEvenLow = Math.ceil(boothCostLow / avgEventRevenue);
   const eventsToBreakEvenHigh = Math.ceil(boothCostHigh / avgEventRevenue);
   const annualRevenue = avgEventRevenue * eventsPerMonth * 12;
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <a href="/" className="inline-flex items-center gap-2" aria-label="Perfect Booth Home">
-            <img 
-              src={perfectBoothLogo} 
-              alt="Perfect Booth logo" 
-              className="h-12 w-auto" 
-              width="120" 
-              height="36" 
-            />
+            <img src={perfectBoothLogo} alt="Perfect Booth logo" className="h-12 w-auto" width="120" height="36" />
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#features" className="hover:text-primary transition-colors">Features</a>
@@ -95,11 +86,7 @@ const Equipment = () => {
       <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <img 
-              src={perfectBoothHero} 
-              alt="Perfect Booth complete package with equipment and accessories" 
-              className="w-full rounded-lg shadow-2xl"
-            />
+            <img src={perfectBoothHero} alt="Perfect Booth complete package with equipment and accessories" className="w-full rounded-lg shadow-2xl" />
           </div>
         </div>
       </section>
@@ -159,16 +146,12 @@ const Equipment = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-8 text-secondary-foreground">
             Unit Specs and Components
           </h2>
-          <p className="text-center text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto text-neutral-200">
             Our photo booth is designed to be both compact and user-friendly, making it the perfect choice for anyone who wants to add excitement to their clients' events. The Perfect Booth features a sleek modern design with high-grade CNC cut plywood and 3D printed components.
           </p>
           
           <div className="max-w-5xl mx-auto mb-12">
-            <img 
-              src={perfectBoothProduct} 
-              alt="Perfect Booth unit specifications and components" 
-              className="w-full rounded-lg shadow-xl"
-            />
+            <img src={perfectBoothProduct} alt="Perfect Booth unit specifications and components" className="w-full rounded-lg shadow-xl" />
           </div>
 
           <div className="max-w-5xl mx-auto">
@@ -476,14 +459,7 @@ const Equipment = () => {
                     <label className="text-lg font-semibold">Average Event Revenue</label>
                     <span className="text-2xl font-bold">${avgEventRevenue.toLocaleString()}</span>
                   </div>
-                  <Slider
-                    value={[avgEventRevenue]}
-                    onValueChange={(value) => setAvgEventRevenue(value[0])}
-                    min={400}
-                    max={2000}
-                    step={50}
-                    className="w-full"
-                  />
+                  <Slider value={[avgEventRevenue]} onValueChange={value => setAvgEventRevenue(value[0])} min={400} max={2000} step={50} className="w-full" />
                   <div className="flex justify-between text-sm opacity-75 mt-2">
                     <span>$400</span>
                     <span>$2,000</span>
@@ -495,14 +471,7 @@ const Equipment = () => {
                     <label className="text-lg font-semibold">Events Per Month</label>
                     <span className="text-2xl font-bold">{eventsPerMonth}</span>
                   </div>
-                  <Slider
-                    value={[eventsPerMonth]}
-                    onValueChange={(value) => setEventsPerMonth(value[0])}
-                    min={1}
-                    max={20}
-                    step={1}
-                    className="w-full"
-                  />
+                  <Slider value={[eventsPerMonth]} onValueChange={value => setEventsPerMonth(value[0])} min={1} max={20} step={1} className="w-full" />
                   <div className="flex justify-between text-sm opacity-75 mt-2">
                     <span>1 event</span>
                     <span>20 events</span>
@@ -558,11 +527,7 @@ const Equipment = () => {
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <img 
-                  src={perfectBoothStory} 
-                  alt="Perfect Booth journey from 2016 to present" 
-                  className="w-full rounded-lg shadow-xl"
-                />
+                <img src={perfectBoothStory} alt="Perfect Booth journey from 2016 to present" className="w-full rounded-lg shadow-xl" />
               </div>
               <div className="space-y-6 text-muted-foreground text-lg">
                 <p>
@@ -594,9 +559,7 @@ const Equipment = () => {
             <Card className="p-8">
               <div className="mb-4">
                 <div className="flex text-primary mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i}>★</span>
-                  ))}
+                  {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
                 </div>
               </div>
               <p className="text-muted-foreground italic mb-6 leading-relaxed">
@@ -612,9 +575,7 @@ const Equipment = () => {
             <Card className="p-8">
               <div className="mb-4">
                 <div className="flex text-primary mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i}>★</span>
-                  ))}
+                  {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
                 </div>
               </div>
               <p className="text-muted-foreground italic mb-6 leading-relaxed">
@@ -630,9 +591,7 @@ const Equipment = () => {
             <Card className="p-8">
               <div className="mb-4">
                 <div className="flex text-primary mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i}>★</span>
-                  ))}
+                  {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
                 </div>
               </div>
               <p className="text-muted-foreground italic mb-6 leading-relaxed">
@@ -656,12 +615,7 @@ const Equipment = () => {
           </h2>
           
           <div className="max-w-3xl mx-auto">
-            <Accordion 
-              type="single" 
-              collapsible 
-              value={expandedAccordion} 
-              onValueChange={setExpandedAccordion}
-            >
+            <Accordion type="single" collapsible value={expandedAccordion} onValueChange={setExpandedAccordion}>
               <AccordionItem value="financing">
                 <AccordionTrigger className="text-lg font-display text-left">
                   Do you offer financing options?
@@ -816,11 +770,7 @@ const Equipment = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
-              <img 
-                src={perfectBoothLogo} 
-                alt="Perfect Booth logo" 
-                className="h-8 w-auto" 
-              />
+              <img src={perfectBoothLogo} alt="Perfect Booth logo" className="h-8 w-auto" />
             </div>
             
             <nav className="flex flex-wrap justify-center gap-6 text-sm">
@@ -844,8 +794,6 @@ const Equipment = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Equipment;
