@@ -12,8 +12,10 @@ const Equipment = () => {
   const [eventsPerMonth, setEventsPerMonth] = useState(4);
 
   // Calculate values based on sliders
-  const boothCost = 15000; // Estimated average booth cost
-  const eventsToBreakEven = Math.ceil(boothCost / avgEventRevenue);
+  const boothCostLow = 6000;
+  const boothCostHigh = 8000;
+  const eventsToBreakEvenLow = Math.ceil(boothCostLow / avgEventRevenue);
+  const eventsToBreakEvenHigh = Math.ceil(boothCostHigh / avgEventRevenue);
   const annualRevenue = avgEventRevenue * eventsPerMonth * 12;
 
   return (
@@ -533,9 +535,9 @@ const Equipment = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-lg opacity-90 mb-2">Events to Break Even</div>
-                  <div className="text-4xl font-bold">{eventsToBreakEven}</div>
+                  <div className="text-4xl font-bold">{eventsToBreakEvenLow}-{eventsToBreakEvenHigh}</div>
                   <div className="text-sm opacity-75 mt-1">
-                    (~{Math.ceil(eventsToBreakEven / eventsPerMonth)} months at your rate)
+                    (~{Math.ceil(eventsToBreakEvenLow / eventsPerMonth)}-{Math.ceil(eventsToBreakEvenHigh / eventsPerMonth)} months at your rate)
                   </div>
                 </div>
                 <div className="text-center">
@@ -549,7 +551,7 @@ const Equipment = () => {
             </div>
             
             <p className="text-sm opacity-75 mb-8 text-center">
-              *Calculations based on ${boothCost.toLocaleString()} estimated booth cost and your selected event pricing. 
+              *Calculations based on ${boothCostLow.toLocaleString()}-${boothCostHigh.toLocaleString()} estimated booth cost range and your selected event pricing. 
               Actual costs and revenue may vary.
             </p>
             
