@@ -5,6 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Slider } from "@/components/ui/slider";
 import { CheckCircle2, Package, Headphones, TrendingUp, Zap, Shield, DollarSign } from "lucide-react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
+import perfectBoothHero from "@/assets/perfect-booth-hero.jpg";
+import perfectBoothProduct from "@/assets/perfect-booth-product.jpg";
+import perfectBoothStory from "@/assets/perfect-booth-story.png";
 
 const Equipment = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
@@ -46,6 +49,11 @@ const Equipment = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-8 space-y-2">
+              <div className="text-xl md:text-2xl font-semibold text-primary uppercase tracking-wider">
+                Compact • Simple • Beautiful
+              </div>
+            </div>
             <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 text-foreground">
               Own The Perfect Booth
             </h1>
@@ -88,7 +96,7 @@ const Equipment = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <img 
-              src="/lovable-uploads/print-booth-package.png" 
+              src={perfectBoothHero} 
               alt="Perfect Booth complete package with equipment and accessories" 
               className="w-full rounded-lg shadow-2xl"
             />
@@ -148,40 +156,68 @@ const Equipment = () => {
       {/* Technical Specifications */}
       <section id="features" className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-16 text-secondary-foreground">
-            Technical Specifications
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-8 text-secondary-foreground">
+            Unit Specs and Components
           </h2>
+          <p className="text-center text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Our photo booth is designed to be both compact and user-friendly, making it the perfect choice for anyone who wants to add excitement to their clients' events. The Perfect Booth features a sleek modern design with high-grade CNC cut plywood and 3D printed components.
+          </p>
+          
+          <div className="max-w-5xl mx-auto mb-12">
+            <img 
+              src={perfectBoothProduct} 
+              alt="Perfect Booth unit specifications and components" 
+              className="w-full rounded-lg shadow-xl"
+            />
+          </div>
+
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <Card>
                 <CardHeader>
-                  <CardTitle className="font-display text-2xl">Hardware</CardTitle>
+                  <CardTitle className="font-display text-2xl">Electronic Components</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Camera:</strong> Professional DSLR with 24.2MP sensor</span>
+                      <span>DNP QW410 Compact Printer</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Printer:</strong> DNP DS620A professional dye-sublimation</span>
+                      <span>Surface Pro 8 Tablet, or 12.9 inch iPad</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Lighting:</strong> Professional LED ring light system with adjustable brightness</span>
+                      <span>Canon M50 mark 2 DSLR camera</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Display:</strong> 15.6" touchscreen interface</span>
+                      <span>Aputure Amaran COB 60X S LED Video Light</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Enclosure:</strong> Premium powder-coated steel construction</span>
+                      <span>Power cables and connective devices</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Dimensions:</strong> 24"W x 72"H x 18"D (portable)</span>
+                      <span>Apple air tag</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Perfect Booth photo booth stand</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>White Perfect Booth Case</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Light reflector</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Soft carry case for stand and unit</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -189,33 +225,37 @@ const Equipment = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="font-display text-2xl">Software & Features</CardTitle>
+                  <CardTitle className="font-display text-2xl">Specifications & Features</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Custom Branding:</strong> White-label ready with your company branding</span>
+                      <span><strong>Dimensions:</strong> 18.38" x 12.14" x 11"</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Templates:</strong> Unlimited custom overlay designs</span>
+                      <span><strong>Weight:</strong> 35 LBS</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Sharing:</strong> Instant SMS, email, QR code, and social media</span>
+                      <span><strong>Print Quality:</strong> High-quality 4x6 or 2x6 prints</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Analytics:</strong> Real-time event metrics and guest data capture</span>
+                      <span><strong>Software Compatible:</strong> Snappic, DSLR Booth, and more</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Backup:</strong> Automatic cloud backup of all photos</span>
+                      <span><strong>Construction:</strong> High-grade CNC cut plywood and 3D printed components</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span><strong>Support:</strong> Remote monitoring and troubleshooting</span>
+                      <span><strong>Customization:</strong> Different colors and finishes available</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span><strong>Sharing:</strong> Live email and text sharing</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -229,147 +269,90 @@ const Equipment = () => {
       <section id="packages" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
-            Choose Your Package
+            Pricing Options
           </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Starter Package */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {/* Upfront Purchase */}
             <Card className="hover-scale shadow relative">
               <CardHeader>
-                <CardTitle className="font-display text-3xl">Starter</CardTitle>
-                <CardDescription className="text-xl mt-2">Perfect for getting started</CardDescription>
+                <CardTitle className="font-display text-2xl">Upfront Purchase</CardTitle>
+                <CardDescription className="text-lg mt-2">Full ownership immediately</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="mb-6">
-                  <div className="text-4xl font-bold text-foreground mb-2">Contact Us</div>
-                  <p className="text-sm text-muted-foreground">One-time purchase</p>
+                  <div className="text-4xl font-bold text-foreground mb-2">$8,000</div>
+                  <p className="text-sm text-muted-foreground">One-time payment</p>
                 </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">1 Complete booth unit</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Professional camera & lighting</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Dye-sublimation printer</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Basic training (2 hours)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">1-year warranty</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Email support</span>
-                  </li>
-                </ul>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Production lead times are 3-6 weeks. Can be paid in two equal payments: one at the beginning of production, final payment prior to shipment.
+                </p>
                 <a href="#contact">
-                  <Button variant="outline" className="w-full">Get Quote</Button>
+                  <Button variant="outline" className="w-full">Contact Us</Button>
                 </a>
               </CardContent>
             </Card>
 
-            {/* Professional Package */}
+            {/* Get Funding */}
             <Card className="hover-scale shadow relative border-primary border-2">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
-                  Most Popular
+                  Popular
                 </span>
               </div>
               <CardHeader>
-                <CardTitle className="font-display text-3xl">Professional</CardTitle>
-                <CardDescription className="text-xl mt-2">For serious businesses</CardDescription>
+                <CardTitle className="font-display text-2xl">Get Funding</CardTitle>
+                <CardDescription className="text-lg mt-2">Flexible financing options</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="mb-6">
-                  <div className="text-4xl font-bold text-foreground mb-2">Contact Us</div>
-                  <p className="text-sm text-muted-foreground">One-time purchase</p>
+                  <div className="text-4xl font-bold text-foreground mb-2">$8,500</div>
+                  <p className="text-sm text-muted-foreground">With financing partners</p>
                 </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Everything in Starter, plus:</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Premium carrying case</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Extended training (4 hours)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Custom template design (3 included)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">2-year warranty</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Priority phone & email support</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Marketing materials package</span>
-                  </li>
-                </ul>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Qualify for payments as low as $200-500 per month depending on your terms. Or four monthly interest free payments with Affirm.
+                </p>
                 <a href="#contact">
-                  <Button className="w-full">Get Quote</Button>
+                  <Button className="w-full">Learn More</Button>
                 </a>
               </CardContent>
             </Card>
 
-            {/* Enterprise Package */}
+            {/* Negotiable Payments */}
             <Card className="hover-scale shadow relative">
               <CardHeader>
-                <CardTitle className="font-display text-3xl">Enterprise</CardTitle>
-                <CardDescription className="text-xl mt-2">Scale your business</CardDescription>
+                <CardTitle className="font-display text-2xl">Negotiable Payments</CardTitle>
+                <CardDescription className="text-lg mt-2">Custom payment plans</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="mb-6">
-                  <div className="text-4xl font-bold text-foreground mb-2">Contact Us</div>
-                  <p className="text-sm text-muted-foreground">Multi-unit pricing</p>
+                  <div className="text-4xl font-bold text-foreground mb-2">Custom</div>
+                  <p className="text-sm text-muted-foreground">Flexible terms</p>
                 </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Everything in Professional, plus:</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">3+ booth units (volume pricing)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">On-site training at your location</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Unlimited custom templates</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">3-year warranty + replacement program</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">24/7 priority support</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Dedicated account manager</span>
-                  </li>
-                </ul>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Multiple payment options structured over 3-7 months. For example: one payment of $3,000 and six monthly payments of $1,000.
+                </p>
                 <a href="#contact">
-                  <Button variant="outline" className="w-full">Get Quote</Button>
+                  <Button variant="outline" className="w-full">Contact Us</Button>
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* Rent to Own */}
+            <Card className="hover-scale shadow relative">
+              <CardHeader>
+                <CardTitle className="font-display text-2xl">Rent to Own</CardTitle>
+                <CardDescription className="text-lg mt-2">Try before you buy</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="mb-6">
+                  <div className="text-4xl font-bold text-foreground mb-2">$1,000</div>
+                  <p className="text-sm text-muted-foreground">Per month</p>
+                </div>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Only available when we have inventory. 62.5% of rental fees go towards purchase price. You own the booth after 12 months of renting.
+                </p>
+                <a href="#contact">
+                  <Button variant="outline" className="w-full">Check Availability</Button>
                 </a>
               </CardContent>
             </Card>
@@ -566,6 +549,40 @@ const Equipment = () => {
         </div>
       </section>
 
+      {/* Our Story */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-8 text-secondary-foreground">
+            Our Story
+          </h2>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <img 
+                  src={perfectBoothStory} 
+                  alt="Perfect Booth journey from 2016 to present" 
+                  className="w-full rounded-lg shadow-xl"
+                />
+              </div>
+              <div className="space-y-6 text-muted-foreground text-lg">
+                <p>
+                  Back in 2016 we put together a photo booth for a family member's wedding. We made a makeshift photo booth with a camera on a table plugged into a printer.
+                </p>
+                <p>
+                  The guests loved the photo booth and soon we had more people interested in us providing them with a photo booth at their events.
+                </p>
+                <p>
+                  Over the years we built and purchased many different photo booth units, experimenting with countless different systems and photo booth unit designs. Always looking for ways to perfect our system and making it more beautiful, compact and easy to use.
+                </p>
+                <p>
+                  People have reached out interested in purchasing our photo booth. So now we build units for others who also are in the photo booth rental business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -746,15 +763,43 @@ const Equipment = () => {
               Get in touch to discuss your needs and receive custom pricing. We're here to help you succeed.
             </p>
             
+            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
+              <Card className="p-6">
+                <h3 className="font-display text-xl font-semibold mb-3">Nathan Reimche-Vu</h3>
+                <p className="text-sm text-muted-foreground mb-4">Cofounder - Marketing</p>
+                <div className="space-y-2 text-sm">
+                  <a href="mailto:nathan@perfectbooth.com" className="block text-primary hover:underline">
+                    nathan@perfectbooth.com
+                  </a>
+                  <a href="tel:+15098407925" className="block text-primary hover:underline">
+                    (509) 840-7925
+                  </a>
+                </div>
+              </Card>
+              
+              <Card className="p-6">
+                <h3 className="font-display text-xl font-semibold mb-3">Micah Reimche-Vu</h3>
+                <p className="text-sm text-muted-foreground mb-4">Cofounder - Product Design</p>
+                <div className="space-y-2 text-sm">
+                  <a href="mailto:micah@perfectbooth.com" className="block text-primary hover:underline">
+                    micah@perfectbooth.com
+                  </a>
+                  <a href="tel:+15092502208" className="block text-primary hover:underline">
+                    (509) 250-2208
+                  </a>
+                </div>
+              </Card>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a href="mailto:sales@perfectbooth.com">
+              <a href="mailto:nathan@perfectbooth.com">
                 <Button size="lg" className="text-lg px-8 py-6 h-auto">
-                  Email Us
+                  Email Nathan
                 </Button>
               </a>
-              <a href="tel:+1234567890">
+              <a href="mailto:micah@perfectbooth.com">
                 <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
-                  Call (123) 456-7890
+                  Email Micah
                 </Button>
               </a>
             </div>
