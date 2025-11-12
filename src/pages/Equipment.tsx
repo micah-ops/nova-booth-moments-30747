@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Slider } from "@/components/ui/slider";
 import { CheckCircle2, Package, Headphones, TrendingUp, Zap, Shield, DollarSign } from "lucide-react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
-import perfectBoothHero from "@/assets/perfect-booth-hero.jpg";
+import perfectBoothHero from "@/assets/perfect-booth-unit-main.png";
 import perfectBoothProduct from "@/assets/perfect-booth-product.jpg";
 import perfectBoothStory from "@/assets/perfect-booth-story.png";
 
