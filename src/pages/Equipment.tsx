@@ -638,7 +638,7 @@ const Equipment = () => {
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible value={expandedAccordion} onValueChange={setExpandedAccordion}>
               <AccordionItem value="financing">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   Do you offer financing options?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -648,7 +648,7 @@ const Equipment = () => {
               </AccordionItem>
 
               <AccordionItem value="warranty">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   What does the warranty cover?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -659,7 +659,7 @@ const Equipment = () => {
               </AccordionItem>
 
               <AccordionItem value="training">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   How long does training take?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -670,7 +670,7 @@ const Equipment = () => {
               </AccordionItem>
 
               <AccordionItem value="shipping">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   How is the booth shipped and what about setup?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -681,7 +681,7 @@ const Equipment = () => {
               </AccordionItem>
 
               <AccordionItem value="supplies">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   Where do I purchase printer paper and supplies?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -692,7 +692,7 @@ const Equipment = () => {
               </AccordionItem>
 
               <AccordionItem value="software">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   What software is included?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -703,7 +703,7 @@ const Equipment = () => {
               </AccordionItem>
 
               <AccordionItem value="updates">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   How do software updates work?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -713,7 +713,7 @@ const Equipment = () => {
               </AccordionItem>
 
               <AccordionItem value="bulk">
-                <AccordionTrigger className="text-lg font-display text-left">
+                <AccordionTrigger className="text-lg font-display text-left text-white">
                   Do you offer discounts for multiple units?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
