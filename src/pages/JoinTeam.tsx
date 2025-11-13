@@ -39,26 +39,33 @@ const JoinTeam = () => {
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
               Join Our Team
             </h1>
-            <p className="text-xl text-muted-foreground">
-              Looking for Photo Booth Attendants in Portland
+            <p className="text-xl text-muted-foreground mb-6">
+              Looking for Photo Booth Attendants
             </p>
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}
+            >
+              Apply Now
+            </Button>
           </div>
 
           {/* Introduction Card */}
           <Card className="mb-8">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed mb-6">
-                We own Perfect Booth Photo Booth Rentals and we're looking for 4-6 people to train 
-                as photo booth attendants. We get super busy over the holidays, so we need extra help!
+                We own Perfect Booth Photo Booth Rentals and we're looking for people to train 
+                as photo booth attendants on a per-event basis.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 The perfect candidate is good with people, punctual, conscientious, teachable, 
                 flexible, and available to work weekends.
               </p>
               <p className="text-lg leading-relaxed">
-                Most of our events are weddings and the occasional corporate event. But right now 
-                they are mostly holiday parties, so we need people who are available on weekends 
-                and a couple who are available on weekdays for our occasional weekday events.
+                Most of our events are weddings and corporate events. We need people who are 
+                available on weekends and some who are available on weekdays for our 
+                occasional weekday events.
               </p>
             </CardContent>
           </Card>
@@ -92,10 +99,10 @@ const JoinTeam = () => {
             <CardContent className="p-8">
               <h2 className="text-2xl font-display font-bold mb-4">Compensation</h2>
               <p className="text-xl font-semibold mb-2">
-                $100-175 per event
+                $20-25 per hour
               </p>
               <p className="text-muted-foreground">
-                The rate is usually about $25 per hour, depending on length and location.
+                You will be hired as an independent contractor on a per-event basis.
               </p>
             </CardContent>
           </Card>
