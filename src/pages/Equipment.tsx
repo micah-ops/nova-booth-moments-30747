@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -13,6 +13,27 @@ const Equipment = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [avgEventRevenue, setAvgEventRevenue] = useState(800);
   const [eventsPerMonth, setEventsPerMonth] = useState(4);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY < 50) {
+        setIsHeaderVisible(true);
+      } else if (currentScrollY > lastScrollY) {
+        setIsHeaderVisible(false);
+      } else {
+        setIsHeaderVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   // Calculate values based on sliders
   const boothCostLow = 6000;
@@ -22,7 +43,7 @@ const Equipment = () => {
   const annualRevenue = avgEventRevenue * eventsPerMonth * 12;
   return <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-[100] w-full bg-background/95 backdrop-blur-md border-b shadow-sm">
+      <header className={`fixed top-0 left-0 right-0 z-[100] w-full bg-background/95 backdrop-blur-md border-b shadow-sm transition-transform duration-300 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <a href="/" className="inline-flex items-center gap-2" aria-label="Perfect Booth Home">
             <img src={perfectBoothLogo} alt="Perfect Booth logo" className="h-12 w-auto" width="120" height="36" />
