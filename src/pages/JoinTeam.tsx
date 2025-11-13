@@ -99,10 +99,11 @@ const JoinTeam = () => {
             <CardContent className="p-8">
               <h2 className="text-2xl font-display font-bold mb-4">Compensation</h2>
               <p className="text-xl font-semibold mb-2">
-                $20-25 per hour
+                $100-200 per event
               </p>
               <p className="text-muted-foreground">
-                You will be hired as an independent contractor on a per-event basis.
+                You will be hired as an independent contractor on a per-event basis. 
+                This usually comes out to about $20-25 per hour.
               </p>
             </CardContent>
           </Card>
