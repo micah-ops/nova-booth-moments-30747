@@ -129,8 +129,7 @@ const Equipment = () => {
                 <CardTitle className="font-display text-2xl">Enterprise Reliability</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
-                Commercial-grade components tested for 500+ events. Backed by comprehensive 
-                warranty and rapid replacement program to keep your business running.
+                Commercial-grade components. The same system that we have used for 100s of events.                                          
               </CardContent>
             </Card>
 
@@ -155,8 +154,7 @@ const Equipment = () => {
                 <CardTitle className="font-display text-2xl">Comprehensive Support</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
-                Expert guidance from setup to scale. Dedicated support team, extensive 
-                training resources, and business consulting to ensure your success.
+                Expert guidance from setup to scale. Training resources, and business consulting to ensure your success.
               </CardContent>
             </Card>
           </div>
