@@ -22,7 +22,7 @@ const Equipment = () => {
   const annualRevenue = avgEventRevenue * eventsPerMonth * 12;
   return <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
+      <header className="fixed top-0 left-0 right-0 z-[100] w-full bg-background/95 backdrop-blur-md border-b shadow-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <a href="/" className="inline-flex items-center gap-2" aria-label="Perfect Booth Home">
             <img src={perfectBoothLogo} alt="Perfect Booth logo" className="h-12 w-auto" width="120" height="36" />
