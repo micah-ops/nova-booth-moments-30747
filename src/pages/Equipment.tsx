@@ -588,7 +588,7 @@ const Equipment = () => {
               <p className="font-display font-semibold text-foreground">
                 Marcus Rivera
               </p>
-              <p className="text-sm text-muted-foreground">Rivera Events, Portland</p>
+              
             </Card>
 
             <Card className="p-8">
