@@ -109,7 +109,24 @@ const Equipment = () => {
       <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            
+            <Card className="bg-secondary border-white/20">
+              <CardContent className="p-8 md:p-12">
+                <div className="flex flex-col md:flex-row gap-8 items-center">
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-4 text-2xl">
+                      {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
+                    </div>
+                    <p className="text-white text-xl md:text-2xl italic leading-relaxed mb-6">
+                      "The Perfect Booth has been a game-changer for our business. We recovered our investment in just 3 months and now we're looking at purchasing our third unit. The build quality is exceptional and customer support is outstanding."
+                    </p>
+                    <div>
+                      <p className="text-white font-semibold text-lg">Sarah Johnson</p>
+                      <p className="text-white/80">Founder, Event Magic Co. - Portland, OR</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
