@@ -115,13 +115,13 @@ const Equipment = () => {
                   <div className="flex text-primary mb-4">
                     {[...Array(5)].map((_, i) => <span key={i} className="text-2xl">★</span>)}
                   </div>
-                  <p className="text-xl md:text-2xl text-muted-foreground italic mb-6 leading-relaxed">
+                  <p className="text-xl md:text-2xl text-white italic mb-6 leading-relaxed">
                     "The Perfect Booth has completely transformed our business. The quality is outstanding, 
                     setup is incredibly fast, and our clients absolutely love it. Best investment we've ever made."
                   </p>
                   <div>
-                    <p className="font-display font-semibold text-xl text-foreground">Sarah Mitchell</p>
-                    <p className="text-muted-foreground">Elite Events Co., Denver</p>
+                    <p className="font-display font-semibold text-xl text-white">Sarah Mitchell</p>
+                    <p className="text-white/80">Elite Events Co., Denver</p>
                   </div>
                 </div>
               </div>
