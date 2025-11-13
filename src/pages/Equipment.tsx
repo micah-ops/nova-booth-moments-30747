@@ -645,17 +645,6 @@ const Equipment = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="training">
-                <AccordionTrigger className="text-lg font-display text-left text-white">
-                  How long does training take?
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Basic training takes 2-4 hours and covers setup, operation, troubleshooting, and maintenance. 
-                  We also provide business training covering pricing, marketing, and client management. 
-                  Additional training sessions are available anytime.
-                </AccordionContent>
-              </AccordionItem>
-
               <AccordionItem value="shipping">
                 <AccordionTrigger className="text-lg font-display text-left text-white">
                   How is the booth shipped and what about setup?
@@ -684,9 +673,8 @@ const Equipment = () => {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
                   Software is not included with the booth purchase and requires a separate subscription. 
-                  Our proprietary software features unlimited custom templates, social sharing, email/SMS 
-                  delivery, data collection, analytics, and remote monitoring. The software can be white-labeled 
-                  with your branding.
+                  We recommend using DSLR Booth software, which features unlimited custom templates, 
+                  social sharing, email/SMS delivery, data collection, analytics, and remote monitoring.
                 </AccordionContent>
               </AccordionItem>
 
