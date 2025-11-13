@@ -645,17 +645,6 @@ const Equipment = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="warranty">
-                <AccordionTrigger className="text-lg font-display text-left text-white">
-                  What does the warranty cover?
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Our warranty covers all hardware defects and malfunctions under normal use. This includes 
-                  the camera, printer, lighting, computer system, and enclosure. We offer rapid replacement 
-                  for critical components to minimize downtime.
-                </AccordionContent>
-              </AccordionItem>
-
               <AccordionItem value="training">
                 <AccordionTrigger className="text-lg font-display text-left text-white">
                   How long does training take?
@@ -683,9 +672,9 @@ const Equipment = () => {
                   Where do I purchase printer paper and supplies?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  We use industry-standard DNP printer media available from multiple suppliers. We'll provide 
-                  you with our preferred vendor list and pricing. Average cost per 4x6 print is $0.30-0.40 
-                  including paper and ink.
+                  We use industry-standard DNP printer media available from B&H Photo and Adorama, 
+                  both excellent suppliers for printer paper and supplies. Average cost per 4x6 print 
+                  is $0.30-0.40 including paper and ink.
                 </AccordionContent>
               </AccordionItem>
 
@@ -694,19 +683,10 @@ const Equipment = () => {
                   What software is included?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Our proprietary software is included with lifetime updates. Features include unlimited custom 
-                  templates, social sharing, email/SMS delivery, data collection, analytics, and remote monitoring. 
-                  The software can be white-labeled with your branding.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="updates">
-                <AccordionTrigger className="text-lg font-display text-left text-white">
-                  How do software updates work?
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Software updates are automatic and free for life. We regularly add new features, templates, 
-                  and improvements based on user feedback. You'll always have access to the latest version.
+                  Software is not included with the booth purchase and requires a separate subscription. 
+                  Our proprietary software features unlimited custom templates, social sharing, email/SMS 
+                  delivery, data collection, analytics, and remote monitoring. The software can be white-labeled 
+                  with your branding.
                 </AccordionContent>
               </AccordionItem>
 
