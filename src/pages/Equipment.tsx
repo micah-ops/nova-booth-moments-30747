@@ -9,6 +9,34 @@ import perfectBoothHero from "@/assets/perfect-booth-unit-main.png";
 import perfectBoothProduct from "@/assets/perfect-booth-product.jpg";
 import perfectBoothStory from "@/assets/perfect-booth-story.png";
 import perfectBoothHeroBg from "@/assets/perfect-booth-hero-bg.png";
+
+const BloomForm = () => {
+  useEffect(() => {
+    // Set bloom settings
+    (window as any).bloomSettings = {
+      userId: "pk37oy04o9qwz",
+      profileId: "38kd5llr87wvr"
+    };
+
+    // Load the script if not already loaded
+    if (typeof (window as any).bloomScript === 'undefined') {
+      const bloomScript = document.createElement('script');
+      bloomScript.async = true;
+      
+      fetch(`https://code.bloom.io/version?t=${Date.now()}`)
+        .then(response => response.text())
+        .then(version => {
+          bloomScript.src = `https://code.bloom.io/widget.js?v=${version}`;
+          document.head.appendChild(bloomScript);
+        });
+      
+      (window as any).bloomScript = bloomScript;
+    }
+  }, []);
+
+  return <div data-bloom-form-id="pv5d6qr389w48" style={{ width: '100%' }} />;
+};
+
 const Equipment = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [avgEventRevenue, setAvgEventRevenue] = useState(800);
@@ -704,13 +732,7 @@ const Equipment = () => {
               Get in touch to discuss your needs and receive custom pricing. We're here to help you succeed.
             </p>
             
-            <div 
-              data-bloom-form-id="pv5d6qr389w48" 
-              style={{ width: '100%' }}
-              dangerouslySetInnerHTML={{
-                __html: `<script>window.bloomSettings={userId:"pk37oy04o9qwz",profileId:"38kd5llr87wvr"};if(void 0===bloomScript){var bloomScript=document.createElement("script");bloomScript.async=!0,fetch("https://code.bloom.io/version?t="+Date.now()).then(function(t){return t.text()}).then(function(t){bloomScript.src="https://code.bloom.io/widget.js?v="+t,document.head.appendChild(bloomScript)})}</script>`
-              }}
-            />
+            <BloomForm />
           </div>
         </div>
       </section>
