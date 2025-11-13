@@ -704,50 +704,13 @@ const Equipment = () => {
               Get in touch to discuss your needs and receive custom pricing. We're here to help you succeed.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
-              <Card className="p-6">
-                <h3 className="font-display text-xl font-semibold mb-3">Nathan Reimche-Vu</h3>
-                <p className="text-sm text-muted-foreground mb-4">Cofounder - Marketing</p>
-                <div className="space-y-2 text-sm">
-                  <a href="mailto:nathan@perfectbooth.com" className="block text-primary hover:underline">
-                    nathan@perfectbooth.com
-                  </a>
-                  <a href="tel:+15098407925" className="block text-primary hover:underline">
-                    (509) 840-7925
-                  </a>
-                </div>
-              </Card>
-              
-              <Card className="p-6">
-                <h3 className="font-display text-xl font-semibold mb-3">Micah Reimche-Vu</h3>
-                <p className="text-sm text-muted-foreground mb-4">Cofounder - Product Design</p>
-                <div className="space-y-2 text-sm">
-                  <a href="mailto:micah@perfectbooth.com" className="block text-primary hover:underline">
-                    micah@perfectbooth.com
-                  </a>
-                  <a href="tel:+15092502208" className="block text-primary hover:underline">
-                    (509) 250-2208
-                  </a>
-                </div>
-              </Card>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a href="mailto:nathan@perfectbooth.com">
-                <Button size="lg" className="text-lg px-8 py-6 h-auto">
-                  Email Nathan
-                </Button>
-              </a>
-              <a href="mailto:micah@perfectbooth.com">
-                <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
-                  Email Micah
-                </Button>
-              </a>
-            </div>
-            
-            <p className="text-sm text-muted-foreground">
-              Or fill out our inquiry form and we'll contact you within 24 hours
-            </p>
+            <div 
+              data-bloom-form-id="pv5d6qr389w48" 
+              style={{ width: '100%' }}
+              dangerouslySetInnerHTML={{
+                __html: `<script>window.bloomSettings={userId:"pk37oy04o9qwz",profileId:"38kd5llr87wvr"};if(void 0===bloomScript){var bloomScript=document.createElement("script");bloomScript.async=!0,fetch("https://code.bloom.io/version?t="+Date.now()).then(function(t){return t.text()}).then(function(t){bloomScript.src="https://code.bloom.io/widget.js?v="+t,document.head.appendChild(bloomScript)})}</script>`
+              }}
+            />
           </div>
         </div>
       </section>
