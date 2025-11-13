@@ -121,8 +121,6 @@ const Equipment = () => {
             Built for Business Success
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            
-
             <Card className="hover-scale shadow">
               <CardHeader>
                 <div className="mb-4">
@@ -146,6 +144,19 @@ const Equipment = () => {
               <CardContent className="text-muted-foreground">
                 From transport to operational in under 15 minutes. Intuitive interface 
                 means minimal training required for your team or subcontractors.
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale shadow">
+              <CardHeader>
+                <div className="mb-4">
+                  <Headphones className="h-12 w-12 text-primary" />
+                </div>
+                <CardTitle className="font-display text-2xl">Comprehensive Support</CardTitle>
+              </CardHeader>
+              <CardContent className="text-muted-foreground">
+                Expert guidance from setup to scale. Dedicated support team, extensive 
+                training resources, and business consulting to ensure your success.
               </CardContent>
             </Card>
           </div>
