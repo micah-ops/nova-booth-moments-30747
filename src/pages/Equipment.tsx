@@ -15,11 +15,9 @@ const Equipment = () => {
   const [eventsPerMonth, setEventsPerMonth] = useState(4);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
       if (currentScrollY < 50) {
         setIsHeaderVisible(true);
       } else if (currentScrollY > lastScrollY) {
@@ -27,11 +25,11 @@ const Equipment = () => {
       } else {
         setIsHeaderVisible(true);
       }
-      
       setLastScrollY(currentScrollY);
     };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, {
+      passive: true
+    });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
@@ -555,16 +553,16 @@ const Equipment = () => {
                 <img src={perfectBoothStory} alt="Perfect Booth journey from 2016 to present" className="w-full rounded-lg shadow-xl" />
               </div>
               <div className="space-y-6 text-muted-foreground text-lg">
-                <p>
+                <p className="text-slate-300">
                   Back in 2016 we put together a photo booth for a family member's wedding. We made a makeshift photo booth with a camera on a table plugged into a printer.
                 </p>
-                <p>
+                <p className="text-slate-300">
                   The guests loved the photo booth and soon we had more people interested in us providing them with a photo booth at their events.
                 </p>
-                <p>
+                <p className="text-slate-300">
                   Over the years we built and purchased many different photo booth units, experimenting with countless different systems and photo booth unit designs. Always looking for ways to perfect our system and making it more beautiful, compact and easy to use.
                 </p>
-                <p>
+                <p className="text-slate-300">
                   People have reached out interested in purchasing our photo booth. So now we build units for others who also are in the photo booth rental business.
                 </p>
               </div>
