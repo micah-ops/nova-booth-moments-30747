@@ -616,8 +616,8 @@ const Equipment = () => {
                 </div>
               </div>
               <p className="text-muted-foreground italic mb-6 leading-relaxed">
-                "We've scaled to 5 booths and they're booked almost every weekend. The build quality 
-                is exceptional - minimal maintenance even after hundreds of events."
+                "The compact design and professional finish make setup a breeze at any venue. 
+                Clients are always impressed, and the print quality is consistently outstanding."
               </p>
               <p className="font-display font-semibold text-foreground">
                 David Thompson
