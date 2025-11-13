@@ -562,9 +562,7 @@ const Equipment = () => {
                 <p className="text-slate-300">
                   Over the years we built and purchased many different photo booth units, experimenting with countless different systems and photo booth unit designs. Always looking for ways to perfect our system and making it more beautiful, compact and easy to use.
                 </p>
-                <p className="text-slate-300">
-                  People have reached out interested in purchasing our photo booth. So now we build units for others who also are in the photo booth rental business.
-                </p>
+                
               </div>
             </div>
           </div>
