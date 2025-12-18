@@ -4,42 +4,28 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { FaPalette, FaGift, FaStar, FaBirthdayCake, FaMusic, FaCamera } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
-
-const reviews = [
-  {
-    name: "Amanda Rodriguez",
-    text: "Perfect Booth made my daughter's sweet 16 absolutely unforgettable! The kids were obsessed with the 360 booth and we have so many amazing videos to look back on. Best birthday investment ever!",
-    shortText: "Made my daughter's sweet 16 unforgettable! Best birthday investment ever!"
-  },
-  {
-    name: "Marcus Chen",
-    text: "Hired them for my 40th birthday bash and it was the highlight of the night! Everyone from kids to grandparents had a blast. The instant prints were such a hit - guests kept going back for more!",
-    shortText: "Highlight of my 40th! Everyone from kids to grandparents had a blast!"
-  },
-  {
-    name: "Jennifer Thompson",
-    text: "We've used Perfect Booth for three of our kids' birthdays now. They always deliver amazing quality and the staff is so great with the kids. Can't recommend them enough for birthday parties!",
-    shortText: "Used them for three kids' birthdays. Amazing quality every time!"
-  },
-  {
-    name: "David Patel",
-    text: "Threw a surprise 50th for my wife and the photo booth was the perfect entertainment. Customized prints with her photo on them - she was so touched! Professional service from start to finish.",
-    shortText: "Perfect entertainment for my wife's surprise 50th! Professional service."
-  }
-];
-
+const reviews = [{
+  name: "Amanda Rodriguez",
+  text: "Perfect Booth made my daughter's sweet 16 absolutely unforgettable! The kids were obsessed with the 360 booth and we have so many amazing videos to look back on. Best birthday investment ever!",
+  shortText: "Made my daughter's sweet 16 unforgettable! Best birthday investment ever!"
+}, {
+  name: "Marcus Chen",
+  text: "Hired them for my 40th birthday bash and it was the highlight of the night! Everyone from kids to grandparents had a blast. The instant prints were such a hit - guests kept going back for more!",
+  shortText: "Highlight of my 40th! Everyone from kids to grandparents had a blast!"
+}, {
+  name: "Jennifer Thompson",
+  text: "We've used Perfect Booth for three of our kids' birthdays now. They always deliver amazing quality and the staff is so great with the kids. Can't recommend them enough for birthday parties!",
+  shortText: "Used them for three kids' birthdays. Amazing quality every time!"
+}, {
+  name: "David Patel",
+  text: "Threw a surprise 50th for my wife and the photo booth was the perfect entertainment. Customized prints with her photo on them - she was so touched! Professional service from start to finish.",
+  shortText: "Perfect entertainment for my wife's surprise 50th! Professional service."
+}];
 const Birthday = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [currentReview, setCurrentReview] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  
-  const birthdayGalleryImages = [
-    "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png",
-    "/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png",
-    "/lovable-uploads/print-booth-package.png",
-    "/lovable-uploads/instant-print-booth-mobile.png"
-  ];
-
+  const birthdayGalleryImages = ["/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png", "/lovable-uploads/27d79526-60d7-442b-a47d-587cfbfffe3f.png", "/lovable-uploads/print-booth-package.png", "/lovable-uploads/instant-print-booth-mobile.png"];
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible(false);
@@ -50,9 +36,7 @@ const Birthday = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
@@ -89,12 +73,10 @@ const Birthday = () => {
                   Get Birthday Quote
                 </Button>
               </a>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30"
-                onClick={() => document.getElementById('party-packages')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
-              >
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30" onClick={() => document.getElementById('party-packages')?.scrollIntoView({
+              behavior: 'smooth',
+              block: 'center'
+            })}>
                 View Party Packages
               </Button>
             </div>
@@ -163,11 +145,9 @@ const Birthday = () => {
           </h2>
           
           <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-            {birthdayGalleryImages.map((image, index) => (
-              <div key={index} className="break-inside-avoid group">
+            {birthdayGalleryImages.map((image, index) => <div key={index} className="break-inside-avoid group">
                 <img src={image} alt={`Birthday party moment ${index + 1}`} className="w-full rounded-lg hover-scale shadow-md hover:shadow-lg transition-shadow duration-300" />
-              </div>
-            ))}
+              </div>)}
           </div>
 
           <div className="text-center mt-12">
@@ -247,9 +227,7 @@ const Birthday = () => {
               <div className="flex justify-center mb-4">
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
-              <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "I hired Perfect Booth for my husband's 50th Birthday Party Celebration and they did a beautiful job! My family was pleased with the entire event (they are very good with younger children as well; my grandbabies absolutely enjoyed them!). They believe in providing great customer service and making sure the customer is satisfied. Thank you Perfect Booth for helping me make my husband's 50th Birthday Celebration MAGNIFICENT and one he will always remember!"
-              </blockquote>
+              <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">"I hired Perfect Booth for my husband's 50th Birthday Party Celebration and they did a beautiful job! My family was pleased with the entire event. They believe in providing great customer service and making sure the customer is satisfied. Thank you Perfect Booth for helping me make my husband's 50th Birthday Celebration MAGNIFICENT and one he will always remember!"</blockquote>
               <cite className="text-foreground font-display font-semibold">
                 Carol M., Milestone Birthday Party
               </cite>
@@ -422,8 +400,6 @@ const Birthday = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Birthday;
