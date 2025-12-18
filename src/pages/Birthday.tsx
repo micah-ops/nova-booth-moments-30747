@@ -260,7 +260,7 @@ const Birthday = () => {
 
           <div className="text-center">
             <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/30 text-foreground bg-primary">
                 Check Availability
               </Button>
             </a>
@@ -366,14 +366,10 @@ const Birthday = () => {
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
               <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="text-lg px-12 py-6 h-auto bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">
-                  Get Your Party Quote
-                </Button>
+                <Button size="lg" className="text-lg px-12 py-6 h-auto bg-primary hover:bg-primary/90 shadow-[var(--shadow-elev)] hover:shadow-[var(--shadow-glow)]">​Get a quote for your birthday party today! </Button>
               </a>
               <a href="tel:+15551234567">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 h-auto border-white/30 text-white hover:bg-white/10">
-                  Call to Book Now
-                </Button>
+                
               </a>
             </div>
           </div>
