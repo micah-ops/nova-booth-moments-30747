@@ -90,7 +90,7 @@ const Birthday = () => {
                 </Button>
               </a>
               <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-4 h-auto border-white/30 text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30">
                   View Party Packages
                 </Button>
               </a>
@@ -279,7 +279,7 @@ const Birthday = () => {
 
           <div className="text-center">
             <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30">
                 Check Availability
               </Button>
             </a>
