@@ -248,10 +248,10 @@ const Birthday = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "My son's 10th birthday was a hit thanks to Perfect Booth! The kids couldn't get enough of the silly props and instant prints. Every parent asked me where I found them!"
+                "I hired Perfect Booth for my husband's 50th Birthday Party Celebration and they did a beautiful job! My family was pleased with the entire event (they are very good with younger children as well; my grandbabies absolutely enjoyed them!). They believe in providing great customer service and making sure the customer is satisfied. Thank you Perfect Booth for helping me make my husband's 50th Birthday Celebration MAGNIFICENT and one he will always remember!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Lisa M., Kids Birthday Party
+                Carol M., Milestone Birthday Party
               </cite>
             </Card>
 
@@ -260,10 +260,10 @@ const Birthday = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "Booked the 360 booth for my daughter's sweet 16 and it was THE thing everyone talked about. She felt like a celebrity and the videos are incredible - worth every penny!"
+                "Thank you!! Staff very responsive, showed up on time...Very professional. Thank you so much for helping us celebrate my husband's birthday. The kids lovedddddd it."
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Sandra K., Sweet 16 Celebration
+                Kim G., Birthday Party
               </cite>
             </Card>
 
@@ -272,10 +272,10 @@ const Birthday = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "We threw a big 60th birthday bash and Perfect Booth kept everyone entertained all night. From the grandkids to the guests of honor - everyone had a blast!"
+                "I'm so happy I got Perfect Booth for my daughter's birthday party. They were so easy to work with, very accommodating and communicative. They were really helpful throughout the process and Esra was so nice to everyone during the event. I will definitely book them again for future events!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Robert T., Milestone Birthday Party
+                Galia P., Birthday Party
               </cite>
             </Card>
           </div>
