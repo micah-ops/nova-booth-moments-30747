@@ -73,10 +73,10 @@ const Birthday = () => {
                   Get Birthday Quote
                 </Button>
               </a>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30" onClick={() => document.getElementById('party-packages')?.scrollIntoView({
+              <Button size="lg" variant="outline" onClick={() => document.getElementById('party-packages')?.scrollIntoView({
               behavior: 'smooth',
               block: 'center'
-            })}>
+            })} className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 hover:bg-white/30 text-primary-foreground">
                 View Party Packages
               </Button>
             </div>
