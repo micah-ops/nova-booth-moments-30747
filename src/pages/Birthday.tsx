@@ -89,11 +89,14 @@ const Birthday = () => {
                   Get Birthday Quote
                 </Button>
               </a>
-              <a href="https://perfectbooth.bloom.io/freequote" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30">
-                  View Party Packages
-                </Button>
-              </a>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-lg px-8 py-4 h-auto border-white/30 bg-white/20 text-foreground hover:bg-white/30"
+                onClick={() => document.getElementById('party-packages')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              >
+                View Party Packages
+              </Button>
             </div>
 
             <p className="text-white/90 font-sans flex items-center justify-center gap-2">
@@ -105,7 +108,7 @@ const Birthday = () => {
       </section>
 
       {/* Two Birthday Experiences */}
-      <section className="py-20 bg-secondary">
+      <section id="party-packages" className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-secondary-foreground">
             Two Ways to Make Their Birthday Unforgettable
