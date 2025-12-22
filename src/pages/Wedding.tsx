@@ -229,10 +229,10 @@ const Wedding = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "Perfect Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!"
+                "I used Perfect Booth for my wedding reception. They were so easy to work with, very professional, great pricing, and lovely photos. The guests loved using the Photo Booth. The attendant was great. Highly recommend. Worth it!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Sarah & Michael, 
+                Alice C.
               </cite>
             </Card>
 
@@ -241,10 +241,10 @@ const Wedding = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "Our wedding planner recommended Perfect Booth and they exceeded every expectation. The instant prints were such high quality our guests thought they were professional photos, and they made perfect wedding favors!"
+                "I hired Perfect Booth for my wedding reception and it was amazing! Their pricing was very fair and very customizable based on time which was so nice! They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event."
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Emma & James, 
+                Katie Y.
               </cite>
             </Card>
 
@@ -253,10 +253,36 @@ const Wedding = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "The team was incredible - they coordinated perfectly with our photographer and never disrupted our timeline. Our guests loved the photo booth during cocktail hour, and we got the most beautiful photos!"
+                "Our guests at our wedding had a lot of fun with the photo booth! Very professional and quick to respond. Micah was very helpful in answering our questions and provided beautiful designs for our printouts. Highly recommend!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Isabella & David, 
+                Patty W.
+              </cite>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-12">
+            <Card className="p-8">
+              <div className="flex justify-center mb-4">
+                {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
+              </div>
+              <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
+                "Super friendly staff and cute set up at the wedding this weekend! Love the vibe!"
+              </blockquote>
+              <cite className="text-foreground font-display font-semibold">
+                Susan V.
+              </cite>
+            </Card>
+
+            <Card className="p-8">
+              <div className="flex justify-center mb-4">
+                {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
+              </div>
+              <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
+                "Perfect Booth was a hit at my daughter's wedding. We had people show up early and more people show up than expected and our Perfect Booth attendant helped keep people busy and entertained. The Photo Booth actually helped save the day!"
+              </blockquote>
+              <cite className="text-foreground font-display font-semibold">
+                Misti M.
               </cite>
             </Card>
           </div>
