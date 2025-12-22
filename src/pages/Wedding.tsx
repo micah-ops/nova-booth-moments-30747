@@ -319,7 +319,7 @@ const Wedding = () => {
                   How much space do you need at our venue?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Space requirements vary by experience type. Instant print booths need approximately 8x8 feet, glamour setups require 10x10 feet, and 360° experiences need a 12x12 foot area. We can work with most venue layouts and provide exact specifications during your consultation.
+                  Space requirements vary by experience type. Instant print booths need approximately 8x8 feet and 360° experiences need a 12x12 foot area. We can work with most venue layouts and provide exact specifications during your consultation.
                 </AccordionContent>
               </AccordionItem>
 
