@@ -301,7 +301,7 @@ const Wedding = () => {
                   What happens if it rains at our outdoor wedding?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  We come prepared with weather-resistant equipment and can quickly adapt to covered areas or tents. Our 360° and glamour experiences work beautifully indoors, and we always have backup plans to ensure your guests can still enjoy the photo experience regardless of weather.
+                  We need a covered area to move our equipment to if it starts to rain. If no covered area is available, we will need to pack up the equipment to protect it from weather damage.
                 </AccordionContent>
               </AccordionItem>
 
