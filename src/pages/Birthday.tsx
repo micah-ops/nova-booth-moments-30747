@@ -278,7 +278,7 @@ const Birthday = () => {
                   What ages is the photo booth best for?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Our photo booths are perfect for all ages! Kids as young as 4 love the props and instant prints, while teems love the 360° videos. Adults appreciate the high-quality photos and nostalgic fun. We adjust props and experiences based on your party's age group.
+                  Our photo booths are perfect for all ages! Kids as young as 4 love the props and instant prints, while teems love the 360° videos. Adults appreciate the high-quality photos and nostalgic fun.
                 </AccordionContent>
               </AccordionItem>
 
