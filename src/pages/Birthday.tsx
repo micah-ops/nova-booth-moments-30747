@@ -323,7 +323,7 @@ const Birthday = () => {
                   Is there someone to help run the booth?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Every booking includes a friendly, professional attendant who manages the booth, helps guests pose, and ensures everyone has a great time. This is especially helpful for kids' parties where little ones might need extra guidance!
+                  Every booking includes a friendly, professional attendant who manages the booth and ensures everyone has a great time. This is especially helpful for kids' parties where little ones might need extra guidance!
                 </AccordionContent>
               </AccordionItem>
 
