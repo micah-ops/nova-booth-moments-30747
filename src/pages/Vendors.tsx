@@ -8,6 +8,7 @@ type VendorCategory =
   | "all"
   | "venues"
   | "catering"
+  | "bartending"
   | "photographers"
   | "videographers"
   | "dj-entertainment"
@@ -28,6 +29,7 @@ const categories: { value: VendorCategory; label: string }[] = [
   { value: "all", label: "All Vendors" },
   { value: "venues", label: "Venues" },
   { value: "catering", label: "Catering" },
+  { value: "bartending", label: "Bartending" },
   { value: "photographers", label: "Photographers" },
   { value: "videographers", label: "Videographers" },
   { value: "dj-entertainment", label: "DJ & Entertainment" },
@@ -36,119 +38,31 @@ const categories: { value: VendorCategory; label: string }[] = [
   { value: "hair-makeup", label: "Hair & Makeup" },
 ];
 
-// Placeholder vendors - replace with actual partner data
+// Real partner vendors
 const vendors: Vendor[] = [
   {
-    name: "The Grand Estate",
+    name: "Abernethy Center",
     category: "venues",
-    description: "A stunning historic venue perfect for elegant weddings and upscale events.",
-    location: "Portland, OR",
-    website: "https://example.com",
+    description: "Portland's full-service wedding and event venue featuring captivating gardens, a luxurious ballroom, and the iconic Abernethy Chapel. Award-winning catering and unmatched customer service since 2001.",
+    location: "Oregon City, OR",
+    website: "https://www.abernethycenter.com",
+    image: "/vendor-images/abernethy-center.jpg",
   },
   {
-    name: "Riverside Gardens",
-    category: "venues",
-    description: "Beautiful outdoor venue with scenic river views and lush gardens.",
-    location: "Lake Oswego, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Savory Celebrations",
+    name: "Morchella Events",
     category: "catering",
-    description: "Farm-to-table catering with customizable menus for any event size.",
+    description: "Award-winning chef expertise blended with the wild, seasonal bounty of the Pacific Northwest. Custom menus for weddings, private dinners, and corporate events—bringing fine dining to any location.",
     location: "Portland, OR",
-    website: "https://example.com",
+    website: "https://www.morchella-pdx.com",
+    image: "/vendor-images/morchella.png",
   },
   {
-    name: "Culinary Creations",
-    category: "catering",
-    description: "Award-winning catering specializing in fusion cuisine and elegant presentations.",
-    location: "Beaverton, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Captured Moments Photography",
-    category: "photographers",
-    description: "Documentary-style wedding photography that tells your unique love story.",
-    location: "Portland, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Luminous Light Studios",
-    category: "photographers",
-    description: "Fine art photography with a focus on natural light and timeless imagery.",
-    location: "Vancouver, WA",
-    website: "https://example.com",
-  },
-  {
-    name: "Cinematic Dreams",
-    category: "videographers",
-    description: "Cinematic wedding films that capture every emotional moment of your day.",
-    location: "Portland, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Motion Stories",
-    category: "videographers",
-    description: "Modern videography with creative storytelling and stunning visuals.",
-    location: "Tigard, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Beats & Rhythms DJ",
-    category: "dj-entertainment",
-    description: "Professional DJ services with extensive music library and lighting packages.",
-    location: "Portland, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Live Wire Entertainment",
-    category: "dj-entertainment",
-    description: "Live bands and entertainment options for unforgettable celebrations.",
-    location: "Portland, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Bloom & Petal",
-    category: "florists",
-    description: "Artisan floral designs with locally sourced, seasonal blooms.",
-    location: "Portland, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Garden of Eden Florals",
-    category: "florists",
-    description: "Luxury floral arrangements for weddings and special events.",
-    location: "Lake Oswego, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Elegant Events Co.",
-    category: "planners",
-    description: "Full-service wedding planning with attention to every detail.",
-    location: "Portland, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Dream Day Coordinators",
-    category: "planners",
-    description: "Day-of coordination and partial planning services for stress-free celebrations.",
-    location: "Beaverton, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Glam Squad PDX",
-    category: "hair-makeup",
-    description: "On-location hair and makeup services for brides and bridal parties.",
-    location: "Portland, OR",
-    website: "https://example.com",
-  },
-  {
-    name: "Beauty on Location",
-    category: "hair-makeup",
-    description: "Professional beauty services specializing in natural, photo-ready looks.",
-    location: "Portland, OR",
-    website: "https://example.com",
+    name: "Top It Off Bartending",
+    category: "bartending",
+    description: "The premier destination for sophisticated bartending services in the Pacific Northwest. Unrivaled service and the freshest ingredients for an exquisite experience.",
+    location: "Oregon & Washington",
+    website: "https://www.topitoffbartending.com",
+    image: "/vendor-images/top-it-off-bartending.jpg",
   },
 ];
 
