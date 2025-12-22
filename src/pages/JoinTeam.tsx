@@ -1,32 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
-
 const JoinTeam = () => {
-  const requirements = [
-    "A friendly, sociable and positive person",
-    "Available for training sessions",
-    "Have availability on weekends or weekdays",
-    "Punctual and conscientious - you know how to be somewhere on time",
-    "Relatively tech savvy",
-    "Can dress in business casual attire or attire appropriate for the event",
-    "Have the ability to carry 35 pounds",
-    "Teachable",
-    "Have a vehicle",
-    "Be able to set up and take down the Photo Booth (it's reasonably simple)",
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+  const requirements = ["A friendly, sociable and positive person", "Available for training sessions", "Have availability on weekends or weekdays", "Punctual and conscientious - you know how to be somewhere on time", "Relatively tech savvy", "Can dress in business casual attire or attire appropriate for the event", "Have the ability to carry 35 pounds", "Teachable", "Have a vehicle", "Be able to set up and take down the Photo Booth (it's reasonably simple)"];
+  return <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       {/* Header */}
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <a href="/" className="inline-block hover:opacity-80 transition-opacity">
-            <img 
-              src="/lovable-uploads/perfect-booth-logo-header.png" 
-              alt="Perfect Booth Photo Booth Rentals" 
-              className="h-12"
-            />
+            <img src="/lovable-uploads/perfect-booth-logo-header.png" alt="Perfect Booth Photo Booth Rentals" className="h-12" />
           </a>
         </div>
       </header>
@@ -42,11 +24,7 @@ const JoinTeam = () => {
             <p className="text-xl text-muted-foreground mb-6">
               Looking for Photo Booth Attendants
             </p>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6"
-              onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}
-            >
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
@@ -54,10 +32,7 @@ const JoinTeam = () => {
           {/* Introduction Card */}
           <Card className="mb-8">
             <CardContent className="p-8">
-              <p className="text-lg leading-relaxed mb-6">
-                We own Perfect Booth Photo Booth Rentals and we're looking for people to train 
-                as photo booth attendants on a per-event basis.
-              </p>
+              
               <p className="text-lg leading-relaxed mb-6">
                 The perfect candidate is good with people, punctual, conscientious, teachable, 
                 flexible, and available to work weekends.
@@ -98,9 +73,7 @@ const JoinTeam = () => {
           <Card className="mb-8 bg-primary/5 border-primary/20">
             <CardContent className="p-8">
               <h2 className="text-2xl font-display font-bold mb-4">Compensation</h2>
-              <p className="text-xl font-semibold mb-2">
-                $100-200 per event
-              </p>
+              <p className="text-xl font-semibold mb-2">$100-175 per event</p>
               <p className="text-muted-foreground">
                 You will be hired as an independent contractor on a per-event basis. 
                 This usually comes out to about $20-25 per hour.
@@ -113,12 +86,10 @@ const JoinTeam = () => {
             <CardContent className="p-8">
               <h2 className="text-2xl font-display font-bold mb-6">Requirements</h2>
               <ul className="space-y-4">
-                {requirements.map((requirement, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {requirements.map((requirement, index) => <li key={index} className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-primary shrink-0 mt-0.5" />
                     <span className="text-lg">{requirement}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </CardContent>
           </Card>
@@ -128,11 +99,7 @@ const JoinTeam = () => {
             <p className="text-xl mb-6">
               If you qualify and are interested, please fill out our application form!
             </p>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6"
-              onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}
-            >
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
@@ -145,8 +112,6 @@ const JoinTeam = () => {
           <p>&copy; 2024 Perfect Booth Photo Booth Rentals. All rights reserved.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default JoinTeam;
