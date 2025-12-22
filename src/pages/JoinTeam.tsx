@@ -24,7 +24,7 @@ const JoinTeam = () => {
             <p className="text-xl text-muted-foreground mb-6">
               Looking for Photo Booth Attendants
             </p>
-            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://perfectbooth.bloom.io/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
@@ -87,7 +87,7 @@ const JoinTeam = () => {
             <p className="text-xl mb-6">
               If you qualify and are interested, please fill out our application form!
             </p>
-            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://perfectbooth.bloom.io/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
