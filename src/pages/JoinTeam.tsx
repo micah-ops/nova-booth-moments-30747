@@ -24,7 +24,7 @@ const JoinTeam = () => {
             <p className="text-xl text-muted-foreground mb-6">
               Looking for Photo Booth Attendants
             </p>
-            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://perfectbooth.bloom.io/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
@@ -46,17 +46,26 @@ const JoinTeam = () => {
           </Card>
 
           {/* What You'll Do */}
-          
-
-          {/* Compensation */}
-          <Card className="mb-8 bg-primary/5 border-primary/20">
+          <Card className="mb-8">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-display font-bold mb-4">© 2025 Perfect Booth Photo Booth Rentals. All rights reserved.</h2>
-              <p className="text-xl font-semibold mb-2">$100-175 per event</p>
-              <p className="text-muted-foreground">
-                You will be hired as an independent contractor on a per-event basis. 
-                This usually comes out to about $20-25 per hour.
+              <h2 className="text-2xl font-display font-bold mb-4">What You'll Do</h2>
+              <p className="text-lg leading-relaxed mb-4">
+                Attending the booth is pretty simple:
               </p>
+              <ul className="space-y-3 text-lg">
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <span>Arrive about an hour before the event starts to set up</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <span>Make sure the booth runs smoothly during the event</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <span>Pack up the equipment at the end of the event</span>
+                </li>
+              </ul>
             </CardContent>
           </Card>
 
@@ -78,7 +87,7 @@ const JoinTeam = () => {
             <p className="text-xl mb-6">
               If you qualify and are interested, please fill out our application form!
             </p>
-            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://perfectbooth.bloom.io/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
