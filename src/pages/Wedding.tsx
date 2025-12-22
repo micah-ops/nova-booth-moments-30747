@@ -158,7 +158,7 @@ const Wedding = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-secondary text-primary-foreground">
               Check Availability
             </Button>
           </div>
