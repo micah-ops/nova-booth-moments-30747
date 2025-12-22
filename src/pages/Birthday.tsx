@@ -332,7 +332,7 @@ const Birthday = () => {
                   How far in advance should I book?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  We recommend booking 2-4 weeks in advance for birthday parties. Weekends fill up quickly, especially during summer and holiday seasons. For large milestone celebrations, booking 4-6 weeks ahead is ideal.
+                  We recommend booking 4-8 weeks in advance for birthday parties. Weekends fill up quickly, especially during summer and holiday seasons. For larger milestone celebrations, booking 8-10 weeks ahead is ideal.
                 </AccordionContent>
               </AccordionItem>
 
