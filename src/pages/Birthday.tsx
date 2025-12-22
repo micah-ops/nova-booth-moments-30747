@@ -341,7 +341,7 @@ const Birthday = () => {
                   Do we get digital copies of everything?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Yes! Guests can instantly share photos via text or email, and you'll receive a complete digital gallery within 48 hours. All 360° videos are delivered digitally for easy sharing on social media.
+                  Yes! Guests can instantly share photos via text or email, and you'll receive a complete digital gallery after the event. All 360° videos are delivered digitally for easy sharing on social media.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
