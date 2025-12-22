@@ -84,49 +84,57 @@ const vendors: Vendor[] = [{
   category: "photographers",
   description: "Editorial storytelling inspired by love and legacy. Timeless art meets wild beauty, capturing personalities through gorgeous photography. Featured in Huffington Post, Oprah Magazine, and Grace Ormonde.",
   location: "Portland, OR",
-  website: "https://jessicahillphotography.com"
+  website: "https://jessicahillphotography.com",
+  image: "/vendor-images/jessica-hill-photography.jpg"
 }, {
   name: "Here Today Photography",
   category: "photographers",
   description: "Joyful wedding images that feel like home. Documenting the in-between moments—the love of family and friends, and the community celebrating with you.",
   location: "Portland, OR",
-  website: "https://www.heretodayphoto.com"
+  website: "https://www.heretodayphoto.com",
+  image: "/vendor-images/here-today-photography.jpg"
 }, {
   name: "Sean Carr Photography",
   category: "photographers",
   description: "Elopements and intimate weddings for the authentic and adventurous. Inspired by big landscapes and big hearts, photographing Oregon, Washington, and beyond.",
   location: "Portland, OR",
-  website: "https://seancarrphotography.com"
+  website: "https://seancarrphotography.com",
+  image: "/vendor-images/sean-carr-photography.jpg"
 }, {
   name: "Watertown Films",
   category: "videographers",
   description: "A luxury wedding videography studio creating timeless films. Cinematic wedding films that artfully weave grand celebrations with cherished intimate moments for generations.",
   location: "Portland, OR",
-  website: "https://www.watertownfilms.com"
+  website: "https://www.watertownfilms.com",
+  image: "/vendor-images/watertown-films.jpg"
 }, {
   name: "Botanica Floral & Home",
   category: "florists",
   description: "Portland florist offering stunning floral designs for weddings and events. Beautiful arrangements with same-day and next-day delivery throughout Portland.",
   location: "Portland, OR",
-  website: "https://botanicafloralpdx.com"
+  website: "https://botanicafloralpdx.com",
+  image: "/vendor-images/botanica-floral.jpg"
 }, {
   name: "Wildeflower Collective",
   category: "hair-makeup",
   description: "Master makeup artistry from The Makeup Designory of LA & New York. 400+ wedding parties served, trusted by brides across the coast for full wedding parties, elopements, and events.",
   location: "Portland, OR",
-  website: "https://thewildeflower.co"
+  website: "https://thewildeflower.co",
+  image: "/vendor-images/wildeflower-collective.jpg"
 }, {
   name: "Bridal Bliss",
   category: "planners",
   description: "Premier wedding planners serving Portland, Seattle, and Bend. Full service, partial planning, and day-of facilitation to bring your dream wedding to life.",
   location: "Portland, Seattle, Bend",
-  website: "https://www.bridalbliss.com"
+  website: "https://www.bridalbliss.com",
+  image: "/vendor-images/bridal-bliss.jpg"
 }, {
   name: "Paradox Productions",
   category: "dj-entertainment",
   description: "Voted 'Best DJ in Portland' by Oregon Wedding Day Magazine. Providing an elite experience with 100% satisfaction guaranteed. If a packed dance floor is non-negotiable, Paradox is your choice.",
   location: "Portland & Bend, OR",
-  website: "https://djpdx.com"
+  website: "https://djpdx.com",
+  image: "/vendor-images/paradox-productions.png"
 }];
 const getCategoryLabel = (category: Exclude<VendorCategory, "all">) => {
   return categories.find(c => c.value === category)?.label || category;
