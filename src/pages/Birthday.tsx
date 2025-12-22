@@ -5,21 +5,17 @@ import { FaPalette, FaGift, FaStar, FaBirthdayCake, FaMusic, FaCamera } from "re
 import { useState, useEffect } from "react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
 const reviews = [{
-  name: "Amanda Rodriguez",
-  text: "Perfect Booth made my daughter's sweet 16 absolutely unforgettable! The kids were obsessed with the 360 booth and we have so many amazing videos to look back on. Best birthday investment ever!",
-  shortText: "Made my daughter's sweet 16 unforgettable! Best birthday investment ever!"
+  name: "Carol M.",
+  text: "I hired Perfect Booth for my husband's 50th Birthday Party Celebration and they did a beautiful job! My family was pleased with the entire event. They believe in providing great customer service and making sure the customer is satisfied. Thank you Perfect Booth for helping me make my husband's 50th Birthday Celebration MAGNIFICENT and one he will always remember!",
+  shortText: "They did a beautiful job! Made my husband's 50th MAGNIFICENT!"
 }, {
-  name: "Marcus Chen",
-  text: "Hired them for my 40th birthday bash and it was the highlight of the night! Everyone from kids to grandparents had a blast. The instant prints were such a hit - guests kept going back for more!",
-  shortText: "Highlight of my 40th! Everyone from kids to grandparents had a blast!"
+  name: "Kim G.",
+  text: "Thank you!! Staff very responsive, showed up on time...Very professional. Thank you so much for helping us celebrate my husband's birthday. The kids lovedddddd it.",
+  shortText: "Staff very responsive and professional. The kids loved it!"
 }, {
-  name: "Jennifer Thompson",
-  text: "We've used Perfect Booth for three of our kids' birthdays now. They always deliver amazing quality and the staff is so great with the kids. Can't recommend them enough for birthday parties!",
-  shortText: "Used them for three kids' birthdays. Amazing quality every time!"
-}, {
-  name: "David Patel",
-  text: "Threw a surprise 50th for my wife and the photo booth was the perfect entertainment. Customized prints with her photo on them - she was so touched! Professional service from start to finish.",
-  shortText: "Perfect entertainment for my wife's surprise 50th! Professional service."
+  name: "Galia P.",
+  text: "I'm so happy I got Perfect Booth for my daughter's birthday party. They were so easy to work with, very accommodating and communicative. They were really helpful throughout the process and Esra was so nice to everyone during the event. I will definitely book them again for future events!",
+  shortText: "So easy to work with! Will definitely book them again!"
 }];
 const Birthday = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
