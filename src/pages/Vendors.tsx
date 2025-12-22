@@ -9,6 +9,7 @@ type VendorCategory =
   | "venues"
   | "catering"
   | "bartending"
+  | "headshot-photography"
   | "photographers"
   | "videographers"
   | "dj-entertainment"
@@ -30,6 +31,7 @@ const categories: { value: VendorCategory; label: string }[] = [
   { value: "venues", label: "Venues" },
   { value: "catering", label: "Catering" },
   { value: "bartending", label: "Bartending" },
+  { value: "headshot-photography", label: "Headshot Photography" },
   { value: "photographers", label: "Photographers" },
   { value: "videographers", label: "Videographers" },
   { value: "dj-entertainment", label: "DJ & Entertainment" },
@@ -63,6 +65,14 @@ const vendors: Vendor[] = [
     location: "Oregon & Washington",
     website: "https://www.topitoffbartending.com",
     image: "/vendor-images/top-it-off-bartending.jpg",
+  },
+  {
+    name: "Headshot Portland",
+    category: "headshot-photography",
+    description: "Portland's top-rated headshot and portrait photography studio. Professional, polished, and priced right—trusted by Portland's leading companies and professionals.",
+    location: "Portland, OR",
+    website: "https://www.headshotportland.com",
+    image: "/vendor-images/headshot-portland.webp",
   },
 ];
 
