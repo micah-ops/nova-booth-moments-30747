@@ -82,6 +82,21 @@ const JoinTeam = () => {
             </CardContent>
           </Card>
 
+          {/* Requirements */}
+          <Card className="mb-8">
+            <CardContent className="p-8">
+              <h2 className="text-2xl font-display font-bold mb-6">Requirements</h2>
+              <ul className="space-y-4">
+                {requirements.map((requirement, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+                    <span className="text-lg">{requirement}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
           {/* CTA */}
           <div className="text-center">
             <p className="text-xl mb-6">
