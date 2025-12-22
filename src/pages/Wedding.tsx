@@ -232,7 +232,7 @@ const Wedding = () => {
                 "Perfect Booth transformed our reception! The 360° videos of our first dance are absolutely magical, and the setup was so elegant it looked like part of our decor. Our guests are still raving about it!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Sarah & Michael, Garden Wedding at Vintage Estates
+                Sarah & Michael, 
               </cite>
             </Card>
 
@@ -244,7 +244,7 @@ const Wedding = () => {
                 "Our wedding planner recommended Perfect Booth and they exceeded every expectation. The instant prints were such high quality our guests thought they were professional photos, and they made perfect wedding favors!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Emma & James, Ballroom Wedding
+                Emma & James, 
               </cite>
             </Card>
 
@@ -256,7 +256,7 @@ const Wedding = () => {
                 "The team was incredible - they coordinated perfectly with our photographer and never disrupted our timeline. Our guests loved the glamour booth during cocktail hour, and we got the most beautiful photos!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
-                Isabella & David, Vineyard Wedding
+                Isabella & David, 
               </cite>
             </Card>
           </div>
