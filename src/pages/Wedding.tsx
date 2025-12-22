@@ -313,7 +313,7 @@ const Wedding = () => {
                   How do you coordinate with our other wedding vendors?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  We work closely with your wedding planner, photographer, and venue coordinator to ensure seamless integration. Our team arrives early for setup and coordinates timing to never interfere with your ceremony, reception timeline, or other vendor activities.
+                  We work with your venue coordinator or wedding planner to ensure seamless integration. Our team arrives about an hour before our scheduled start time to get set up and coordinates timing to never interfere with your ceremony, reception timeline, or other vendor activities.
                 </AccordionContent>
               </AccordionItem>
 
@@ -367,7 +367,7 @@ const Wedding = () => {
                   What's included in the setup and breakdown?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Our team handles complete setup 1-2 hours before your event begins and breakdown after your celebration ends. This includes all equipment, backdrops, props, lighting, and a professional attendant to manage the experience throughout your wedding.
+                  Our team arrives about an hour before our scheduled start time to handle complete setup and stays through breakdown after your celebration ends. This includes all equipment, backdrops, props, lighting, and a professional attendant to manage the experience throughout your wedding.
                 </AccordionContent>
               </AccordionItem>
 
@@ -376,7 +376,7 @@ const Wedding = () => {
                   Can we get both prints and digital copies?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Yes! All experiences include digital delivery. Guests receive instant prints or videos, and you'll receive a complete digital gallery of all photos and videos captured during your wedding within 48 hours.
+                  Yes! All experiences include digital delivery. Guests receive instant prints or videos, and you'll receive a complete digital gallery of all photos and videos captured during your wedding.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
