@@ -184,7 +184,7 @@ const Birthday = () => {
               </div>
               <h3 className="text-xl font-display font-bold mb-4 text-foreground">Entertainment for All Ages</h3>
               <p className="text-muted-foreground leading-relaxed">
-                From kids' parties to milestone celebrations, our booths keep guests entertained for hours. Props, filters, and interactive experiences that everyone loves!
+                From kids' parties to milestone celebrations, our booths keep guests entertained for hours. Props, prints, and interactive experiences that everyone loves!
               </p>
             </Card>
 
@@ -196,7 +196,7 @@ const Birthday = () => {
               </div>
               <h3 className="text-xl font-display font-bold mb-4 text-foreground">Built-In Party Favors</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Skip the goodie bags! Guests leave with personalized photo prints and digital videos - memorable keepsakes that won't end up in the trash.
+                Skip the goodie bags! Guests leave with personalized photo prints or digital videos. Memorable keepsakes that  they will cherish.            
               </p>
             </Card>
           </div>
