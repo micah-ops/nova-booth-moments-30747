@@ -143,7 +143,6 @@ const Vendors = () => {
   const [selectedCategory, setSelectedCategory] = useState<VendorCategory>("all");
   const [headerVisible, setHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -154,11 +153,11 @@ const Vendors = () => {
       }
       setLastScrollY(currentScrollY);
     };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, {
+      passive: true
+    });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
-
   const filteredVendors = selectedCategory === "all" ? vendors : vendors.filter(vendor => vendor.category === selectedCategory);
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -202,7 +201,7 @@ const Vendors = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredVendors.map((vendor, index) => <Card key={index} className="hover:shadow-lg transition-shadow overflow-hidden group">
               {vendor.image && <div className="h-48 overflow-hidden">
-                  <img src={vendor.image} alt={vendor.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <img src={vendor.image} alt={vendor.name} className="w-full h-full group-hover:scale-105 transition-transform duration-300 object-contain" />
                 </div>}
               <CardContent className="p-6">
                 <div className="flex items-start justify-between gap-2 mb-2">
