@@ -8,6 +8,8 @@ import Wedding from "./pages/Wedding";
 import Birthday from "./pages/Birthday";
 import HolidayParties from "./pages/HolidayParties";
 import Corporate from "./pages/Corporate";
+import InstantPrintBooth from "./pages/InstantPrintBooth";
+import VideoBooth360 from "./pages/VideoBooth360";
 import Equipment from "./pages/Equipment";
 import JoinTeam from "./pages/JoinTeam";
 import Partners from "./pages/Partners";
@@ -31,6 +33,8 @@ const App = () => (
           <Route path="/birthday" element={<Birthday />} />
           <Route path="/holiday-parties" element={<HolidayParties />} />
           <Route path="/corporate" element={<Corporate />} />
+          <Route path="/instant-print-booth" element={<InstantPrintBooth />} />
+          <Route path="/360-video-booth" element={<VideoBooth360 />} />
           <Route path="/equipment" element={<Equipment />} />
           <Route path="/join-team" element={<JoinTeam />} />
           <Route path="/partners" element={<Partners />} />
