@@ -46,28 +46,7 @@ const JoinTeam = () => {
           </Card>
 
           {/* What You'll Do */}
-          <Card className="mb-8">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-display font-bold mb-4">What You'll Do</h2>
-              <p className="text-lg leading-relaxed mb-4">
-                Attending the booth is pretty simple:
-              </p>
-              <ul className="space-y-3 text-lg">
-                <li className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>Arrive about an hour before the event starts to set up</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>Make sure the booth runs smoothly during the event</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>Pack up the equipment at the end of the event</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
+          
 
           {/* Compensation */}
           <Card className="mb-8 bg-primary/5 border-primary/20">
