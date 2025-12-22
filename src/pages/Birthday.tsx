@@ -314,7 +314,7 @@ const Birthday = () => {
                   Do you provide props and accessories?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Yes! Every booking includes a curated prop collection. We can also source theme-specific props to match your party - from princess crowns to superhero masks, decade-themed items for milestone birthdays, and more.
+                  Yes! Every booking includes a curated prop collection. We can also source theme-specific props to match your party, and you're welcome to provide your own props in addition to ours.
                 </AccordionContent>
               </AccordionItem>
 
