@@ -9,6 +9,7 @@ import Birthday from "./pages/Birthday";
 import Equipment from "./pages/Equipment";
 import JoinTeam from "./pages/JoinTeam";
 import Partners from "./pages/Partners";
+import Vendors from "./pages/Vendors";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import ThankYou from "./pages/ThankYou";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/equipment" element={<Equipment />} />
           <Route path="/join-team" element={<JoinTeam />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/vendors" element={<Vendors />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/thank-you" element={<ThankYou />} />
