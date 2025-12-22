@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, MapPin } from "lucide-react";
@@ -85,10 +85,28 @@ const getCategoryLabel = (category: Exclude<VendorCategory, "all">) => {
 };
 const Vendors = () => {
   const [selectedCategory, setSelectedCategory] = useState<VendorCategory>("all");
+  const [headerVisible, setHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        setHeaderVisible(false);
+      } else {
+        setHeaderVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   const filteredVendors = selectedCategory === "all" ? vendors : vendors.filter(vendor => vendor.category === selectedCategory);
   return <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className={`border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50 transition-transform duration-300 ${headerVisible ? "translate-y-0" : "-translate-y-full"}`}>
         <div className="container mx-auto px-4 py-4">
           <a href="/" className="inline-block hover:opacity-80 transition-opacity">
             <img src={perfectBoothLogo} alt="Perfect Booth Photo Booth Rentals" className="h-12" />
