@@ -24,7 +24,7 @@ const JoinTeam = () => {
             <p className="text-xl text-muted-foreground mb-6">
               Looking for Photo Booth Attendants
             </p>
-            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://perfectbooth.bloom.io/jointeampdx', '_blank')}>
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
@@ -69,6 +69,18 @@ const JoinTeam = () => {
             </CardContent>
           </Card>
 
+          {/* Compensation */}
+          <Card className="mb-8 bg-primary/5 border-primary/20">
+            <CardContent className="p-8">
+              <h2 className="text-2xl font-display font-bold mb-4">© 2025 Perfect Booth Photo Booth Rentals. All rights reserved.</h2>
+              <p className="text-xl font-semibold mb-2">$100-175 per event</p>
+              <p className="text-muted-foreground">
+                You will be hired as an independent contractor on a per-event basis. 
+                This usually comes out to about $20-25 per hour.
+              </p>
+            </CardContent>
+          </Card>
+
           {/* Requirements */}
           <Card className="mb-8">
             <CardContent className="p-8">
@@ -87,7 +99,7 @@ const JoinTeam = () => {
             <p className="text-xl mb-6">
               If you qualify and are interested, please fill out our application form!
             </p>
-            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://perfectbooth.bloom.io/jointeampdx', '_blank')}>
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://ww2.perfectbooth.co/jointeampdx', '_blank')}>
               Apply Now
             </Button>
           </div>
