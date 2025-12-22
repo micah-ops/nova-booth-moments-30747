@@ -253,7 +253,7 @@ const Wedding = () => {
                 {[...Array(5)].map((_, i) => <FaStar key={i} className="text-primary text-lg" />)}
               </div>
               <blockquote className="text-muted-foreground italic mb-6 leading-relaxed">
-                "The team was incredible - they coordinated perfectly with our photographer and never disrupted our timeline. Our guests loved the glamour booth during cocktail hour, and we got the most beautiful photos!"
+                "The team was incredible - they coordinated perfectly with our photographer and never disrupted our timeline. Our guests loved the photo booth during cocktail hour, and we got the most beautiful photos!"
               </blockquote>
               <cite className="text-foreground font-display font-semibold">
                 Isabella & David, 
