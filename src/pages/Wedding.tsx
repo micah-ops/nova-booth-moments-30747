@@ -6,21 +6,25 @@ import { FaConciergeBell } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
 const reviews = [{
-  name: "Max Barenberg",
-  text: "Awesome booth! Everyone at the party was raving. Worth the money for sure!!",
-  shortText: "Awesome booth! Everyone at the party was raving."
+  name: "Alice Cadman",
+  text: "I used Perfect Booth for my wedding reception. They were so easy to work with, very professional, great pricing, and lovely photos. The guests loved using the Photo Booth. The attendant was great. Highly recommend. Worth it!",
+  shortText: "So easy to work with, very professional, great pricing. Worth it!"
+}, {
+  name: "Katie Yoshioka",
+  text: "I hired Perfect Booth for my wedding reception and it was amazing! Their pricing was very fair and very customizable based on time which was so nice! They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event.",
+  shortText: "Amazing! Fair pricing, customizable, and so much fun! 10/10 recommend!"
 }, {
   name: "Susan Vandervlugt",
   text: "Super friendly staff and cute set up at the wedding this weekend! Love the vibe!",
   shortText: "Super friendly staff and cute set up! Love the vibe!"
 }, {
-  name: "Katie Yoshioka",
-  text: "I hired Perfect Booth for my wedding reception and it was amazing! Their pricing was very fair and very customizable based on time which was so nice! They worked with me to design the photo strip and easily made changes based on my preferences. The product itself was clear, beautiful, and so much fun! 10/10 would recommend using them for ANY event.",
-  shortText: "Amazing! Fair pricing, customizable, and so much fun! 10/10 recommend for any event."
+  name: "Patty Wu",
+  text: "Our guests at our wedding had a lot of fun with the photo booth! Very professional and quick to respond. Micah was very helpful in answering our questions and provided beautiful designs for our printouts. Highly recommend!",
+  shortText: "Very professional and quick to respond. Beautiful designs. Highly recommend!"
 }, {
-  name: "Jenny Payne",
-  text: "Such a great team! Kids had a blast and perfect booth was PERFECT! Great communication and professional.",
-  shortText: "Great team! Kids had a blast. Perfect communication and professional."
+  name: "Misti Mott",
+  text: "Perfect Booth was a hit at my daughter's wedding. We had people show up early and more people show up than expected and our Perfect Booth attendant helped keep people busy and entertained. The Photo Booth actually helped save the day!",
+  shortText: "A hit at my daughter's wedding! The Photo Booth helped save the day!"
 }];
 const Wedding = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
