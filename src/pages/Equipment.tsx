@@ -86,7 +86,7 @@ const Equipment = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden min-h-[600px] md:min-h-[700px]">
         <div className="absolute inset-0">
-          <img src={perfectBoothHeroBg} alt="Perfect Booth photo booth unit" className="w-full h-full object-cover object-[25%_center] md:object-center" />
+          <img src={perfectBoothHeroBg} alt="Perfect Booth photo booth unit" className="w-full h-full object-cover object-[75%_center] md:object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-transparent" />
         </div>
         <div className="container mx-auto px-4 relative">
