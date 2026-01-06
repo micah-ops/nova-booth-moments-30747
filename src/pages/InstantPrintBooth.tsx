@@ -5,12 +5,10 @@ import { CheckCircle2, Printer, Image, Palette, Clock, Users, Share2, Sparkles, 
 import { FaStar } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import perfectBoothLogo from "@/assets/perfect-booth-logo-header.png";
-
 const InstantPrintBooth = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>("");
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -23,19 +21,13 @@ const InstantPrintBooth = () => {
       }
       setLastScrollY(currentScrollY);
     };
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, {
+      passive: true
+    });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
-
-  const galleryImages = [
-    "/lovable-uploads/print-booth-package.png",
-    "/lovable-uploads/wedding-photo-strips.png",
-    "/lovable-uploads/instant-print-booth-desktop.jpg",
-    "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const galleryImages = ["/lovable-uploads/print-booth-package.png", "/lovable-uploads/wedding-photo-strips.png", "/lovable-uploads/instant-print-booth-desktop.jpg", "/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png"];
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className={`fixed top-0 left-0 right-0 z-[100] w-full bg-background/95 backdrop-blur-md border-b shadow-sm transition-transform duration-300 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -57,11 +49,7 @@ const InstantPrintBooth = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         <div className="absolute inset-0">
-          <img 
-            src="/lovable-uploads/print-booth-package.png" 
-            alt="Instant Print Photo Booth setup with prints" 
-            className="w-full h-full object-cover"
-          />
+          <img src="/lovable-uploads/print-booth-package.png" alt="Instant Print Photo Booth setup with prints" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40"></div>
         </div>
         
@@ -85,7 +73,7 @@ const InstantPrintBooth = () => {
                 </Button>
               </a>
               <a href="#features">
-                <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/30 text-white hover:bg-white/10">
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/30 text-white bg-secondary">
                   Learn More
                 </Button>
               </a>
@@ -163,11 +151,7 @@ const InstantPrintBooth = () => {
             {/* 2x6 Photo Strips */}
             <Card className="overflow-hidden hover-scale">
               <div className="aspect-[3/4] overflow-hidden">
-                <img 
-                  src="/lovable-uploads/wedding-photo-strips.png" 
-                  alt="2x6 photo strip examples" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/wedding-photo-strips.png" alt="2x6 photo strip examples" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-display font-bold mb-4 text-foreground">2x6 Photo Strips</h3>
@@ -194,11 +178,7 @@ const InstantPrintBooth = () => {
             {/* 4x6 Prints */}
             <Card className="overflow-hidden hover-scale">
               <div className="aspect-[3/4] overflow-hidden">
-                <img 
-                  src="/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png" 
-                  alt="4x6 postcard print examples" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/d14d2b05-c6aa-4cd8-a774-828b6cac6ac8.png" alt="4x6 postcard print examples" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-display font-bold mb-4 text-foreground">4x6 Postcard Prints</h3>
@@ -303,15 +283,9 @@ const InstantPrintBooth = () => {
           </h2>
           
           <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 max-w-6xl mx-auto">
-            {galleryImages.map((image, index) => (
-              <div key={index} className="break-inside-avoid group">
-                <img 
-                  src={image} 
-                  alt={`Instant print booth example ${index + 1}`} 
-                  className="w-full rounded-lg hover-scale shadow-md hover:shadow-lg transition-shadow duration-300" 
-                />
-              </div>
-            ))}
+            {galleryImages.map((image, index) => <div key={index} className="break-inside-avoid group">
+                <img src={image} alt={`Instant print booth example ${index + 1}`} className="w-full rounded-lg hover-scale shadow-md hover:shadow-lg transition-shadow duration-300" />
+              </div>)}
           </div>
         </div>
       </section>
@@ -521,8 +495,6 @@ const InstantPrintBooth = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default InstantPrintBooth;
