@@ -237,10 +237,10 @@ const InstantPrintBooth = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Sparkles className="text-primary h-6 w-6" />
                 </div>
-                <h3 className="font-display font-bold text-foreground">Props & Accessories</h3>
+                <h3 className="font-display font-bold text-foreground">Photo Filters & Effects</h3>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Fun props included with every rental! From silly glasses to elegant signs, we bring the accessories that make photos memorable.
+                Choose from a variety of photo filters including black & white, vintage, glam, and more. Add fun overlays and effects to match your event vibe.
               </p>
             </Card>
 
