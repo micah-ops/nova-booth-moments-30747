@@ -90,9 +90,7 @@ const InstantPrintBooth = () => {
       {/* What Makes It Special */}
       <section id="features" className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-6 text-foreground">
-            Why Choose Instant Print?
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-6 text-foreground">Why Choose Prints?</h2>
           <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-16">
             In a world of digital everything, there's something magical about holding a physical photo in your hands. Our instant print booth creates lasting keepsakes your guests will treasure.
           </p>
@@ -104,7 +102,7 @@ const InstantPrintBooth = () => {
                   <Printer className="text-primary h-8 w-8" />
                 </div>
               </div>
-              <h3 className="text-xl font-display font-bold mb-4 text-foreground">Lab-Quality Prints</h3>
+              <h3 className="text-xl font-display font-bold mb-4 text-foreground">High-Quality Prints</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Our commercial-grade dye-sublimation printers produce stunning, smudge-proof prints that last a lifetime. No inkjet blur or fading here.
               </p>
@@ -117,9 +115,7 @@ const InstantPrintBooth = () => {
                 </div>
               </div>
               <h3 className="text-xl font-display font-bold mb-4 text-foreground">Prints in Seconds</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                No waiting around! Photos print in just 8-12 seconds, keeping the line moving and your guests entertained all night long.
-              </p>
+              <p className="text-muted-foreground leading-relaxed">No waiting around! Photos print in just 29 seconds, keeping the line moving and your guests entertained all night long.</p>
             </Card>
 
             <Card className="text-center p-8 hover-scale">
@@ -155,17 +151,15 @@ const InstantPrintBooth = () => {
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-display font-bold mb-4 text-foreground">2x6 Photo Strips</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  The classic photo booth experience! Four photos arranged vertically on a strip—perfect for slipping into wallets, sticking on fridges, or tucking into scrapbooks.
-                </p>
+                <p className="text-muted-foreground mb-4 leading-relaxed">The classic photo booth experience! 3 photos arranged vertically on a strip. perfect for slipping into wallets, sticking on fridges, or tucking into scrapbooks. </p>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-muted-foreground">
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>4 photos per strip</span>
+                    <span>3 photos per strip</span>
                   </li>
                   <li className="flex items-center gap-2 text-muted-foreground">
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>Option for duplicate strips</span>
+                    <span>Each print session creates two identical strips, perfect for large groups. </span>
                   </li>
                   <li className="flex items-center gap-2 text-muted-foreground">
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
@@ -182,9 +176,7 @@ const InstantPrintBooth = () => {
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-display font-bold mb-4 text-foreground">4x6 Postcard Prints</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  A larger format that makes a bigger statement. Perfect for corporate events, branded activations, or when you want your photos to really stand out.
-                </p>
+                <p className="text-muted-foreground mb-4 leading-relaxed">A larger format that makes a bigger statement. Perfect for corporate events, branded activations, or when you want your photos to really stand out In a larger format. </p>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-muted-foreground">
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
@@ -196,7 +188,7 @@ const InstantPrintBooth = () => {
                   </li>
                   <li className="flex items-center gap-2 text-muted-foreground">
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>Frame-ready size</span>
+                    <span>Larger image size</span>
                   </li>
                 </ul>
               </CardContent>
@@ -476,9 +468,7 @@ const InstantPrintBooth = () => {
               </Button>
             </a>
             <a href="tel:5035550123">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto">
-                Call Us Today
-              </Button>
+              
             </a>
           </div>
         </div>
