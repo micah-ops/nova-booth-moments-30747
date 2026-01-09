@@ -367,7 +367,7 @@ const FinalCTA = () => <section id="contact" className="relative py-16 md:py-24"
         <a href="tel:+1234567890" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Call Perfect Booth">
            
         </a>
-        <a href="mailto:micah@perfect-booth.com" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Perfect Booth">
+        <a href="mailto:contact@perfectbooth.com" className="inline-flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors" aria-label="Email Perfect Booth">
            
         </a>
       </div>

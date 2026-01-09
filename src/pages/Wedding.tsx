@@ -418,7 +418,7 @@ const Wedding = () => {
               <a href="https://instagram.com/novabooth" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 Instagram
               </a>
-              <a href="mailto:weddings@novabooth.com" className="hover:text-primary transition-colors">
+              <a href="mailto:contact@perfectbooth.com" className="hover:text-primary transition-colors">
                 Contact
               </a>
             </div>
