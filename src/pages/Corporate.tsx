@@ -384,7 +384,7 @@ const Corporate = () => {
               <a href="https://instagram.com/perfectbooth" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 Instagram
               </a>
-              <a href="mailto:corporate@perfectbooth.com" className="hover:text-primary transition-colors">
+              <a href="mailto:contact@perfectbooth.com" className="hover:text-primary transition-colors">
                 Contact
               </a>
             </div>
